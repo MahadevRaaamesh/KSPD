@@ -1,0 +1,53 @@
+.map-page-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.map-glass-wrapper {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  padding: 0;
+  min-height: 500px;
+}
+
+.map-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.loading-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: var(--accent-primary);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  font-weight: 500;
+  z-index: 10;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.loading-badge::after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  border: 2px solid white;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: map-spin 1s linear infinite;
+}
+
+@keyframes map-spin {
+  to { transform: rotate(360deg); }
+}

@@ -2,7 +2,7 @@ from pydantic_settings import BaseSettings
 
 class Settings(BaseSettings):
     ENVIRONMENT: str = "local"
-    DATABASE_URL: str = "sqlite+aiosqlite:///./data/kspd.db"
+    DATABASE_URL: str = "sqlite+aiosqlite:///./data/mock_data/mock_fir_data.db"
     QUICKML_LLM_ENDPOINT: str = ""
     QUICKML_OAUTH_TOKEN: str = ""
     QUICKML_ORG_ID: str = ""

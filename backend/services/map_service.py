@@ -9,32 +9,29 @@ async def get_heatmap_data(
     date_to: Optional[str] = None
 ) -> List[HeatmapPoint]:
     query = """
-        SELECT c.latitude, c.longitude, COUNT(*) as intensity
-        FROM CaseMaster c
-        JOIN Unit u ON c.PoliceStationID = u.UnitID
-        JOIN District d ON u.DistrictID = d.DistrictID
-        JOIN CrimeHead ch ON c.CrimeMajorHeadID = ch.CrimeHeadID
-        WHERE c.latitude IS NOT NULL AND c.longitude IS NOT NULL
+        SELECT latitude, longitude, COUNT(*) as intensity
+        FROM FIRs
+        WHERE latitude IS NOT NULL AND longitude IS NOT NULL
     """
     params = {}
     
     if crime_category:
-        query += " AND ch.CrimeGroupName = :category"
+        query += " AND crime_major_head = :category"
         params["category"] = crime_category
         
     if district:
-        query += " AND d.DistrictName = :district"
+        query += " AND district = :district"
         params["district"] = district
         
     if date_from:
-        query += " AND c.CrimeRegisteredDate >= :date_from"
+        query += " AND date_reported >= :date_from"
         params["date_from"] = date_from
         
     if date_to:
-        query += " AND c.CrimeRegisteredDate <= :date_to"
+        query += " AND date_reported <= :date_to"
         params["date_to"] = date_to
         
-    query += " GROUP BY c.latitude, c.longitude"
+    query += " GROUP BY latitude, longitude"
     
     results = await execute_query(query, params)
     return [HeatmapPoint(
@@ -45,19 +42,16 @@ async def get_heatmap_data(
 
 async def get_crime_clusters(district: Optional[str] = None) -> List[CrimeCluster]:
     query = """
-        SELECT c.latitude, c.longitude, COUNT(*) as count, ch.CrimeGroupName as crime_category
-        FROM CaseMaster c
-        JOIN Unit u ON c.PoliceStationID = u.UnitID
-        JOIN District d ON u.DistrictID = d.DistrictID
-        JOIN CrimeHead ch ON c.CrimeMajorHeadID = ch.CrimeHeadID
-        WHERE c.latitude IS NOT NULL AND c.longitude IS NOT NULL
+        SELECT latitude, longitude, COUNT(*) as count, crime_major_head as crime_category
+        FROM FIRs
+        WHERE latitude IS NOT NULL AND longitude IS NOT NULL
     """
     params = {}
     if district:
-        query += " AND d.DistrictName = :district"
+        query += " AND district = :district"
         params["district"] = district
         
-    query += " GROUP BY c.latitude, c.longitude, ch.CrimeGroupName"
+    query += " GROUP BY latitude, longitude, crime_major_head"
     
     results = await execute_query(query, params)
     return [CrimeCluster(
@@ -69,26 +63,12 @@ async def get_crime_clusters(district: Optional[str] = None) -> List[CrimeCluste
 
 async def get_station_markers() -> List[dict]:
     query = """
-        SELECT u.UnitName as station_name, d.DistrictName as district,
-        u.UnitID, COUNT(c.CaseMasterID) as case_count
-        FROM Unit u
-        JOIN District d ON u.DistrictID = d.DistrictID
-        LEFT JOIN CaseMaster c ON c.PoliceStationID = u.UnitID
-        GROUP BY u.UnitID, u.UnitName, d.DistrictName
-    """
-    # Note: Our schema doesn't have lat/lng in the Unit table, so we use
-    # average lat/lng from cases reported in that station as a proxy.
-    
-    proxy_query = """
-        SELECT u.UnitName as station_name, d.DistrictName as district,
-        AVG(c.latitude) as latitude, AVG(c.longitude) as longitude,
-        COUNT(c.CaseMasterID) as case_count
-        FROM Unit u
-        JOIN District d ON u.DistrictID = d.DistrictID
-        LEFT JOIN CaseMaster c ON c.PoliceStationID = u.UnitID
-        GROUP BY u.UnitID, u.UnitName, d.DistrictName
+        SELECT station_name, district, ROWID as UnitID, 
+        latitude, longitude,
+        (SELECT COUNT(*) FROM FIRs WHERE FIRs.police_station = PoliceStations.station_name) as case_count
+        FROM PoliceStations
+        WHERE latitude IS NOT NULL AND longitude IS NOT NULL
     """
     
-    results = await execute_query(proxy_query)
-    # Filter out stations with no valid coordinates
-    return [dict(row) for row in results if row.get("latitude")]
+    results = await execute_query(query)
+    return [dict(row) for row in results]

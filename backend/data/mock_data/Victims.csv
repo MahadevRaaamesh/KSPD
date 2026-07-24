@@ -1,0 +1,15 @@
+ROWID,name,age,fir_rowid,gender,is_police,is_complainant,occupation,religion,caste
+1,Shravya Hora,60,1,Male,1,1,Business,Hindu,SC
+2,Advay Bahri,53,2,Female,0,1,Govt Employee,Other,OBC
+3,Charita Nagi,32,2,Female,1,0,Student,Other,SC
+4,Gaurangi Talwar,43,3,Female,1,1,Student,Muslim,SC
+5,Lekha Mukherjee,78,3,Male,1,1,Govt Employee,Other,SC
+6,Charvi Swamy,66,4,Female,1,0,Student,Other,ST
+7,Orinder Karnik,46,5,Female,0,1,Business,Muslim,SC
+8,Zayan Kanda,21,6,Male,0,0,Private Sector,Other,OBC
+9,Vritti Thaman,48,7,Female,1,1,Private Sector,Muslim,General
+10,Aarini Agarwal,63,7,Female,0,0,Govt Employee,Christian,ST
+11,Isha De,11,8,Male,0,1,Govt Employee,Other,OBC
+12,Onveer Roy,51,9,Male,1,1,Govt Employee,Christian,SC
+13,Upma Sur,32,9,Male,0,1,Govt Employee,Other,ST
+14,Bhavani Krish,76,10,Male,1,1,Private Sector,Christian,OBC

@@ -1,0 +1,6 @@
+ROWID,section_number,description,act_name,act_short_name,is_active
+1,302,Punishment for murder,Indian Penal Code,IPC,1
+2,379,Punishment for theft,Indian Penal Code,IPC,1
+3,420,Cheating and dishonestly inducing delivery of property,Indian Penal Code,IPC,1
+4,392,Punishment for robbery,Indian Penal Code,IPC,1
+5,20,Punishment for contravention in relation to cannabis plant and cannabis,Narcotic Drugs and Psychotropic Substances Act,NDPS,1

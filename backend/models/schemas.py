@@ -4,37 +4,36 @@ from typing import Optional, List, Dict, Any
 # ──── Entity Models ────
 
 class FIR(BaseModel):
-    CaseMasterID: int
-    CrimeNo: str
-    CaseNo: Optional[str] = None
-    CrimeRegisteredDate: Optional[str] = None
-    BriefFacts: Optional[str] = None
-    CrimeGroupName: Optional[str] = None  # Joined from CrimeHead
-    CrimeHeadName: Optional[str] = None   # Joined from CrimeSubHead
-    DistrictName: Optional[str] = None    # Joined from District
-    UnitName: Optional[str] = None        # Joined from Unit (Police Station)
-    CaseStatusName: Optional[str] = None  # Joined from CaseStatusMaster
+    ROWID: int
+    fir_number: str
+    date_reported: Optional[str] = None
+    brief_facts: Optional[str] = None
+    crime_major_head: Optional[str] = None
+    crime_minor_head: Optional[str] = None
+    district: Optional[str] = None
+    police_station: Optional[str] = None
+    status: Optional[str] = None
     latitude: Optional[float] = None
     longitude: Optional[float] = None
     ipc_sections: List[str] = []
 
 class AccusedPerson(BaseModel):
-    AccusedMasterID: int
-    AccusedName: str
-    AgeYear: Optional[int] = None
-    GenderID: Optional[int] = None
-    CaseMasterID: Optional[int] = None
+    ROWID: int
+    name: str
+    age: Optional[int] = None
+    gender: Optional[str] = None
+    fir_rowid: Optional[int] = None
 
 class Victim(BaseModel):
-    VictimMasterID: int
-    VictimName: str
-    AgeYear: Optional[int] = None
-    CaseMasterID: Optional[int] = None
+    ROWID: int
+    name: str
+    age: Optional[int] = None
+    fir_rowid: Optional[int] = None
 
 class PoliceStation(BaseModel):
-    UnitID: int
-    UnitName: str
-    DistrictName: Optional[str] = None
+    ROWID: int
+    station_name: str
+    district: Optional[str] = None
     latitude: Optional[float] = None
     longitude: Optional[float] = None
 

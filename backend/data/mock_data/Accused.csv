@@ -1,0 +1,29 @@
+ROWID,name,age,address,fir_rowid,gender,person_id,arrest_date,arrest_state,arrest_district,arrest_station,arrest_officer_name
+1,Aadi Dubey,26,"H.No. 796
+Shroff Street, Tiruchirappalli 617781",1,Male,A1,2026-06-24T03:54:26,Karnataka,Kota,Hindupur PS,Suhani Gara
+2,Kevin Dayal,65,"H.No. 77
+Dutta Marg, Bardhaman 627683",1,Female,A2,,,,,
+3,Meghana Samra,39,"H.No. 28
+Sahni Road
+New Delhi 057729",2,Male,A1,2026-03-12T20:52:44,Karnataka,Gandhidham,Raurkela Industrial Township PS,Falan Ghosh
+4,Rushil Varkey,36,"934, Karnik Circle, Morbi-877376",3,Male,A1,,,,,
+5,Priya Sethi,61,"42, Mangat Path, Karaikudi 399583",3,Female,A2,,,,,
+6,Yug Palla,57,"507
+Kurian Ganj
+Tadepalligudem-872201",3,Male,A3,,,,,
+7,Vivaan Bhattacharyya,22,"40
+Munshi Circle, Jhansi 423118",4,Female,A1,2026-02-06T06:18:10,Karnataka,Coimbatore,Katihar PS,Tamanna Bahl
+8,Aryan Sahni,31,"H.No. 94
+Badami Zila, Nashik 662995",5,Male,A1,,,,,
+9,Harshil Srinivas,24,"H.No. 729, Buch Circle
+Sambhal 003034",5,Male,A2,2026-02-27T08:57:15,Karnataka,Gandhidham,Shahjahanpur PS,Warinder Swaminathan
+10,Anay Golla,54,"721
+Saraf Zila
+Suryapet 702204",6,Female,A1,2026-03-20T13:13:07,Karnataka,Gandhidham,Shahjahanpur PS,Hemangini Choudhry
+11,Veer Batra,37,"46/22, Tata Zila, Gulbarga 110850",7,Female,A1,,,,,
+12,Farhan Sarin,54,"H.No. 07, Badami Path, Pudukkottai 835690",8,Male,A1,2026-05-02T18:25:21,Karnataka,Kota,Hindupur PS,Indrajit Yadav
+13,Neel Khare,45,"06, Mistry Marg, Bahraich-684464",9,Male,A1,,,,,
+14,Theodore Solanki,36,"708
+Apte Circle, Tumkur 171427",9,Female,A2,,,,,
+15,Aachal Ganesh,46,"13/435, Dada Street
+Kottayam 228722",10,Female,A1,2026-02-09T23:53:44,Karnataka,Jalna,Rourkela PS,Hritik Rajan

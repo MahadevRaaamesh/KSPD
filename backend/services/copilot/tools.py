@@ -23,17 +23,16 @@ async def sql_query_tool(intent: str, params: dict) -> dict:
     elif intent == "case_details":
         fir_no = params.get("fir_number")
         if fir_no:
-            res = await execute_query("SELECT * FROM CaseMaster WHERE CaseNo LIKE :fir_no OR CrimeNo LIKE :fir_no", {"fir_no": f"%{fir_no}%"})
+            res = await execute_query("SELECT * FROM FIRs WHERE fir_number LIKE :fir_no", {"fir_no": f"%{fir_no}%"})
             data = res
     elif intent == "accused_history":
         name = params.get("person_name")
         if name:
             res = await execute_query("""
-                SELECT c.CaseNo, c.CrimeNo, c.CrimeRegisteredDate, s.CaseStatusName
+                SELECT c.fir_number, c.date_reported, c.status, c.crime_major_head
                 FROM Accused a
-                JOIN CaseMaster c ON a.CaseMasterID = c.CaseMasterID
-                LEFT JOIN CaseStatusMaster s ON c.CaseStatusID = s.CaseStatusID
-                WHERE a.AccusedName LIKE :name
+                JOIN FIRs c ON a.fir_rowid = c.ROWID
+                WHERE a.name LIKE :name
             """, {"name": f"%{name}%"})
             data = res
             
@@ -53,7 +52,7 @@ async def graph_query_tool(intent: str, params: dict) -> dict:
 async def vector_search_tool(intent: str, params: dict) -> dict:
     text = params.get("text", "")
     if not text and intent == "similar_cases":
-        text = "similar cases" # fallback
+        text = "similar cases" 
         
     res = await similarity_service.search_similar(
         text=text,

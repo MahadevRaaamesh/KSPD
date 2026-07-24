@@ -1,0 +1,76 @@
+ROWID,name,rank,station_rowid,designation,kgid,dob,gender,blood_group,is_physically_challenged,appointment_date
+1,Christopher Palla,Constable,1,Beat Officer,3480706707,1992-10-26,Female,B-,1,2024-09-21
+2,Ishwar Hayre,Sub-Inspector,1,Station House Officer (SHO),5353148394,1984-04-30,Male,AB-,0,2017-10-17
+3,Hritik Rajan,Inspector,1,Station House Officer (SHO),7817795333,1991-03-22,Male,O+,0,2016-11-27
+4,Onveer Saxena,Sub-Inspector,1,Investigating Officer (IO),7716913984,1969-11-17,Male,B-,0,2020-03-30
+5,Kavya Dada,Sub-Inspector,1,Station House Officer (SHO),9172758224,1985-01-24,Female,AB-,0,2013-01-15
+6,Jeremiah Agate,Head Constable,2,Beat Officer,4815002590,1986-04-11,Female,B+,0,2018-01-26
+7,Forum Bhatt,Sub-Inspector,2,Investigating Officer (IO),0886134281,1974-02-01,Female,B-,1,2014-10-30
+8,Vedika Lad,Head Constable,2,Station House Officer (SHO),9839081357,1969-07-28,Male,A+,1,2016-08-16
+9,Suhani Gara,Head Constable,2,Beat Officer,1054408518,1972-06-21,Male,O-,0,2020-12-25
+10,Yashvi Dhar,Constable,2,Investigating Officer (IO),9030053607,1994-11-19,Male,A-,0,2018-07-11
+11,Chanchal Malhotra,Sub-Inspector,3,Investigating Officer (IO),5710024765,1990-09-23,Female,AB+,0,2017-11-22
+12,Krishna Nadig,Constable,3,Investigating Officer (IO),5313093892,1978-03-04,Female,O-,0,2020-01-30
+13,Yuvraj Sharaf,Sub-Inspector,3,Investigating Officer (IO),5771658763,1992-02-12,Female,B+,0,2016-09-11
+14,Omya Mohanty,Inspector,3,Station House Officer (SHO),7126460197,1993-08-21,Male,AB-,0,2018-04-07
+15,Udarsh Mane,Sub-Inspector,3,Investigating Officer (IO),7979977900,1995-05-28,Male,AB+,0,2013-12-04
+16,Falan Ghosh,Head Constable,4,Station House Officer (SHO),5609245097,1986-03-14,Male,AB-,0,2015-11-15
+17,Dakshesh Bansal,Sub-Inspector,4,Investigating Officer (IO),6681872284,1977-08-30,Female,O-,1,2025-01-07
+18,Elijah Sanghvi,Head Constable,4,Beat Officer,0085077506,1994-08-14,Male,B-,1,2021-05-23
+19,Harish Chawla,Head Constable,4,Investigating Officer (IO),6628459562,1969-07-25,Female,A+,0,2018-09-08
+20,Advay Iyer,Constable,4,Station House Officer (SHO),6715764809,1976-07-30,Male,B+,0,2012-03-09
+21,Urishilla Chadha,Inspector,5,Station House Officer (SHO),3260293832,1987-07-22,Male,AB-,0,2013-11-22
+22,Rushil Randhawa,Sub-Inspector,5,Station House Officer (SHO),0396770236,1992-04-15,Male,A+,0,2019-11-07
+23,Aadi Konda,Inspector,5,Station House Officer (SHO),6569853232,1969-11-17,Female,B+,0,2019-05-08
+24,Mitali Apte,Head Constable,5,Station House Officer (SHO),0283246944,1998-05-15,Male,AB-,0,2012-08-24
+25,Warinder Swaminathan,Head Constable,5,Station House Officer (SHO),9744264406,1995-12-21,Female,O+,1,2017-11-22
+26,Jatin Bora,Sub-Inspector,6,Beat Officer,7538080723,1989-05-03,Male,A+,0,2019-06-26
+27,Pooja Lad,Head Constable,6,Beat Officer,9441033992,1992-09-13,Female,B+,1,2016-10-28
+28,Prisha Basu,Inspector,6,Beat Officer,5221855986,1977-03-31,Male,B+,0,2022-11-21
+29,Zayyan Madan,Head Constable,6,Station House Officer (SHO),1805009033,1978-08-01,Female,B-,0,2016-05-05
+30,Vanya Talwar,Constable,6,Station House Officer (SHO),6413917350,1994-11-26,Female,O+,0,2016-06-18
+31,Neelima Nayar,Sub-Inspector,7,Station House Officer (SHO),1985589889,1977-07-14,Female,B+,0,2020-01-03
+32,Oeshi Morar,Constable,7,Investigating Officer (IO),5354085325,1984-04-30,Female,B+,0,2024-08-24
+33,Barkha Mammen,Sub-Inspector,7,Beat Officer,8253225926,1976-07-07,Male,O+,0,2019-11-10
+34,Radha Saraf,Inspector,7,Investigating Officer (IO),5450509867,1983-12-28,Female,B-,1,2018-08-18
+35,Atharv Thaker,Constable,7,Investigating Officer (IO),6593388384,1985-11-21,Female,AB+,0,2025-07-04
+36,Ekaja Mammen,Sub-Inspector,8,Beat Officer,5337450388,1997-06-19,Female,B+,0,2011-10-11
+37,Maanas Luthra,Sub-Inspector,8,Beat Officer,6277261641,1987-06-23,Male,B+,1,2014-12-19
+38,Prisha Natarajan,Constable,8,Station House Officer (SHO),7812497155,1998-03-23,Female,AB-,0,2023-08-22
+39,Urvashi Dhawan,Inspector,8,Investigating Officer (IO),7600686502,1998-09-17,Male,A-,0,2022-10-07
+40,Triveni Madan,Head Constable,8,Station House Officer (SHO),6474648021,1980-12-10,Female,O+,0,2013-10-31
+41,Azad Bhardwaj,Inspector,9,Investigating Officer (IO),3972169544,1992-06-09,Female,O-,0,2022-01-22
+42,Ayushman Lall,Constable,9,Station House Officer (SHO),6288346770,1973-02-17,Female,A+,0,2021-11-09
+43,Ojasvi Balasubramanian,Constable,9,Beat Officer,9358804691,1983-08-05,Female,AB-,0,2021-12-07
+44,Daksha Chandra,Head Constable,9,Investigating Officer (IO),6310623673,1972-11-08,Female,A+,0,2013-12-17
+45,Chaitanya Ganguly,Inspector,9,Station House Officer (SHO),6360410287,1983-05-10,Male,O+,0,2020-09-02
+46,Patrick Shenoy,Inspector,10,Investigating Officer (IO),3349986061,1978-04-03,Male,AB-,0,2015-12-07
+47,Meghana Joshi,Sub-Inspector,10,Station House Officer (SHO),8705668566,1999-12-14,Male,A-,1,2021-01-01
+48,Faqid Salvi,Head Constable,10,Station House Officer (SHO),8169036027,1987-06-04,Female,O-,0,2022-03-22
+49,Ekansh Kota,Inspector,10,Beat Officer,2822254770,1981-03-22,Male,B-,0,2023-01-19
+50,Tamanna Bahl,Sub-Inspector,10,Beat Officer,0189355289,1984-09-17,Female,B+,0,2017-07-28
+51,Yachana Mital,Head Constable,11,Station House Officer (SHO),9559626186,1977-08-30,Male,AB-,0,2012-06-13
+52,Indrajit Yadav,Head Constable,11,Beat Officer,2985924997,1975-03-10,Male,B+,0,2018-04-02
+53,Aahana Anne,Inspector,11,Investigating Officer (IO),4629941311,1990-10-25,Female,O-,0,2024-07-18
+54,Theodore Deshpande,Head Constable,11,Beat Officer,5963666973,1972-11-28,Male,A-,1,2015-05-03
+55,Raagini Tella,Inspector,11,Station House Officer (SHO),1624878493,1983-10-11,Female,A+,0,2019-06-14
+56,Brinda Divan,Constable,12,Beat Officer,3723956125,1999-02-23,Female,O+,1,2023-09-13
+57,Hemangini Choudhry,Inspector,12,Station House Officer (SHO),8807543861,1975-06-14,Male,O+,0,2017-09-18
+58,Neel Dash,Inspector,12,Station House Officer (SHO),2157643534,1991-07-07,Female,B-,0,2011-10-24
+59,Sanya Randhawa,Head Constable,12,Station House Officer (SHO),6913139907,1991-08-29,Male,O+,0,2012-05-20
+60,Amol Batra,Sub-Inspector,12,Station House Officer (SHO),6086757160,1992-03-24,Male,AB+,1,2025-03-21
+61,Liam Manne,Constable,13,Investigating Officer (IO),8088837890,1974-04-05,Female,AB+,0,2021-02-12
+62,Waida Sen,Constable,13,Investigating Officer (IO),2961310947,1971-02-01,Male,O+,1,2022-12-22
+63,Nihal Pant,Sub-Inspector,13,Station House Officer (SHO),6128781196,1977-02-19,Female,B-,1,2025-04-02
+64,Yashasvi Walia,Constable,13,Investigating Officer (IO),4704340635,1997-04-14,Female,O+,0,2016-04-25
+65,Ganga Sharaf,Head Constable,13,Investigating Officer (IO),7692044288,1996-10-18,Male,B+,0,2019-07-30
+66,Ryan Bhavsar,Constable,14,Beat Officer,8242705570,1977-10-11,Male,AB+,1,2023-02-18
+67,Omkaar Ram,Constable,14,Investigating Officer (IO),7653148158,1995-12-21,Female,AB-,1,2022-02-13
+68,Jeevika Mallick,Inspector,14,Beat Officer,8329666020,1973-02-14,Female,A-,0,2016-04-10
+69,Om Yohannan,Inspector,14,Investigating Officer (IO),7670864832,1974-11-23,Female,AB-,0,2017-08-01
+70,Rajata Ramesh,Inspector,14,Beat Officer,5571583734,1996-05-05,Male,AB+,0,2020-09-20
+71,Aditya Andra,Constable,15,Station House Officer (SHO),2744133758,1978-03-17,Female,O+,0,2025-01-25
+72,Rishi Sood,Constable,15,Investigating Officer (IO),3951811149,1976-06-21,Male,A-,0,2013-07-17
+73,Lekha Johal,Sub-Inspector,15,Station House Officer (SHO),0281396105,1983-11-06,Male,A+,1,2025-02-07
+74,Jagdish Sagar,Inspector,15,Station House Officer (SHO),9872167536,1995-09-06,Male,O-,0,2013-07-24
+75,Jagat Swamy,Sub-Inspector,15,Investigating Officer (IO),6557516959,1990-04-22,Female,O+,0,2016-03-25

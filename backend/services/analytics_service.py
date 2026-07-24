@@ -3,28 +3,22 @@ from models.schemas import OverviewStats, TrendDataPoint, DistrictStat, IPCStat,
 from typing import List, Optional
 
 async def get_overview_stats() -> OverviewStats:
-    # 1. Total FIRs
-    res = await execute_query("SELECT COUNT(*) as cnt FROM CaseMaster")
+    res = await execute_query("SELECT COUNT(*) as cnt FROM FIRs")
     total_firs = res[0]["cnt"]
     
-    # 2. Total Accused
     res = await execute_query("SELECT COUNT(*) as cnt FROM Accused")
     total_accused = res[0]["cnt"]
     
-    # 3. Total Victims
-    res = await execute_query("SELECT COUNT(*) as cnt FROM Victim")
+    res = await execute_query("SELECT COUNT(*) as cnt FROM Victims")
     total_victims = res[0]["cnt"]
     
-    # 4. Cases Solved (Assuming StatusID 2=Charge Sheeted, 3=Closed)
-    res = await execute_query("SELECT COUNT(*) as cnt FROM CaseMaster WHERE CaseStatusID IN (2, 3)")
+    res = await execute_query("SELECT COUNT(*) as cnt FROM FIRs WHERE status IN ('Charge Sheeted', 'Closed')")
     cases_solved = res[0]["cnt"]
     
-    # 5. Cases Pending (Assuming StatusID 1=Under Investigation)
-    res = await execute_query("SELECT COUNT(*) as cnt FROM CaseMaster WHERE CaseStatusID = 1")
+    res = await execute_query("SELECT COUNT(*) as cnt FROM FIRs WHERE status = 'Under Investigation'")
     cases_pending = res[0]["cnt"]
     
-    # 6. Chargesheets Filed (Assuming StatusID 2=Charge Sheeted)
-    res = await execute_query("SELECT COUNT(*) as cnt FROM CaseMaster WHERE CaseStatusID = 2")
+    res = await execute_query("SELECT COUNT(*) as cnt FROM Chargesheets")
     chargesheets_filed = res[0]["cnt"]
     
     return OverviewStats(
@@ -38,70 +32,49 @@ async def get_overview_stats() -> OverviewStats:
 
 async def get_crime_trends(district: Optional[str] = None, crime_category: Optional[str] = None) -> List[TrendDataPoint]:
     query = """
-        SELECT SUBSTR(CrimeRegisteredDate, 1, 7) as period, COUNT(*) as count 
-        FROM CaseMaster c
-        JOIN Unit u ON c.PoliceStationID = u.UnitID
-        JOIN District d ON u.DistrictID = d.DistrictID
-        JOIN CrimeHead ch ON c.CrimeMajorHeadID = ch.CrimeHeadID
+        SELECT SUBSTR(date_reported, 1, 7) as period, COUNT(*) as count 
+        FROM FIRs 
         WHERE 1=1
     """
     params = {}
-    
     if district:
-        query += " AND d.DistrictName = :district"
+        query += " AND district = :district"
         params["district"] = district
-        
     if crime_category:
-        query += " AND ch.CrimeGroupName = :category"
+        query += " AND crime_major_head = :category"
         params["category"] = crime_category
         
     query += " GROUP BY period ORDER BY period"
-    
     results = await execute_query(query, params)
     return [TrendDataPoint(period=row["period"], count=row["count"]) for row in results if row["period"]]
 
 async def get_district_stats() -> List[DistrictStat]:
     query = """
-        SELECT d.DistrictName, COUNT(c.CaseMasterID) as total,
-        SUM(CASE WHEN c.CaseStatusID IN (2, 3) THEN 1 ELSE 0 END) as solved,
-        SUM(CASE WHEN c.CaseStatusID = 1 THEN 1 ELSE 0 END) as pending
-        FROM District d
-        LEFT JOIN Unit u ON d.DistrictID = u.DistrictID
-        LEFT JOIN CaseMaster c ON u.UnitID = c.PoliceStationID
-        GROUP BY d.DistrictName
+        SELECT district, COUNT(*) as total,
+        SUM(CASE WHEN status IN ('Charge Sheeted', 'Closed') THEN 1 ELSE 0 END) as solved,
+        SUM(CASE WHEN status = 'Under Investigation' THEN 1 ELSE 0 END) as pending
+        FROM FIRs
+        GROUP BY district
         ORDER BY total DESC
     """
     results = await execute_query(query)
     return [DistrictStat(
-        district=row["DistrictName"],
+        district=row["district"],
         total_cases=row["total"],
         solved=row["solved"] or 0,
         pending=row["pending"] or 0
-    ) for row in results]
+    ) for row in results if row["district"]]
 
 async def get_top_ipc_sections(limit: int = 15) -> List[IPCStat]:
     query = """
-        SELECT s.SectionCode, COUNT(*) as count, s.SectionDescription
-        FROM ActSectionAssociation asa
-        JOIN Section s ON asa.SectionID = s.SectionCode
-        GROUP BY s.SectionCode, s.SectionDescription
+        SELECT i.section_number as section, COUNT(*) as count, i.description
+        FROM FIR_IPC_Map m
+        JOIN IPCSections i ON m.ipc_rowid = i.ROWID
+        GROUP BY i.section_number, i.description
         ORDER BY count DESC
         LIMIT :limit
     """
-    # Note: We didn't link ActSectionAssociation fully in mock data, 
-    # but we will fallback to CrimeMinorHeadID if association table is empty.
-    
-    # Simpler fallback for our mock data setup
-    fallback_query = """
-        SELECT ch.CrimeHeadName as section, COUNT(*) as count, ch.CrimeHeadName as description
-        FROM CaseMaster c
-        JOIN CrimeSubHead ch ON c.CrimeMinorHeadID = ch.CrimeSubHeadID
-        GROUP BY ch.CrimeHeadName
-        ORDER BY count DESC
-        LIMIT :limit
-    """
-    
-    results = await execute_query(fallback_query, {"limit": limit})
+    results = await execute_query(query, {"limit": limit})
     return [IPCStat(
         section=row["section"],
         count=row["count"],
@@ -110,30 +83,26 @@ async def get_top_ipc_sections(limit: int = 15) -> List[IPCStat]:
 
 async def get_station_stats(district: Optional[str] = None) -> List[StationStat]:
     query = """
-        SELECT u.UnitName, d.DistrictName, COUNT(c.CaseMasterID) as total,
-        SUM(CASE WHEN c.CaseStatusID IN (2, 3) THEN 1 ELSE 0 END) as solved
-        FROM Unit u
-        JOIN District d ON u.DistrictID = d.DistrictID
-        LEFT JOIN CaseMaster c ON u.UnitID = c.PoliceStationID
+        SELECT police_station as station_name, district, COUNT(*) as total,
+        SUM(CASE WHEN status IN ('Charge Sheeted', 'Closed') THEN 1 ELSE 0 END) as solved
+        FROM FIRs
         WHERE 1=1
     """
     params = {}
     if district:
-        query += " AND d.DistrictName = :district"
+        query += " AND district = :district"
         params["district"] = district
         
-    query += " GROUP BY u.UnitName, d.DistrictName ORDER BY total DESC"
-    
+    query += " GROUP BY police_station, district ORDER BY total DESC"
     results = await execute_query(query, params)
     return [StationStat(
-        station_name=row["UnitName"],
-        district=row["DistrictName"],
+        station_name=row["station_name"],
+        district=row["district"],
         total_cases=row["total"],
         solved=row["solved"] or 0
-    ) for row in results]
+    ) for row in results if row["station_name"]]
 
 async def get_insights() -> List[dict]:
-    # Placeholder for AI insights
     return [
         {
             "title": "Robbery Cases Active",

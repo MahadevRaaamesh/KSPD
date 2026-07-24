@@ -1,0 +1,4 @@
+Faker>=24.0.0
+pandas>=2.2.0
+SQLAlchemy>=2.0.25
+requests>=2.31.0

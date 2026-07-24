@@ -31,6 +31,11 @@ backend/data/*.faiss
 backend/data/*_id_map.json
 data/*.db
 
+# Exception to track mock data for sharing
+!backend/data/mock_data/
+!backend/data/mock_data/*.db
+!backend/data/mock_data/*.csv
+
 # Environment variables
 .env
 .env.local

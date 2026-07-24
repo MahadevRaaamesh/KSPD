@@ -1,0 +1,16 @@
+ROWID,station_name,district,latitude,longitude,unit_type,state
+1,Tinsukia PS,Coimbatore,28.0577775,152.597142,Police Station,Karnataka
+2,Sirsa PS,Coimbatore,83.9037095,-77.137136,Police Station,Karnataka
+3,Katihar PS,Coimbatore,-86.3610095,49.345522,Police Station,Karnataka
+4,Malegaon PS,Gandhidham,-61.874614,176.606289,Police Station,Karnataka
+5,Shahjahanpur PS,Gandhidham,85.265093,34.374516,Police Station,Karnataka
+6,Raurkela Industrial Township PS,Gandhidham,5.798576,-6.266236,Police Station,Karnataka
+7,Agartala PS,Jalna,-83.295291,-154.838285,Police Station,Karnataka
+8,Nellore PS,Jalna,-61.946706,43.517159,Police Station,Karnataka
+9,Vasai-Virar PS,Jalna,-81.12999,31.613753,Police Station,Karnataka
+10,Hajipur PS,Kota,-76.5129125,-140.521988,Police Station,Karnataka
+11,Bilaspur PS,Kota,-47.6734975,145.491277,Police Station,Karnataka
+12,Hindupur PS,Kota,-54.666831,13.877199,Police Station,Karnataka
+13,Pimpri-Chinchwad PS,Jalna,65.6237305,-128.626529,Police Station,Karnataka
+14,Bongaigaon PS,Jalna,-31.452575,114.252456,Police Station,Karnataka
+15,Rourkela PS,Jalna,-46.2309855,82.876322,Police Station,Karnataka

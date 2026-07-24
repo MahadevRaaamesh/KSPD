@@ -1,0 +1,9 @@
+ROWID,fir_rowid,filing_date,status,charge_sheet_type,filing_officer_name
+1,2,2026-05-11T20:52:44,Submitted,False Case,Vanya Talwar
+2,3,2026-06-11T15:20:36,Submitted,Chargesheet,Urvashi Dhawan
+3,4,2026-03-22T06:18:10,Submitted,False Case,Ekaja Mammen
+4,6,2026-05-13T13:13:07,Submitted,Undetected,Tamanna Bahl
+5,7,2026-06-28T17:05:00,Submitted,False Case,Raagini Tella
+6,8,2026-06-26T18:25:21,Submitted,Chargesheet,Neelima Nayar
+7,9,2026-04-05T17:37:42,Submitted,Undetected,Prisha Natarajan
+8,10,2026-04-11T23:53:44,Submitted,Undetected,Neelima Nayar

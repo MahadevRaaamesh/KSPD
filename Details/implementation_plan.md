@@ -51,9 +51,10 @@ Your Karnataka Police database likely has tens of thousands of FIRs. You have tw
 > [!IMPORTANT]
 > **Recommendation: Use Option A for development, deploy to production for the final submission.** Start with a curated 4,000-record subset for development speed, then load the full dataset into production on Day 4.
 
-### Table Design for Catalyst Data Store
+### Table Design for Catalyst Data Store (Expanded Flattened Schema)
 
-Tables must be created manually in the Catalyst Console. Plan these upfront:
+Tables must be created manually in the Catalyst Console. Plan these upfront. 
+*Note: We are using an "expanded flattened" schema to capture all granular ER diagram fields (like religion, blood group, etc.) within the 8 core tables.*
 
 ```
 Table: FIRs
@@ -61,12 +62,19 @@ Table: FIRs
   - fir_number (text)
   - brief_facts (text)
   - crime_category (text)
-  - date_reported (text — store as ISO string, ZCQL has limited date support)
+  - date_reported (text — store as ISO string)
   - district (text)
   - police_station (text)
   - status (text)
   - latitude (double)
   - longitude (double)
+  - gravity (text)
+  - crime_major_head (text)
+  - crime_minor_head (text)
+  - court_name (text)
+  - incident_from_date (text)
+  - incident_to_date (text)
+  - info_received_date (text)
 
 Table: Accused
   - ROWID (auto)
@@ -74,18 +82,33 @@ Table: Accused
   - age (int)
   - address (text)
   - fir_rowid (bigint — reference to FIRs.ROWID)
+  - gender (text)
+  - person_id (text)
+  - arrest_date (text)
+  - arrest_state (text)
+  - arrest_district (text)
+  - arrest_station (text)
+  - arrest_officer_name (text)
 
 Table: Victims
   - ROWID (auto)
   - name (text)
   - age (int)
   - fir_rowid (bigint)
+  - gender (text)
+  - is_police (boolean)
+  - is_complainant (boolean)
+  - occupation (text)
+  - religion (text)
+  - caste (text)
 
 Table: IPCSections
   - ROWID (auto)
   - section_number (text)
   - description (text)
   - act_name (text)
+  - act_short_name (text)
+  - is_active (boolean)
 
 Table: FIR_IPC_Map
   - ROWID (auto)
@@ -98,22 +121,35 @@ Table: PoliceStations
   - district (text)
   - latitude (double)
   - longitude (double)
+  - unit_type (text)
+  - state (text)
 
 Table: Officers
   - ROWID (auto)
   - name (text)
   - rank (text)
   - station_rowid (bigint)
+  - designation (text)
+  - kgid (text)
+  - dob (text)
+  - gender (text)
+  - blood_group (text)
+  - is_physically_challenged (boolean)
+  - appointment_date (text)
 
 Table: Chargesheets
   - ROWID (auto)
   - fir_rowid (bigint)
   - filing_date (text)
   - status (text)
+  - charge_sheet_type (text)
+  - filing_officer_name (text)
 ```
 
 > [!TIP]
-> **Flatten where possible.** Notice that `district` and `police_station` are stored as text directly in the `FIRs` table rather than as foreign keys. This reduces JOINs in ZCQL (which is less powerful than full SQL) and simplifies queries. You still have separate `PoliceStations` and a dedicated table for station-specific queries.
+> **Flatten where possible.** Notice that we are storing many demographic and logistical properties (like `religion`, `district`, `police_station`) as text directly in the core tables rather than as foreign keys. This reduces JOINs in ZCQL (which is less powerful than full SQL) and guarantees we capture all ER diagram data without hitting Catalyst limits.
+>
+> **Data Generation & Sharing:** The fake data generator script will output `.db` and `.csv` files into `backend/data/mock_data/`. Make sure this directory is explicitly **not ignored** in `.gitignore` so your teammates can pull the generated mock data!
 
 ---
 

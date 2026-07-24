@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Query, Path
 from typing import List
 from models.schemas import GraphData, AccusedPerson
-from services.graph_service import get_case_graph, get_accused_network, get_network_by_name, get_co_accused
+from services.graph_service import get_case_graph, get_accused_network, get_network_by_name, get_co_accused, get_all_accused
 
 router = APIRouter()
 
@@ -12,6 +12,10 @@ async def case_graph(fir_id: int = Path(..., description="The internal CaseMaste
 @router.get("/accused/{accused_id}", response_model=GraphData)
 async def accused_graph(accused_id: int = Path(..., description="The internal AccusedMasterID")):
     return await get_accused_network(accused_id)
+
+@router.get("/accused", response_model=List[AccusedPerson])
+async def list_accused(limit: int = Query(100, description="Number of accused to return")):
+    return await get_all_accused(limit)
 
 @router.get("/network", response_model=GraphData)
 async def network_by_name(name: str = Query(..., description="Name of the accused to search")):

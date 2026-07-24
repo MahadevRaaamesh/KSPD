@@ -1,0 +1,25 @@
+ROWID,fir_number,brief_facts,crime_category,date_reported,district,police_station,status,latitude,longitude,gravity,crime_major_head,crime_minor_head,court_name,incident_from_date,incident_to_date,info_received_date
+1,30012202600001,"Pariatur deserunt accusamus. Distinctio sunt impedit asperiores. Sit doloremque repellat dignissimos eius qui deserunt.
+Porro a excepturi modi quaerat odit vero. Quis ut aliquam quaerat. Occaecati nisi officia. Molestiae ipsa ab.",Zero FIR,2026-06-15,Kota,Hindupur PS,Under Investigation,-10.260012,-71.07338,Heinous,Cyber Crimes,Nihil,Kota District Court,2026-06-13T03:54:26,2026-06-15T03:54:26,2026-06-15T03:54:26
+2,30006202600002,"Nobis cupiditate numquam occaecati animi consequatur sit. Amet est aliquid corrupti molestiae ea beatae.
+Officiis quod est voluptate. Maiores excepturi provident voluptatem esse. Nulla aspernatur repellendus illum.
+Odio reiciendis possimus ipsa nostrum veniam debitis.",Zero FIR,2026-02-19,Gandhidham,Raurkela Industrial Township PS,Charge Sheeted,52.776989,149.829697,Heinous,Narcotics,Omnis,Gandhidham District Court,2026-02-16T20:52:44,2026-02-19T20:52:44,2026-02-19T20:52:44
+3,60005202600003,"Hic eaque id sit quaerat perspiciatis magni. Labore pariatur vitae expedita.
+Quibusdam sint enim iste quas officiis. Possimus quam placeat pariatur cum.
+Nulla neque eligendi assumenda asperiores explicabo necessitatibus. Laboriosam suscipit quisquam animi minima vitae quos possimus.",UDR,2026-03-15,Gandhidham,Shahjahanpur PS,Closed,-36.82733,-9.727831,Non-Heinous,Cyber Crimes,Eius,Gandhidham District Court,2026-03-06T15:20:36,2026-03-15T15:20:36,2026-03-15T15:20:36
+4,50003202600004,"Quas sint assumenda voluptatem. Consequuntur sint nemo sint enim sapiente. Repellendus pariatur similique expedita aspernatur at.
+Veniam nobis quo quasi ut quasi repudiandae. Vero temporibus commodi placeat voluptas magnam exercitationem.",FIR,2026-01-18,Coimbatore,Katihar PS,Charge Sheeted,-8.077609,88.025127,Non-Heinous,Crimes Against Body,Iusto,Coimbatore District Court,2026-01-09T06:18:10,2026-01-18T06:18:10,2026-01-18T06:18:10
+5,30005202600005,"Possimus quisquam neque eum. Nam vel cupiditate repellat veritatis.
+Fuga doloremque a quam voluptates excepturi. Quasi voluptate esse ducimus soluta enim repellat.",Zero FIR,2026-02-23,Gandhidham,Shahjahanpur PS,Under Investigation,-73.15855,-25.661982,Heinous,Crimes Against Body,Occaecati,Gandhidham District Court,2026-02-14T08:57:15,2026-02-23T08:57:15,2026-02-23T08:57:15
+6,60005202600006,"Ipsa iusto perferendis asperiores. Eaque nemo cumque repudiandae est corporis. Placeat quod sapiente quae quos dolor dicta velit.
+Aspernatur nam voluptates repellendus ducimus maiores dolores. Tenetur a dolores nobis alias corrupti aperiam. Officiis laboriosam magnam nisi pariatur quisquam quod.",Zero FIR,2026-03-11,Gandhidham,Shahjahanpur PS,Charge Sheeted,-49.11495,28.434733,Heinous,Crimes Against Body,Facilis,Gandhidham District Court,2026-03-02T13:13:07,2026-03-11T13:13:07,2026-03-11T13:13:07
+7,80009202600007,"Aliquam esse vero repellendus necessitatibus et. Cupiditate magnam rerum nemo dolores repellendus.
+Temporibus possimus labore quis unde aperiam cupiditate. Molestias pariatur maiores explicabo iste quis. Totam minima necessitatibus ut quasi repudiandae.",FIR,2026-05-10,Jalna,Vasai-Virar PS,Closed,-62.6508445,-77.914212,Heinous,Property Crimes,Repellat,Jalna District Court,2026-05-07T17:05:00,2026-05-10T17:05:00,2026-05-10T17:05:00
+8,30012202600008,"Deserunt odit id in. Sequi veritatis magni omnis veniam. Minus enim qui recusandae.
+Perferendis ipsam similique dolores illum cumque. Accusamus ullam neque.
+Officiis nisi autem aspernatur debitis cum. Quidem eius asperiores vitae.",Zero FIR,2026-04-14,Kota,Hindupur PS,Closed,38.06978,-65.214488,Heinous,Cyber Crimes,A,Kota District Court,2026-04-04T18:25:21,2026-04-14T18:25:21,2026-04-14T18:25:21
+9,70004202600009,"Repellendus maxime veritatis sapiente et. Inventore quas ipsam quos. Deserunt modi optio expedita quo.
+Dolorum maxime vel. Temporibus harum molestiae cum deserunt.
+Doloremque cumque labore atque soluta. Cumque possimus esse officia dicta rerum suscipit. Quas suscipit earum voluptas eos nisi natus.",Zero FIR,2026-03-01,Gandhidham,Malegaon PS,Charge Sheeted,3.540171,87.060247,Heinous,Property Crimes,Perspiciatis,Gandhidham District Court,2026-02-28T17:37:42,2026-03-01T17:37:42,2026-03-01T17:37:42
+10,30015202600010,"At cupiditate repellendus quis voluptatibus impedit labore adipisci. Officia molestias deserunt aliquid. Magnam totam dolor ab laboriosam.
+Culpa saepe quibusdam expedita voluptatem. Beatae accusantium optio.",FIR,2026-01-20,Jalna,Rourkela PS,Closed,-15.86191,-117.427585,Non-Heinous,Narcotics,Eum,Jalna District Court,2026-01-11T23:53:44,2026-01-20T23:53:44,2026-01-20T23:53:44
