@@ -1,4 +1,4 @@
-name: KSPD Backend CI Pipeline
+name: DRISHTI Backend CI Pipeline
 
 on:
   push:
@@ -33,7 +33,7 @@ jobs:
     - name: Generate Mock Data
       working-directory: ./backend
       run: |
-        python scripts/generate_mock_data.py
+        python scripts/generate_data.py
 
     - name: Build FAISS Index
       working-directory: ./backend

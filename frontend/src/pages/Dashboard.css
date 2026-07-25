@@ -1,54 +1,166 @@
-.dashboard-container {
+.dash {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 16px;
 }
 
-.dashboard-header h1 {
-  font-size: 2.25rem;
-  margin-bottom: 0.5rem;
-  letter-spacing: -0.5px;
-}
-
-.dashboard-header p {
-  color: var(--text-secondary);
-  font-size: 1.1rem;
-}
-
-.stats-grid {
+/* ---- KPI row ---- */
+.kpi-row {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
 }
 
-.charts-grid {
+@media (max-width: 1400px) {
+  .kpi-row { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* ---- Alerts strip ---- */
+.alerts-label { margin-bottom: 8px; }
+
+.alerts-strip {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.alert-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  padding: 12px 14px;
+  min-width: 320px;
+  max-width: 420px;
+  flex-shrink: 0;
+}
+
+.alert-card.spike { border-color: rgba(208, 59, 59, 0.4); }
+.alert-card.success { border-color: rgba(12, 163, 12, 0.3); }
+
+.alert-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: var(--radius-sm);
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 1.5rem;
+  place-items: center;
+  flex-shrink: 0;
+  background: var(--bg-elevated);
+  color: var(--ink-secondary);
 }
+.alert-icon.spike { color: var(--status-serious); background: rgba(208, 59, 59, 0.12); }
+.alert-icon.spike.critical { color: #ff8a8a; }
+.alert-icon.success { color: var(--status-good); background: rgba(12, 163, 12, 0.1); }
+.alert-icon.info { color: var(--accent-bright); background: var(--accent-dim); }
 
-.chart-container {
-  padding: 1.5rem;
-  background: var(--bg-secondary);
-}
-
-.chart-container h3 {
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin-bottom: 1.5rem;
-  color: var(--text-primary);
-}
-
-.loading {
+.alert-title {
+  font-size: 13px;
+  font-weight: 650;
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 100%;
-  font-size: 1.25rem;
-  color: var(--accent-primary);
+  gap: 8px;
+  flex-wrap: wrap;
+  line-height: 1.35;
 }
 
-/* Make echarts transparent to inherit glass-card background */
-.echarts-for-react {
-  background: transparent !important;
+.alert-desc {
+  font-size: 12px;
+  color: var(--ink-muted);
+  margin-top: 2px;
+  line-height: 1.5;
+}
+
+/* ---- Grids ---- */
+.dash-grid { display: grid; gap: 16px; }
+.main-grid { grid-template-columns: 1.9fr 1.1fr; }
+.half-grid { grid-template-columns: 1fr 1fr; }
+
+@media (max-width: 1200px) {
+  .main-grid, .half-grid { grid-template-columns: 1fr; }
+}
+
+.main-grid .filter-row .select { max-width: 168px; }
+
+/* ---- Risk index ---- */
+.risk-list {
+  padding: 10px 16px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  max-height: 344px;
+  overflow-y: auto;
+}
+
+.risk-row { display: flex; flex-direction: column; gap: 5px; }
+
+.risk-head {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.risk-name {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--ink-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1;
+  min-width: 0;
+}
+
+.risk-trend { color: var(--ink-muted); flex-shrink: 0; }
+.risk-trend.bad { color: #ff8a8a; }
+.risk-trend.good { color: #4cc94c; }
+
+.risk-score {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--ink-primary);
+  width: 26px;
+  text-align: right;
+}
+
+.risk-track {
+  height: 5px;
+  border-radius: 3px;
+  background: var(--bg-inset);
+  overflow: hidden;
+}
+
+.risk-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 600ms var(--ease);
+}
+
+/* ---- District table ---- */
+.district-table-wrap {
+  padding: 4px 6px 10px;
+  overflow-x: auto;
+}
+
+.clearance-cell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.clearance-pct {
+  font-size: 11.5px;
+  color: var(--ink-secondary);
+  width: 34px;
+  text-align: right;
+}
+
+/* ---- Footnote ---- */
+.dash-footnote {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 9.5px;
+  letter-spacing: 0.14em;
+  color: var(--ink-faint);
+  padding-top: 2px;
 }

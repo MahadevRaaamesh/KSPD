@@ -1,15 +1,2647 @@
 ROWID,name,age,fir_rowid,gender,is_police,is_complainant,occupation,religion,caste
-1,Shravya Hora,60,1,Male,1,1,Business,Hindu,SC
-2,Advay Bahri,53,2,Female,0,1,Govt Employee,Other,OBC
-3,Charita Nagi,32,2,Female,1,0,Student,Other,SC
-4,Gaurangi Talwar,43,3,Female,1,1,Student,Muslim,SC
-5,Lekha Mukherjee,78,3,Male,1,1,Govt Employee,Other,SC
-6,Charvi Swamy,66,4,Female,1,0,Student,Other,ST
-7,Orinder Karnik,46,5,Female,0,1,Business,Muslim,SC
-8,Zayan Kanda,21,6,Male,0,0,Private Sector,Other,OBC
-9,Vritti Thaman,48,7,Female,1,1,Private Sector,Muslim,General
-10,Aarini Agarwal,63,7,Female,0,0,Govt Employee,Christian,ST
-11,Isha De,11,8,Male,0,1,Govt Employee,Other,OBC
-12,Onveer Roy,51,9,Male,1,1,Govt Employee,Christian,SC
-13,Upma Sur,32,9,Male,0,1,Govt Employee,Other,ST
-14,Bhavani Krish,76,10,Male,1,1,Private Sector,Christian,OBC
+1,Anitha Acharya,22,1,Female,0,1,Software Engineer,-,-
+2,Kavitha Jadhav,37,1,Female,0,0,Auto Driver,-,-
+3,Savitha Shinde,66,2,Female,0,1,Businessman,-,-
+4,Salman Amin,40,3,Male,0,1,Daily Wage Worker,-,-
+5,Bhavya Pinto,36,3,Female,0,0,Teacher,-,-
+6,Hema Pai,71,4,Female,0,1,Shop Owner,-,-
+7,Jagadish Salian,19,5,Male,0,1,Businessman,-,-
+8,Mohan Acharya,48,5,Male,0,0,Software Engineer,-,-
+9,Navya Achar,45,6,Female,0,1,Student,-,-
+10,Sunil Puthran,18,7,Male,0,1,Homemaker,-,-
+11,Manjula Kini,46,8,Female,0,1,Businessman,-,-
+12,Ravi Bhat,46,9,Male,0,1,Bank Employee,-,-
+13,Gowri Alva,66,10,Female,0,1,Software Engineer,-,-
+14,Ganesh Swamy,20,11,Male,0,1,Daily Wage Worker,-,-
+15,Chetan Prabhu,66,12,Male,0,1,Businessman,-,-
+16,Praveen Puthran,57,12,Male,0,0,Security Guard,-,-
+17,Sunitha Kulkarni,52,13,Female,0,1,Tailor,-,-
+18,Mustafa Joshi,22,13,Male,0,0,Auto Driver,-,-
+19,Shivakumar Suvarna,61,14,Male,0,1,Security Guard,-,-
+20,Anitha Pai,50,15,Female,0,1,Hotel Worker,-,-
+21,Divya Angadi,17,16,Female,0,1,Homemaker,-,-
+22,Arun Madiwal,68,17,Male,0,1,Student,-,-
+23,Bharath Fernandes,41,18,Male,0,1,Student,-,-
+24,Nandini Biradar,58,19,Female,0,1,Nurse,-,-
+25,Spandana Acharya,46,20,Female,0,1,Businessman,-,-
+26,Charan Kumar,72,21,Male,0,1,Daily Wage Worker,-,-
+27,Nisha Sheikh,32,22,Female,0,1,Student,-,-
+28,Lakshmi Karanth,38,23,Female,0,1,Software Engineer,-,-
+29,Asha Pawar,69,24,Female,0,1,Security Guard,-,-
+30,Seetha Sait,42,25,Female,0,1,Farmer,-,-
+31,Satish Deshpande,40,27,Male,0,1,Bank Employee,-,-
+32,Shilpa Kini,30,28,Female,0,1,Hotel Worker,-,-
+33,Rakesh Puthran,44,29,Male,0,1,Shop Owner,-,-
+34,Ravi Poojary,62,30,Male,0,1,Businessman,-,-
+35,Vikram Hiremath,52,31,Male,0,1,Teacher,-,-
+36,Puneeth Swamy,35,32,Male,0,1,Shop Owner,-,-
+37,Ayesha Murthy,67,33,Female,0,1,Shop Owner,-,-
+38,Harish Deshpande,61,33,Male,0,0,Nurse,-,-
+39,Dinesh Achar,17,34,Male,0,1,Nurse,-,-
+40,Anand Bangera,29,35,Male,0,1,Daily Wage Worker,-,-
+41,Puneeth Karanth,55,36,Male,0,1,Security Guard,-,-
+42,Vanitha Iyer,49,37,Female,0,1,Homemaker,-,-
+43,Raghavendra DSouza,41,38,Male,0,1,Security Guard,-,-
+44,Gowri DSouza,26,39,Female,0,1,Retired Govt Servant,-,-
+45,Sunitha Naik,30,40,Female,0,1,Businessman,-,-
+46,Shobha Madiwal,69,43,Female,0,1,Teacher,-,-
+47,Savitha Madiwal,37,44,Female,0,1,Daily Wage Worker,-,-
+48,Riyaz Kamath,40,46,Male,0,1,Shop Owner,-,-
+49,Umesh Naik,44,47,Male,0,1,Nurse,-,-
+50,Irfan Gowda,27,47,Male,0,0,Nurse,-,-
+51,Shobha Biradar,69,48,Female,0,1,Retired Govt Servant,-,-
+52,Charan Pinto,44,49,Male,0,1,Hotel Worker,-,-
+53,Madhu Pawar,64,50,Male,0,1,Hotel Worker,-,-
+54,Navya Achar,27,51,Female,0,1,Auto Driver,-,-
+55,Pavan Iyer,41,52,Male,0,1,Shop Owner,-,-
+56,Vanitha Reddy,17,52,Female,0,0,Nurse,-,-
+57,Rajesh Adiga,71,52,Male,0,0,Daily Wage Worker,-,-
+58,Gopal Karanth,16,53,Male,0,1,Homemaker,-,-
+59,Ganesh Acharya,45,54,Male,0,1,Software Engineer,-,-
+60,Pooja Karanth,21,55,Female,0,1,Farmer,-,-
+61,Shruthi Deshpande,40,56,Female,0,1,Shop Owner,-,-
+62,Manjula Deshpande,43,57,Female,0,1,Homemaker,-,-
+63,Nagaraj Devadiga,59,58,Male,0,1,Security Guard,-,-
+64,Naveen Sequeira,48,59,Male,0,1,Security Guard,-,-
+65,Rohan Kamath,31,59,Male,0,0,Retired Govt Servant,-,-
+66,Spandana Suvarna,34,61,Female,0,1,Security Guard,-,-
+67,Gagan Acharya,68,62,Male,0,1,Daily Wage Worker,-,-
+68,Sudeep Kamat,68,63,Male,0,1,Shop Owner,-,-
+69,Asha Kattimani,63,64,Female,0,1,Nurse,-,-
+70,Praveen Hiremath,16,65,Male,0,1,Farmer,-,-
+71,Gowri Salian,26,66,Female,0,1,Auto Driver,-,-
+72,Harish Puthran,48,67,Male,0,1,Nurse,-,-
+73,Rohan Suvarna,28,68,Male,0,1,Nurse,-,-
+74,Mohan Shanbhag,35,68,Male,0,0,Hotel Worker,-,-
+75,Naveen Udupa,35,68,Male,0,0,Shop Owner,-,-
+76,Anitha Gowda,21,69,Female,0,1,Businessman,-,-
+77,Joseph Bangera,60,70,Male,0,1,Security Guard,-,-
+78,Shobha Ballal,29,71,Female,0,1,Student,-,-
+79,Anil Iyer,16,72,Male,0,1,Hotel Worker,-,-
+80,Basavaraj Kattimani,72,73,Male,0,1,Farmer,-,-
+81,Girish Alva,24,73,Male,0,0,Shop Owner,-,-
+82,Lakshmi Pasha,68,74,Female,0,1,Software Engineer,-,-
+83,Bhagya Pawar,54,75,Female,0,1,Security Guard,-,-
+84,Hema Karanth,42,75,Female,0,0,Homemaker,-,-
+85,Peter Kumar,17,76,Male,0,1,Homemaker,-,-
+86,Dinesh Puthran,63,78,Male,0,1,Retired Govt Servant,-,-
+87,Swathi Iyengar,71,79,Female,0,1,Businessman,-,-
+88,Ajay Pai,26,79,Male,0,0,Shop Owner,-,-
+89,Kavitha Biradar,51,80,Female,0,1,Businessman,-,-
+90,Shankar Kulkarni,43,81,Male,0,1,Tailor,-,-
+91,Shobha Karanth,65,81,Female,0,0,Hotel Worker,-,-
+92,Rakesh Poojary,33,81,Male,0,0,Software Engineer,-,-
+93,Puneeth Bhat,23,82,Male,0,1,Nurse,-,-
+94,Mary Hiremath,37,82,Female,0,0,Farmer,-,-
+95,Shilpa Pasha,62,82,Female,0,0,Security Guard,-,-
+96,Irfan Kulkarni,23,83,Male,0,1,Hotel Worker,-,-
+97,Ayesha Kotian,62,84,Female,0,1,Hotel Worker,-,-
+98,Naveen Kattimani,53,85,Male,0,1,Homemaker,-,-
+99,Dinesh Hiremath,41,88,Male,0,1,Security Guard,-,-
+100,Krishna Kini,72,89,Male,0,1,Businessman,-,-
+101,Salma Sheikh,60,90,Female,0,1,Nurse,-,-
+102,Ramesh Rao,66,91,Male,0,1,Student,-,-
+103,Shilpa Kamat,47,91,Female,0,0,Bank Employee,-,-
+104,Nandini Fernandes,26,92,Female,0,1,Tailor,-,-
+105,Hema Sait,54,93,Female,0,1,Shop Owner,-,-
+106,Pallavi Devadiga,48,93,Female,0,0,Tailor,-,-
+107,Vinod Kattimani,36,94,Male,0,1,Auto Driver,-,-
+108,Parvathi Nayak,41,95,Female,0,1,Shop Owner,-,-
+109,Mahesh Khan,23,96,Male,0,1,Daily Wage Worker,-,-
+110,Rashmi Achar,21,97,Female,0,1,Shop Owner,-,-
+111,Chandru Suvarna,71,98,Male,0,1,Daily Wage Worker,-,-
+112,Irfan Fernandes,40,99,Male,0,1,Hotel Worker,-,-
+113,Ravi Iyengar,24,100,Male,0,1,Farmer,-,-
+114,Rekha Sequeira,53,101,Female,0,1,Teacher,-,-
+115,Jagadish Amin,34,102,Male,0,1,Bank Employee,-,-
+116,Harish Khan,37,102,Male,0,0,Retired Govt Servant,-,-
+117,Joseph Ballal,29,104,Male,0,1,Daily Wage Worker,-,-
+118,Satish Alva,30,104,Male,0,0,Tailor,-,-
+119,Ayesha Fernandes,51,105,Female,0,1,Bank Employee,-,-
+120,Pooja Patil,71,105,Female,0,0,Hotel Worker,-,-
+121,Chetan Naik,27,105,Male,0,0,Homemaker,-,-
+122,Sunitha Nayak,21,106,Female,0,1,Teacher,-,-
+123,Chandru DSouza,51,107,Male,0,1,Software Engineer,-,-
+124,Basavaraj Poojary,27,108,Male,0,1,Shop Owner,-,-
+125,Sanjay Poojary,23,109,Male,0,1,Hotel Worker,-,-
+126,Arun Shanbhag,41,110,Male,0,1,Shop Owner,-,-
+127,Swathi Alva,72,110,Female,0,0,Teacher,-,-
+128,Suresh Ballal,63,111,Male,0,1,Student,-,-
+129,Abhishek Murthy,68,111,Male,0,0,Security Guard,-,-
+130,Krishna Pawar,40,111,Male,0,0,Tailor,-,-
+131,Chaitra Achar,21,112,Female,0,1,Businessman,-,-
+132,Gowri Amin,29,112,Female,0,0,Homemaker,-,-
+133,Mahesh Biradar,70,113,Male,0,1,Teacher,-,-
+134,Shruthi Murthy,37,114,Female,0,1,Daily Wage Worker,-,-
+135,Krishna Kumar,58,115,Male,0,1,Bank Employee,-,-
+136,Sanjay Murthy,58,116,Male,0,1,Retired Govt Servant,-,-
+137,Usha Pinto,57,117,Female,0,1,Bank Employee,-,-
+138,Gowri Baig,37,118,Female,0,1,Security Guard,-,-
+139,Umesh Chavan,33,119,Male,0,1,Retired Govt Servant,-,-
+140,Swathi Bangera,62,120,Female,0,1,Nurse,-,-
+141,Mary Hegde,39,121,Female,0,1,Security Guard,-,-
+142,Raghavendra Shetty,23,122,Male,0,1,Shop Owner,-,-
+143,Savitha Deshpande,53,123,Female,0,1,Businessman,-,-
+144,Abhishek Baig,43,124,Male,0,1,Tailor,-,-
+145,Meghana Achar,34,125,Female,0,1,Businessman,-,-
+146,Seetha Gowda,57,126,Female,0,1,Hotel Worker,-,-
+147,Sunil Biradar,71,127,Male,0,1,Farmer,-,-
+148,Hema Kumar,51,128,Female,0,1,Hotel Worker,-,-
+149,Salma Kattimani,59,129,Female,0,1,Nurse,-,-
+150,Ajay Puthran,21,130,Male,0,1,Businessman,-,-
+151,Saraswathi Alva,56,131,Female,0,1,Daily Wage Worker,-,-
+152,Mustafa Shanbhag,16,132,Male,0,1,Teacher,-,-
+153,Fathima Fernandes,34,132,Female,0,0,Security Guard,-,-
+154,Anand Pawar,26,132,Male,0,0,Businessman,-,-
+155,Parvathi Hiremath,41,133,Female,0,1,Security Guard,-,-
+156,Charan Swamy,34,133,Male,0,0,Nurse,-,-
+157,Deepa Kini,35,133,Female,0,0,Nurse,-,-
+158,Gowri Khan,58,134,Female,0,1,Tailor,-,-
+159,Vikram Pai,69,134,Male,0,0,Nurse,-,-
+160,Ramesh Suvarna,55,135,Male,0,1,Student,-,-
+161,Gopal Ballal,43,136,Male,0,1,Software Engineer,-,-
+162,Priya Shanbhag,35,137,Female,0,1,Teacher,-,-
+163,Manjula Kulkarni,50,138,Female,0,1,Retired Govt Servant,-,-
+164,Sanjay Karanth,33,139,Male,0,1,Student,-,-
+165,Mustafa Iyer,40,139,Male,0,0,Student,-,-
+166,Seetha Karanth,57,140,Female,0,1,Retired Govt Servant,-,-
+167,Swathi Iyer,20,141,Female,0,1,Homemaker,-,-
+168,Ramesh Angadi,59,142,Male,0,1,Bank Employee,-,-
+169,Shobha Prabhu,53,143,Female,0,1,Daily Wage Worker,-,-
+170,Fathima Bangera,72,145,Female,0,1,Homemaker,-,-
+171,Ayesha Patil,52,146,Female,0,1,Businessman,-,-
+172,Divya Salian,63,146,Female,0,0,Nurse,-,-
+173,Gopal Kumar,17,146,Male,0,0,Security Guard,-,-
+174,Vanitha Bhat,49,147,Female,0,1,Student,-,-
+175,Mahesh Alva,65,147,Male,0,0,Auto Driver,-,-
+176,Santhosh DSouza,20,147,Male,0,0,Bank Employee,-,-
+177,Santhosh Kamath,58,148,Male,0,1,Student,-,-
+178,Jagadish DSouza,51,149,Male,0,1,Student,-,-
+179,Peter Shinde,36,150,Male,0,1,Auto Driver,-,-
+180,Prakash Moily,23,151,Male,0,1,Software Engineer,-,-
+181,Lokesh Pinto,25,152,Male,0,1,Hotel Worker,-,-
+182,Yashoda Sequeira,36,152,Female,0,0,Retired Govt Servant,-,-
+183,Ramya Adiga,44,152,Female,0,0,Teacher,-,-
+184,Radha Hiremath,70,153,Female,0,1,Tailor,-,-
+185,Madhu Sait,68,154,Male,0,1,Shop Owner,-,-
+186,Vanitha Swamy,40,154,Female,0,0,Bank Employee,-,-
+187,Murali Swamy,42,154,Male,0,0,Student,-,-
+188,Usha Iyer,21,155,Female,0,1,Farmer,-,-
+189,Manjunath Baig,49,156,Male,0,1,Security Guard,-,-
+190,Geetha Moily,41,157,Female,0,1,Student,-,-
+191,Suma Pai,35,159,Female,0,1,Teacher,-,-
+192,Radha Nayak,57,159,Female,0,0,Bank Employee,-,-
+193,Raghavendra Hiremath,62,160,Male,0,1,Farmer,-,-
+194,Rakesh Pawar,51,162,Male,0,1,Farmer,-,-
+195,Sharada Ballal,35,163,Female,0,1,Nurse,-,-
+196,Dinesh Poojary,44,164,Male,0,1,Homemaker,-,-
+197,Vidya Pai,34,165,Female,0,1,Software Engineer,-,-
+198,Salma Alva,64,166,Female,0,1,Hotel Worker,-,-
+199,Ajay Murthy,44,167,Male,0,1,Security Guard,-,-
+200,Shruthi Shinde,45,168,Female,0,1,Farmer,-,-
+201,Darshan Joshi,69,169,Male,0,1,Auto Driver,-,-
+202,Nisha Pinto,38,170,Female,0,1,Auto Driver,-,-
+203,Parvathi Reddy,63,171,Female,0,1,Auto Driver,-,-
+204,Sunil Jadhav,68,172,Male,0,1,Security Guard,-,-
+205,Saraswathi Acharya,30,173,Female,0,1,Businessman,-,-
+206,Raghavendra Reddy,51,174,Male,0,1,Homemaker,-,-
+207,Rohan Poojary,51,176,Male,0,1,Bank Employee,-,-
+208,Manjunath Biradar,63,177,Male,0,1,Businessman,-,-
+209,Umesh Kattimani,47,178,Male,0,1,Security Guard,-,-
+210,Bharath Poojary,39,179,Male,0,1,Shop Owner,-,-
+211,Vijay Kattimani,60,180,Male,0,1,Farmer,-,-
+212,Saraswathi Pinto,62,181,Female,0,1,Teacher,-,-
+213,Vanitha Kamat,51,182,Female,0,1,Homemaker,-,-
+214,Yashoda Prabhu,38,183,Female,0,1,Shop Owner,-,-
+215,Satish Khan,51,184,Male,0,1,Student,-,-
+216,Rajesh Sheikh,56,185,Male,0,1,Businessman,-,-
+217,Parvathi Iyer,54,186,Female,0,1,Retired Govt Servant,-,-
+218,Spandana Kattimani,62,187,Female,0,1,Nurse,-,-
+219,Vinod Sheikh,53,188,Male,0,1,Bank Employee,-,-
+220,Deepa Swamy,54,191,Female,0,1,Bank Employee,-,-
+221,Nithin Acharya,72,192,Male,0,1,Hotel Worker,-,-
+222,Hanumantha Angadi,49,194,Male,0,1,Security Guard,-,-
+223,Anil Baig,22,195,Male,0,1,Bank Employee,-,-
+224,Radha Joshi,58,196,Female,0,1,Tailor,-,-
+225,Asha Khan,56,197,Female,0,1,Retired Govt Servant,-,-
+226,Lakshmi Hiremath,43,197,Female,0,0,Businessman,-,-
+227,Savitha Udupa,48,198,Female,0,1,Bank Employee,-,-
+228,Asha Chavan,63,198,Female,0,0,Tailor,-,-
+229,Savitha Kattimani,19,199,Female,0,1,Retired Govt Servant,-,-
+230,Abhishek Moily,61,199,Male,0,0,Bank Employee,-,-
+231,Murali Fernandes,63,200,Male,0,1,Tailor,-,-
+232,Divya Prabhu,44,201,Female,0,1,Homemaker,-,-
+233,Geetha Pasha,72,202,Female,0,1,Homemaker,-,-
+234,Rekha Acharya,51,203,Female,0,1,Nurse,-,-
+235,Chaitra Biradar,64,204,Female,0,1,Nurse,-,-
+236,Pallavi Acharya,70,204,Female,0,0,Teacher,-,-
+237,Puneeth Adiga,64,204,Male,0,0,Nurse,-,-
+238,Girish Pai,42,205,Male,0,1,Nurse,-,-
+239,Pavan Nayak,25,206,Male,0,1,Software Engineer,-,-
+240,Latha Hiremath,58,207,Female,0,1,Software Engineer,-,-
+241,Nandini Sheikh,25,208,Female,0,1,Nurse,-,-
+242,Sunitha Poojary,44,209,Female,0,1,Homemaker,-,-
+243,Venkatesh Sequeira,55,209,Male,0,0,Nurse,-,-
+244,Mohan Kattimani,30,209,Male,0,0,Farmer,-,-
+245,Saraswathi Biradar,31,210,Female,0,1,Nurse,-,-
+246,Joseph Hegde,45,211,Male,0,1,Bank Employee,-,-
+247,Krishna Sharma,58,212,Male,0,1,Teacher,-,-
+248,Krishna Baig,50,212,Male,0,0,Bank Employee,-,-
+249,Girish Patil,62,213,Male,0,1,Bank Employee,-,-
+250,Mustafa DSouza,67,213,Male,0,0,Security Guard,-,-
+251,Sanjay Chavan,23,213,Male,0,0,Daily Wage Worker,-,-
+252,Shivakumar Pai,72,215,Male,0,1,Daily Wage Worker,-,-
+253,Wilson Hiremath,43,215,Male,0,0,Nurse,-,-
+254,Ambika Kamath,26,216,Female,0,1,Software Engineer,-,-
+255,Parvathi Shinde,61,217,Female,0,1,Hotel Worker,-,-
+256,Shilpa Iyengar,35,218,Female,0,1,Auto Driver,-,-
+257,Chetan Sharma,44,219,Male,0,1,Student,-,-
+258,Bhagya Reddy,64,220,Female,0,1,Auto Driver,-,-
+259,Mohan Jadhav,40,221,Male,0,1,Software Engineer,-,-
+260,Bhagya Naik,18,222,Female,0,1,Auto Driver,-,-
+261,Rashmi Angadi,35,223,Female,0,1,Homemaker,-,-
+262,Shivakumar Kumar,33,223,Male,0,0,Daily Wage Worker,-,-
+263,Vijay Sait,25,224,Male,1,1,Nurse,-,-
+264,Murali Angadi,46,225,Male,0,1,Teacher,-,-
+265,Krishna Ballal,71,226,Male,0,1,Homemaker,-,-
+266,Yashoda Sharma,23,227,Female,0,1,Student,-,-
+267,Gowri Kamath,31,228,Female,0,1,Retired Govt Servant,-,-
+268,Anil Alva,56,229,Male,0,1,Businessman,-,-
+269,Gagan Prabhu,29,230,Male,0,1,Software Engineer,-,-
+270,Yashoda Patil,38,231,Female,0,1,Farmer,-,-
+271,Chetan Swamy,45,231,Male,0,0,Hotel Worker,-,-
+272,Pooja Kotian,32,231,Female,0,0,Nurse,-,-
+273,Shwetha Prabhu,67,233,Female,0,1,Student,-,-
+274,Siddaraju Pawar,35,234,Male,0,1,Shop Owner,-,-
+275,Sunitha Iyer,32,234,Female,0,0,Tailor,-,-
+276,Lokesh Pawar,16,235,Male,0,1,Homemaker,-,-
+277,Vijay Nayak,36,235,Male,0,0,Businessman,-,-
+278,Suma Sheikh,16,235,Female,0,0,Farmer,-,-
+279,Pallavi Prabhu,41,236,Female,0,1,Businessman,-,-
+280,Soumya Sequeira,22,236,Female,0,0,Shop Owner,-,-
+281,Spandana Joshi,40,238,Female,0,1,Shop Owner,-,-
+282,Chandru Sheikh,40,239,Male,0,1,Retired Govt Servant,-,-
+283,Sandhya Sheikh,20,240,Female,0,1,Tailor,-,-
+284,Vijay Sheikh,27,240,Male,0,0,Homemaker,-,-
+285,Mahesh Sait,62,241,Male,0,1,Farmer,-,-
+286,Savitha Poojary,72,243,Female,0,1,Shop Owner,-,-
+287,Lakshmi Kini,24,244,Female,0,1,Farmer,-,-
+288,Swathi Gowda,36,244,Female,0,0,Retired Govt Servant,-,-
+289,Ajay Reddy,32,245,Male,0,1,Hotel Worker,-,-
+290,Lakshmi Kamat,48,246,Female,0,1,Auto Driver,-,-
+291,Seetha Devadiga,18,247,Female,0,1,Bank Employee,-,-
+292,Sunil Fernandes,43,247,Male,0,0,Shop Owner,-,-
+293,Sudeep Joshi,65,249,Male,0,1,Shop Owner,-,-
+294,Murali DSouza,58,250,Male,0,1,Retired Govt Servant,-,-
+295,Rohan Puthran,52,250,Male,0,0,Software Engineer,-,-
+296,Sagar Adiga,72,251,Male,0,1,Bank Employee,-,-
+297,Arun Adiga,35,252,Male,0,1,Shop Owner,-,-
+298,Lokesh Angadi,26,253,Male,0,1,Software Engineer,-,-
+299,Bhagya Pasha,55,254,Female,0,1,Security Guard,-,-
+300,Deepa Pinto,31,255,Female,0,1,Homemaker,-,-
+301,Divya Hiremath,16,256,Female,0,1,Farmer,-,-
+302,Saraswathi Joshi,25,257,Female,0,1,Retired Govt Servant,-,-
+303,Manjunath Shanbhag,41,258,Male,0,1,Student,-,-
+304,Shilpa Kamat,46,259,Female,0,1,Bank Employee,-,-
+305,Asha Alva,58,260,Female,0,1,Hotel Worker,-,-
+306,Latha Acharya,45,261,Female,0,1,Farmer,-,-
+307,Pavan Shinde,41,261,Male,0,0,Bank Employee,-,-
+308,Sharada Khan,44,261,Female,0,0,Bank Employee,-,-
+309,Farhan Amin,40,262,Male,0,1,Security Guard,-,-
+310,Krishna Salian,28,262,Male,0,0,Software Engineer,-,-
+311,Vijay Patil,67,263,Male,0,1,Daily Wage Worker,-,-
+312,Arun Murthy,64,264,Male,0,1,Student,-,-
+313,Shobha Kulkarni,57,265,Female,0,1,Retired Govt Servant,-,-
+314,Ayesha Gowda,69,266,Female,0,1,Nurse,-,-
+315,Parvathi Joshi,32,267,Female,0,1,Homemaker,-,-
+316,Satish Devadiga,43,269,Male,0,1,Shop Owner,-,-
+317,Ramesh Gowda,23,269,Male,0,0,Student,-,-
+318,Shivakumar Khan,44,269,Male,0,0,Auto Driver,-,-
+319,Farhan Deshpande,68,270,Male,0,1,Teacher,-,-
+320,Salma Khan,62,271,Female,0,1,Security Guard,-,-
+321,Meghana Iyer,34,272,Female,0,1,Businessman,-,-
+322,Gagan Biradar,60,273,Male,1,1,Student,-,-
+323,Spandana Biradar,35,274,Female,0,1,Farmer,-,-
+324,Charan Kumar,56,275,Male,0,1,Businessman,-,-
+325,Pooja Murthy,59,276,Female,0,1,Tailor,-,-
+326,Rajesh Fernandes,40,276,Male,0,0,Businessman,-,-
+327,Chetan DSouza,61,276,Male,0,0,Retired Govt Servant,-,-
+328,Nandini Murthy,50,277,Female,0,1,Bank Employee,-,-
+329,Shwetha Adiga,18,278,Female,0,1,Auto Driver,-,-
+330,Nisha Iyer,38,279,Female,0,1,Retired Govt Servant,-,-
+331,Farhan Ballal,39,280,Male,0,1,Daily Wage Worker,-,-
+332,Radha Hegde,25,281,Female,0,1,Security Guard,-,-
+333,Sharada Adiga,34,282,Female,0,1,Bank Employee,-,-
+334,Priya Fernandes,69,283,Female,0,1,Daily Wage Worker,-,-
+335,Puneeth Prabhu,40,283,Male,0,0,Hotel Worker,-,-
+336,Wilson Kulkarni,48,284,Male,0,1,Teacher,-,-
+337,Santhosh Iyer,59,284,Male,0,0,Nurse,-,-
+338,Murali Kamat,40,285,Male,0,1,Tailor,-,-
+339,Fathima Acharya,66,286,Female,0,1,Businessman,-,-
+340,Vikram Gowda,16,287,Male,0,1,Businessman,-,-
+341,Kavitha Patil,27,288,Female,0,1,Teacher,-,-
+342,Pooja Fernandes,31,288,Female,0,0,Bank Employee,-,-
+343,Sagar Iyer,35,289,Male,0,1,Shop Owner,-,-
+344,Madhu Suvarna,27,290,Male,0,1,Software Engineer,-,-
+345,Naveen Devadiga,42,291,Male,0,1,Farmer,-,-
+346,Rashmi Shetty,26,291,Female,0,0,Student,-,-
+347,Ramya Pawar,49,293,Female,0,1,Farmer,-,-
+348,Mustafa Kini,20,294,Male,0,1,Security Guard,-,-
+349,Fathima Kini,29,295,Female,0,1,Software Engineer,-,-
+350,Anitha Amin,18,295,Female,0,0,Bank Employee,-,-
+351,Divya Patil,63,297,Female,0,1,Daily Wage Worker,-,-
+352,Uma Kotian,55,298,Female,0,1,Software Engineer,-,-
+353,Navya Iyer,27,299,Female,0,1,Teacher,-,-
+354,Darshan Acharya,39,299,Male,0,0,Security Guard,-,-
+355,Darshan Karanth,43,300,Male,0,1,Auto Driver,-,-
+356,Chandru Jadhav,55,301,Male,0,1,Nurse,-,-
+357,Shankar Iyengar,67,302,Male,0,1,Bank Employee,-,-
+358,Praveen Sait,52,303,Male,0,1,Daily Wage Worker,-,-
+359,Navya Hegde,16,304,Female,0,1,Nurse,-,-
+360,Ravi Naik,21,305,Male,0,1,Tailor,-,-
+361,Divya Bhat,45,306,Female,0,1,Tailor,-,-
+362,Wilson Prabhu,61,307,Male,0,1,Retired Govt Servant,-,-
+363,Charan Salian,45,308,Male,0,1,Retired Govt Servant,-,-
+364,Thomas Suvarna,34,309,Male,0,1,Bank Employee,-,-
+365,Mohan Kotian,48,310,Male,0,1,Teacher,-,-
+366,Vidya Nayak,41,310,Female,0,0,Nurse,-,-
+367,Manjula Patil,28,311,Female,0,1,Auto Driver,-,-
+368,Bharath Chavan,69,312,Male,0,1,Hotel Worker,-,-
+369,Radha Rai,62,313,Female,0,1,Hotel Worker,-,-
+370,Savitha Shinde,31,315,Female,0,1,Hotel Worker,-,-
+371,Mohan Nayak,31,315,Male,0,0,Daily Wage Worker,-,-
+372,Santhosh Iyengar,44,315,Male,0,0,Bank Employee,-,-
+373,Vijay Kini,51,316,Male,0,1,Homemaker,-,-
+374,Karthik Udupa,58,316,Male,0,0,Teacher,-,-
+375,Ravi Sharma,50,317,Male,0,1,Hotel Worker,-,-
+376,Sharada Iyengar,50,318,Female,0,1,Teacher,-,-
+377,Radha Suvarna,20,318,Female,0,0,Hotel Worker,-,-
+378,Farhan Adiga,44,319,Male,0,1,Businessman,-,-
+379,Ravi Kamath,66,320,Male,0,1,Auto Driver,-,-
+380,Gowri Fernandes,45,321,Female,0,1,Businessman,-,-
+381,Swathi Bhat,45,321,Female,0,0,Daily Wage Worker,-,-
+382,Saraswathi Joshi,48,322,Female,0,1,Bank Employee,-,-
+383,Seetha Nayak,45,323,Female,0,1,Homemaker,-,-
+384,Farhan Shetty,17,323,Male,0,0,Auto Driver,-,-
+385,Manjula Pawar,33,324,Female,0,1,Tailor,-,-
+386,Basavaraj Karanth,40,325,Male,0,1,Farmer,-,-
+387,Bhagya Amin,54,326,Female,0,1,Daily Wage Worker,-,-
+388,Krishna Jadhav,25,326,Male,0,0,Bank Employee,-,-
+389,Srinivas Adiga,61,327,Male,0,1,Nurse,-,-
+390,Umesh Reddy,38,328,Male,0,1,Shop Owner,-,-
+391,Saraswathi Bhat,26,329,Female,0,1,Auto Driver,-,-
+392,Ambika Shinde,18,330,Female,0,1,Businessman,-,-
+393,Lakshmi Chavan,18,331,Female,0,1,Bank Employee,-,-
+394,Rekha Iyengar,56,332,Female,0,1,Student,-,-
+395,Joseph Alva,46,333,Male,0,1,Shop Owner,-,-
+396,Salman Pinto,68,334,Male,0,1,Student,-,-
+397,Saraswathi Shanbhag,21,335,Female,0,1,Teacher,-,-
+398,Thomas Patil,58,335,Male,0,0,Software Engineer,-,-
+399,Jagadish Achar,23,336,Male,0,1,Bank Employee,-,-
+400,Asha Gowda,31,337,Female,0,1,Software Engineer,-,-
+401,Salma Madiwal,61,339,Female,0,1,Software Engineer,-,-
+402,Peter Acharya,36,340,Male,0,1,Security Guard,-,-
+403,Priya Kattimani,53,342,Female,0,1,Shop Owner,-,-
+404,Jagadish Kulkarni,49,343,Male,0,1,Student,-,-
+405,Wilson Gowda,71,345,Male,0,1,Retired Govt Servant,-,-
+406,Irfan Sharma,62,347,Male,0,1,Shop Owner,-,-
+407,Nagaraj Kamat,23,348,Male,0,1,Teacher,-,-
+408,Mahesh Nayak,60,349,Male,0,1,Hotel Worker,-,-
+409,Sunitha Iyer,71,350,Female,0,1,Daily Wage Worker,-,-
+410,Bhavya DSouza,29,351,Female,0,1,Homemaker,-,-
+411,Manjula Bangera,49,351,Female,0,0,Hotel Worker,-,-
+412,Venkatesh Angadi,31,351,Male,0,0,Retired Govt Servant,-,-
+413,Spandana Moily,54,353,Female,0,1,Farmer,-,-
+414,Sunitha Kulkarni,19,354,Female,0,1,Teacher,-,-
+415,Anil Bangera,33,355,Male,0,1,Nurse,-,-
+416,Rohan Shinde,72,355,Male,0,0,Shop Owner,-,-
+417,Murali Shanbhag,38,356,Male,0,1,Nurse,-,-
+418,Mohan Bhat,38,357,Male,0,1,Security Guard,-,-
+419,Ambika Rao,26,358,Female,0,1,Auto Driver,-,-
+420,Joseph Baig,17,359,Male,0,1,Software Engineer,-,-
+421,Puneeth Sheikh,20,359,Male,0,0,Bank Employee,-,-
+422,Yash Joshi,60,360,Male,0,1,Student,-,-
+423,Shilpa Moily,43,361,Female,0,1,Auto Driver,-,-
+424,Rakesh Bhat,57,362,Male,0,1,Businessman,-,-
+425,Lokesh Deshpande,57,362,Male,0,0,Hotel Worker,-,-
+426,Salma Kulkarni,45,362,Female,0,0,Bank Employee,-,-
+427,Joseph Biradar,26,363,Male,0,1,Security Guard,-,-
+428,Joseph Sharma,48,363,Male,0,0,Daily Wage Worker,-,-
+429,Latha Karanth,60,364,Female,0,1,Businessman,-,-
+430,Naveen Kini,42,365,Male,0,1,Bank Employee,-,-
+431,Ramya Pinto,52,366,Female,0,1,Auto Driver,-,-
+432,Puneeth Reddy,57,367,Male,0,1,Auto Driver,-,-
+433,Farhan Udupa,29,367,Male,0,0,Daily Wage Worker,-,-
+434,Uma Adiga,28,369,Female,0,1,Daily Wage Worker,-,-
+435,Darshan Amin,46,370,Male,0,1,Software Engineer,-,-
+436,Bhavya Deshpande,43,371,Female,0,1,Retired Govt Servant,-,-
+437,Nandini Deshpande,40,372,Female,0,1,Student,-,-
+438,Nagaraj Moily,27,373,Male,0,1,Hotel Worker,-,-
+439,Arun Shanbhag,29,373,Male,0,0,Security Guard,-,-
+440,Vijay Sait,24,374,Male,0,1,Farmer,-,-
+441,Shivakumar Murthy,72,374,Male,0,0,Nurse,-,-
+442,Sandhya Deshpande,60,375,Female,0,1,Teacher,-,-
+443,Wilson Hegde,45,376,Male,0,1,Homemaker,-,-
+444,Shruthi Kotian,29,377,Female,0,1,Hotel Worker,-,-
+445,Sagar Shanbhag,70,377,Male,0,0,Tailor,-,-
+446,Rashmi Pinto,51,378,Female,0,1,Nurse,-,-
+447,Shruthi Fernandes,66,379,Female,0,1,Farmer,-,-
+448,Lakshmi Suvarna,23,380,Female,0,1,Shop Owner,-,-
+449,Nandini Kamat,22,381,Female,0,1,Homemaker,-,-
+450,Yash Joshi,17,382,Male,0,1,Bank Employee,-,-
+451,Dinesh Hiremath,61,384,Male,0,1,Auto Driver,-,-
+452,Sudeep Biradar,47,385,Male,0,1,Retired Govt Servant,-,-
+453,Venkatesh Kini,27,386,Male,0,1,Software Engineer,-,-
+454,Manjunath Puthran,43,387,Male,0,1,Student,-,-
+455,Pooja Bhat,49,388,Female,0,1,Auto Driver,-,-
+456,Shivakumar Joshi,61,389,Male,0,1,Daily Wage Worker,-,-
+457,Bhavya Naik,30,389,Female,0,0,Businessman,-,-
+458,Sharada Shetty,21,389,Female,0,0,Nurse,-,-
+459,Riyaz Devadiga,59,390,Male,0,1,Hotel Worker,-,-
+460,Uma Pinto,47,391,Female,0,1,Retired Govt Servant,-,-
+461,Farhan Pai,66,391,Male,0,0,Retired Govt Servant,-,-
+462,Shivakumar Amin,54,392,Male,0,1,Retired Govt Servant,-,-
+463,Ramya Acharya,17,392,Female,0,0,Software Engineer,-,-
+464,Latha Suvarna,50,395,Female,0,1,Security Guard,-,-
+465,Umesh Prabhu,51,396,Male,0,1,Teacher,-,-
+466,Chandru Ballal,62,396,Male,0,0,Auto Driver,-,-
+467,Farhan Bhat,45,398,Male,0,1,Retired Govt Servant,-,-
+468,Suma Sequeira,70,399,Female,0,1,Retired Govt Servant,-,-
+469,Radha Murthy,46,400,Female,0,1,Teacher,-,-
+470,Yashoda Kumar,29,402,Female,0,1,Daily Wage Worker,-,-
+471,Nisha Ballal,24,402,Female,0,0,Retired Govt Servant,-,-
+472,Saraswathi Murthy,70,403,Female,0,1,Businessman,-,-
+473,Murali Prabhu,22,403,Male,0,0,Businessman,-,-
+474,Nithin Fernandes,54,404,Male,0,1,Farmer,-,-
+475,Radha Acharya,50,405,Female,0,1,Farmer,-,-
+476,Madhu Adiga,44,406,Male,0,1,Businessman,-,-
+477,Hema Alva,49,407,Female,0,1,Retired Govt Servant,-,-
+478,Jagadish Bhat,20,407,Male,0,0,Teacher,-,-
+479,Nithin Madiwal,39,408,Male,0,1,Software Engineer,-,-
+480,Deepa Chavan,31,409,Female,0,1,Businessman,-,-
+481,Rekha Khan,17,411,Female,0,1,Shop Owner,-,-
+482,Farhan Shanbhag,69,412,Male,0,1,Hotel Worker,-,-
+483,Harish Karanth,16,412,Male,0,0,Businessman,-,-
+484,Abhishek Pawar,36,412,Male,0,0,Businessman,-,-
+485,Mohan Puthran,46,413,Male,0,1,Homemaker,-,-
+486,Sudeep Poojary,25,413,Male,0,0,Farmer,-,-
+487,Murali Shetty,23,414,Male,0,1,Daily Wage Worker,-,-
+488,Ramya Alva,19,415,Female,0,1,Student,-,-
+489,Mohan Naik,66,416,Male,0,1,Teacher,-,-
+490,Usha Kumar,52,417,Female,0,1,Farmer,-,-
+491,Priya Kamat,30,418,Female,0,1,Hotel Worker,-,-
+492,Darshan Reddy,42,419,Male,0,1,Teacher,-,-
+493,Abhishek Swamy,46,420,Male,0,1,Security Guard,-,-
+494,Suresh Karanth,66,420,Male,0,0,Shop Owner,-,-
+495,Siddaraju Kumar,43,421,Male,0,1,Shop Owner,-,-
+496,Mohan Pasha,35,422,Male,0,1,Teacher,-,-
+497,Puneeth Suvarna,43,423,Male,0,1,Security Guard,-,-
+498,Anitha Khan,65,425,Female,0,1,Nurse,-,-
+499,Hema Naik,69,426,Female,0,1,Student,-,-
+500,Ajay Pawar,56,427,Male,0,1,Daily Wage Worker,-,-
+501,Shilpa Shetty,25,428,Female,0,1,Software Engineer,-,-
+502,Ravi Iyengar,67,429,Male,0,1,Daily Wage Worker,-,-
+503,Joseph Swamy,64,430,Male,0,1,Teacher,-,-
+504,Mohan Puthran,55,431,Male,0,1,Bank Employee,-,-
+505,Kavitha Patil,20,431,Female,0,0,Student,-,-
+506,Suma Moily,23,432,Female,0,1,Farmer,-,-
+507,Rajesh Adiga,71,433,Male,0,1,Student,-,-
+508,Nagaraj Patil,46,434,Male,0,1,Software Engineer,-,-
+509,Seetha Puthran,49,435,Female,0,1,Businessman,-,-
+510,Ambika Pawar,63,436,Female,0,1,Homemaker,-,-
+511,Fathima Nayak,45,437,Female,0,1,Homemaker,-,-
+512,Nisha Deshpande,58,438,Female,0,1,Nurse,-,-
+513,Irfan Bhat,61,439,Male,0,1,Teacher,-,-
+514,Fathima Suvarna,19,442,Female,0,1,Businessman,-,-
+515,Shwetha Fernandes,66,443,Female,0,1,Retired Govt Servant,-,-
+516,Usha Lobo,47,445,Female,0,1,Daily Wage Worker,-,-
+517,Mahesh Deshpande,42,446,Male,0,1,Security Guard,-,-
+518,Lokesh Shinde,54,446,Male,0,0,Tailor,-,-
+519,Madhu Prabhu,29,447,Male,0,1,Shop Owner,-,-
+520,Syed Amin,52,447,Male,0,0,Hotel Worker,-,-
+521,Harish Khan,50,448,Male,0,1,Student,-,-
+522,Mahesh Kotian,38,448,Male,0,0,Nurse,-,-
+523,Chaitra Jadhav,55,450,Female,0,1,Student,-,-
+524,Darshan Sheikh,22,451,Male,0,1,Homemaker,-,-
+525,Sunil Poojary,48,453,Male,0,1,Shop Owner,-,-
+526,Nandini Shinde,65,454,Female,0,1,Homemaker,-,-
+527,Nithin Acharya,63,455,Male,0,1,Bank Employee,-,-
+528,Bhavya Kini,53,455,Female,0,0,Daily Wage Worker,-,-
+529,Wilson DSouza,25,456,Male,0,1,Nurse,-,-
+530,Hema Lobo,20,457,Female,0,1,Tailor,-,-
+531,Joseph Shetty,67,457,Male,0,0,Farmer,-,-
+532,Soumya Acharya,17,458,Female,0,1,Retired Govt Servant,-,-
+533,Jagadish Reddy,23,459,Male,0,1,Student,-,-
+534,Seetha Jadhav,41,460,Female,0,1,Homemaker,-,-
+535,Kavitha Puthran,16,461,Female,0,1,Farmer,-,-
+536,Kiran Bhat,32,462,Male,0,1,Tailor,-,-
+537,Arun Shinde,59,463,Male,0,1,Homemaker,-,-
+538,Puneeth Sharma,23,464,Male,0,1,Security Guard,-,-
+539,Imran Fernandes,51,465,Male,1,1,Shop Owner,-,-
+540,Siddaraju Salian,40,465,Male,1,0,Hotel Worker,-,-
+541,Chaitra Acharya,32,466,Female,0,1,Tailor,-,-
+542,Suresh Pai,48,467,Male,0,1,Bank Employee,-,-
+543,Lakshmi Kotian,26,467,Female,0,0,Student,-,-
+544,Vinod Rao,51,468,Male,0,1,Auto Driver,-,-
+545,Nisha Pawar,50,469,Female,0,1,Hotel Worker,-,-
+546,Sunil Bhat,64,469,Male,0,0,Nurse,-,-
+547,Ramya Angadi,44,470,Female,0,1,Homemaker,-,-
+548,Madhu Udupa,28,471,Male,0,1,Farmer,-,-
+549,Mustafa Kamath,31,472,Male,0,1,Software Engineer,-,-
+550,Sudeep Prabhu,71,473,Male,0,1,Software Engineer,-,-
+551,Umesh Pasha,17,474,Male,0,1,Daily Wage Worker,-,-
+552,Bhavya Reddy,65,475,Female,0,1,Homemaker,-,-
+553,Anand Salian,43,476,Male,0,1,Daily Wage Worker,-,-
+554,Manjula Naik,61,477,Female,0,1,Daily Wage Worker,-,-
+555,Mahesh Baig,36,478,Male,0,1,Farmer,-,-
+556,Lakshmi Pasha,70,479,Female,0,1,Nurse,-,-
+557,Anitha DSouza,71,479,Female,0,0,Retired Govt Servant,-,-
+558,Mohan Kotian,47,480,Male,0,1,Auto Driver,-,-
+559,Sunitha Karanth,18,481,Female,0,1,Software Engineer,-,-
+560,Hema Iyer,62,482,Female,0,1,Auto Driver,-,-
+561,Ganesh Adiga,65,483,Male,0,1,Hotel Worker,-,-
+562,Fathima Kamat,32,483,Female,0,0,Daily Wage Worker,-,-
+563,Suresh Adiga,72,483,Male,0,0,Tailor,-,-
+564,Murali Adiga,53,484,Male,0,1,Retired Govt Servant,-,-
+565,Chetan Murthy,22,486,Male,0,1,Retired Govt Servant,-,-
+566,Uma Chavan,50,487,Female,0,1,Shop Owner,-,-
+567,Girish Pasha,44,488,Male,0,1,Farmer,-,-
+568,Vinod Sequeira,62,489,Male,0,1,Businessman,-,-
+569,Arun Shetty,64,489,Male,0,0,Auto Driver,-,-
+570,Suma Swamy,21,490,Female,0,1,Farmer,-,-
+571,Nandini Pinto,39,491,Female,0,1,Retired Govt Servant,-,-
+572,Shruthi Sheikh,63,493,Female,0,1,Student,-,-
+573,Abdul Hiremath,35,494,Male,0,1,Tailor,-,-
+574,Spandana Naik,28,495,Female,0,1,Shop Owner,-,-
+575,Ayesha Puthran,21,496,Female,0,1,Farmer,-,-
+576,Deepa Kini,51,497,Female,0,1,Teacher,-,-
+577,Sanjay Hiremath,64,498,Male,0,1,Auto Driver,-,-
+578,Basavaraj Swamy,63,499,Male,0,1,Bank Employee,-,-
+579,Siddaraju Shetty,65,499,Male,0,0,Daily Wage Worker,-,-
+580,Santhosh Puthran,62,500,Male,0,1,Businessman,-,-
+581,Manjunath Fernandes,36,502,Male,0,1,Nurse,-,-
+582,Riyaz Rao,31,502,Male,0,0,Auto Driver,-,-
+583,Gopal Nayak,69,502,Male,0,0,Farmer,-,-
+584,Kiran Fernandes,18,503,Male,0,1,Tailor,-,-
+585,Mary Sait,69,505,Female,0,1,Farmer,-,-
+586,Manjula Sequeira,30,506,Female,0,1,Businessman,-,-
+587,Rashmi Kattimani,57,508,Female,0,1,Retired Govt Servant,-,-
+588,Geetha Kattimani,68,508,Female,0,0,Bank Employee,-,-
+589,Harish Reddy,40,511,Male,0,1,Hotel Worker,-,-
+590,Ravi Biradar,19,512,Male,0,1,Daily Wage Worker,-,-
+591,Pooja Hegde,33,513,Female,0,1,Shop Owner,-,-
+592,Divya Kotian,64,514,Female,0,1,Teacher,-,-
+593,Gopal Khan,57,515,Male,0,1,Security Guard,-,-
+594,Saraswathi Kamath,68,515,Female,0,0,Nurse,-,-
+595,Soumya Moily,65,516,Female,0,1,Tailor,-,-
+596,Shivakumar Biradar,72,517,Male,0,1,Homemaker,-,-
+597,Darshan Kattimani,35,518,Male,0,1,Homemaker,-,-
+598,Vanitha Sequeira,41,518,Female,0,0,Retired Govt Servant,-,-
+599,Santhosh Deshpande,39,519,Male,0,1,Hotel Worker,-,-
+600,Sandhya Pawar,50,520,Female,0,1,Businessman,-,-
+601,Bhagya Sequeira,34,521,Female,0,1,Teacher,-,-
+602,Vanitha Patil,17,522,Female,0,1,Tailor,-,-
+603,Venkatesh Madiwal,33,522,Male,0,0,Software Engineer,-,-
+604,Fathima Hegde,51,522,Female,0,0,Teacher,-,-
+605,Kavitha Kattimani,44,524,Female,0,1,Bank Employee,-,-
+606,Murali Kamath,62,525,Male,0,1,Homemaker,-,-
+607,Siddaraju Ballal,36,526,Male,0,1,Software Engineer,-,-
+608,Salman Hegde,67,527,Male,0,1,Farmer,-,-
+609,Sharada Amin,22,528,Female,0,1,Businessman,-,-
+610,Mohan Jadhav,58,530,Male,0,1,Homemaker,-,-
+611,Charan Suvarna,29,531,Male,0,1,Hotel Worker,-,-
+612,Meghana Sheikh,40,532,Female,0,1,Teacher,-,-
+613,Swathi Sharma,50,533,Female,0,1,Farmer,-,-
+614,Ajay Shanbhag,30,534,Male,0,1,Bank Employee,-,-
+615,Gowri Lobo,42,536,Female,0,1,Hotel Worker,-,-
+616,Shilpa Kulkarni,58,537,Female,0,1,Tailor,-,-
+617,Ganesh Kamat,30,537,Male,0,0,Farmer,-,-
+618,Shivakumar Bangera,64,539,Male,0,1,Teacher,-,-
+619,Ajay Sequeira,67,541,Male,0,1,Software Engineer,-,-
+620,Mohan Sheikh,70,543,Male,0,1,Tailor,-,-
+621,Suma Rao,28,543,Female,0,0,Homemaker,-,-
+622,Vidya Angadi,51,545,Female,0,1,Homemaker,-,-
+623,Navya Kamat,35,547,Female,0,1,Bank Employee,-,-
+624,Satish Shanbhag,58,547,Male,0,0,Homemaker,-,-
+625,Anitha Kini,68,548,Female,0,1,Businessman,-,-
+626,Abdul Angadi,69,550,Male,0,1,Bank Employee,-,-
+627,Pavan Acharya,46,551,Male,0,1,Homemaker,-,-
+628,Thomas Baig,62,551,Male,0,0,Farmer,-,-
+629,Girish Swamy,72,552,Male,0,1,Farmer,-,-
+630,Farhan Joshi,67,552,Male,0,0,Security Guard,-,-
+631,Nandini Iyer,39,554,Female,0,1,Bank Employee,-,-
+632,Meghana Shetty,59,555,Female,0,1,Software Engineer,-,-
+633,Suresh Jadhav,19,556,Male,0,1,Retired Govt Servant,-,-
+634,Darshan Naik,34,556,Male,0,0,Shop Owner,-,-
+635,Shruthi Iyengar,23,558,Female,0,1,Teacher,-,-
+636,Ambika Rai,18,558,Female,0,0,Tailor,-,-
+637,Sharada Udupa,44,560,Female,0,1,Homemaker,-,-
+638,Madhu Bhat,36,561,Male,0,1,Teacher,-,-
+639,Mustafa Biradar,44,561,Male,0,0,Software Engineer,-,-
+640,Shilpa Acharya,24,562,Female,0,1,Homemaker,-,-
+641,Mohan Lobo,24,563,Male,0,1,Hotel Worker,-,-
+642,Srinivas Gowda,31,564,Male,0,1,Teacher,-,-
+643,Mary Naik,67,565,Female,0,1,Bank Employee,-,-
+644,Rohan Shinde,32,565,Male,0,0,Security Guard,-,-
+645,Umesh Madiwal,21,566,Male,0,1,Homemaker,-,-
+646,Charan Deshpande,56,566,Male,0,0,Student,-,-
+647,Irfan Swamy,63,567,Male,0,1,Auto Driver,-,-
+648,Girish Kulkarni,35,567,Male,0,0,Auto Driver,-,-
+649,Gowri Salian,37,567,Female,0,0,Auto Driver,-,-
+650,Abhishek Iyer,33,568,Male,0,1,Homemaker,-,-
+651,Fathima Achar,57,568,Female,0,0,Software Engineer,-,-
+652,Darshan Biradar,60,569,Male,0,1,Businessman,-,-
+653,Sunil Hiremath,63,570,Male,0,1,Retired Govt Servant,-,-
+654,Karthik Devadiga,66,571,Male,0,1,Hotel Worker,-,-
+655,Mustafa Pasha,43,573,Male,0,1,Security Guard,-,-
+656,Anil Deshpande,64,574,Male,0,1,Shop Owner,-,-
+657,Abhishek Alva,50,574,Male,0,0,Bank Employee,-,-
+658,Geetha Rao,71,575,Female,0,1,Tailor,-,-
+659,Hanumantha Swamy,20,576,Male,0,1,Businessman,-,-
+660,Spandana Kini,46,577,Female,0,1,Software Engineer,-,-
+661,Riyaz Sequeira,72,578,Male,0,1,Bank Employee,-,-
+662,Syed Joshi,27,579,Male,0,1,Teacher,-,-
+663,Fathima Sequeira,47,580,Female,0,1,Daily Wage Worker,-,-
+664,Gopal Joshi,56,581,Male,0,1,Bank Employee,-,-
+665,Vikram Reddy,58,582,Male,0,1,Auto Driver,-,-
+666,Pallavi Iyengar,42,583,Female,0,1,Security Guard,-,-
+667,Latha Pai,53,583,Female,0,0,Farmer,-,-
+668,Shankar Khan,21,585,Male,0,1,Hotel Worker,-,-
+669,Shankar Baig,45,587,Male,0,1,Student,-,-
+670,Pallavi Shanbhag,52,587,Female,0,0,Auto Driver,-,-
+671,Pooja Acharya,67,588,Female,0,1,Auto Driver,-,-
+672,Praveen Alva,44,588,Male,0,0,Farmer,-,-
+673,Nithin Achar,25,589,Male,0,1,Hotel Worker,-,-
+674,Srinivas Chavan,22,591,Male,0,1,Homemaker,-,-
+675,Sagar Ballal,70,592,Male,0,1,Auto Driver,-,-
+676,Abhishek Shetty,32,593,Male,0,1,Retired Govt Servant,-,-
+677,Parvathi Rao,42,594,Female,0,1,Shop Owner,-,-
+678,Abdul Chavan,52,595,Male,0,1,Daily Wage Worker,-,-
+679,Umesh Chavan,32,596,Male,0,1,Homemaker,-,-
+680,Farhan Poojary,56,597,Male,0,1,Security Guard,-,-
+681,Pallavi Achar,63,598,Female,0,1,Farmer,-,-
+682,Umesh Shinde,23,599,Male,0,1,Security Guard,-,-
+683,Sunil Pai,35,600,Male,0,1,Security Guard,-,-
+684,Mohan Kamat,20,601,Male,0,1,Auto Driver,-,-
+685,Anitha Joshi,58,602,Female,0,1,Nurse,-,-
+686,Madhu Hegde,34,603,Male,0,1,Retired Govt Servant,-,-
+687,Jagadish Amin,52,604,Male,0,1,Retired Govt Servant,-,-
+688,Chandru Iyer,52,605,Male,0,1,Nurse,-,-
+689,Thomas Nayak,48,607,Male,0,1,Nurse,-,-
+690,Asha Shetty,50,607,Female,0,0,Teacher,-,-
+691,Mahesh Pinto,17,608,Male,0,1,Hotel Worker,-,-
+692,Rashmi Reddy,22,610,Female,0,1,Daily Wage Worker,-,-
+693,Mahesh Baig,37,610,Male,0,0,Businessman,-,-
+694,Farhan Rao,39,612,Male,0,1,Software Engineer,-,-
+695,Farhan Kattimani,37,612,Male,0,0,Software Engineer,-,-
+696,Yashoda Alva,34,613,Female,0,1,Security Guard,-,-
+697,Peter Angadi,43,614,Male,0,1,Shop Owner,-,-
+698,Ajay Patil,40,615,Male,0,1,Daily Wage Worker,-,-
+699,Manjunath Adiga,63,616,Male,0,1,Retired Govt Servant,-,-
+700,Kiran Pai,62,618,Male,0,1,Daily Wage Worker,-,-
+701,Gowri Iyengar,67,619,Female,0,1,Auto Driver,-,-
+702,Fathima Iyengar,46,620,Female,0,1,Homemaker,-,-
+703,Mohan Swamy,55,623,Male,0,1,Retired Govt Servant,-,-
+704,Shilpa Sheikh,52,624,Female,0,1,Teacher,-,-
+705,Savitha Kumar,53,624,Female,0,0,Businessman,-,-
+706,Rashmi Sheikh,18,625,Female,0,1,Teacher,-,-
+707,Deepa Bhat,41,625,Female,0,0,Software Engineer,-,-
+708,Ayesha Iyengar,52,625,Female,0,0,Bank Employee,-,-
+709,Murali Madiwal,33,626,Male,0,1,Businessman,-,-
+710,Anil Reddy,42,626,Male,0,0,Security Guard,-,-
+711,Peter Pawar,36,627,Male,0,1,Bank Employee,-,-
+712,Krishna Deshpande,46,627,Male,0,0,Businessman,-,-
+713,Santhosh Madiwal,56,628,Male,0,1,Nurse,-,-
+714,Meghana Sharma,69,629,Female,0,1,Hotel Worker,-,-
+715,Rashmi Pawar,70,630,Female,0,1,Bank Employee,-,-
+716,Mahesh Pai,27,631,Male,0,1,Teacher,-,-
+717,Vinod Khan,17,633,Male,0,1,Homemaker,-,-
+718,Sanjay DSouza,29,634,Male,0,1,Homemaker,-,-
+719,Ramya Alva,63,635,Female,0,1,Teacher,-,-
+720,Pallavi Sequeira,23,636,Female,0,1,Tailor,-,-
+721,Asha Kamat,23,638,Female,0,1,Teacher,-,-
+722,Umesh Angadi,53,638,Male,0,0,Hotel Worker,-,-
+723,Ramya Chavan,69,638,Female,0,0,Hotel Worker,-,-
+724,Navya Swamy,31,639,Female,0,1,Retired Govt Servant,-,-
+725,Yash Kulkarni,58,640,Male,0,1,Daily Wage Worker,-,-
+726,Joseph Joshi,57,640,Male,0,0,Nurse,-,-
+727,Rakesh Devadiga,36,640,Male,0,0,Teacher,-,-
+728,Vinod Achar,69,641,Male,0,1,Software Engineer,-,-
+729,Rakesh Acharya,62,641,Male,0,0,Bank Employee,-,-
+730,Mahesh Shetty,32,642,Male,0,1,Retired Govt Servant,-,-
+731,Peter Gowda,41,643,Male,0,1,Hotel Worker,-,-
+732,Shobha Kattimani,41,644,Female,0,1,Farmer,-,-
+733,Nandini Bhat,34,645,Female,0,1,Software Engineer,-,-
+734,Nithin Iyer,46,646,Male,0,1,Student,-,-
+735,Swathi Prabhu,26,647,Female,0,1,Daily Wage Worker,-,-
+736,Santhosh Iyengar,67,650,Male,0,1,Hotel Worker,-,-
+737,Uma Chavan,67,651,Female,0,1,Homemaker,-,-
+738,Shivakumar Jadhav,20,654,Male,0,1,Software Engineer,-,-
+739,Vikram Kumar,43,655,Male,0,1,Nurse,-,-
+740,Ramesh Kotian,65,655,Male,0,0,Tailor,-,-
+741,Sagar Lobo,67,656,Male,0,1,Retired Govt Servant,-,-
+742,Bhagya Rai,25,656,Female,0,0,Software Engineer,-,-
+743,Joseph Acharya,47,658,Male,0,1,Security Guard,-,-
+744,Divya Patil,60,659,Female,0,1,Nurse,-,-
+745,Ajay Puthran,67,660,Male,0,1,Tailor,-,-
+746,Swathi Achar,26,661,Female,0,1,Bank Employee,-,-
+747,Nandini Kotian,50,662,Female,0,1,Auto Driver,-,-
+748,Ayesha Prabhu,70,663,Female,0,1,Hotel Worker,-,-
+749,Chetan Kamat,17,663,Male,0,0,Daily Wage Worker,-,-
+750,Manjula Acharya,72,664,Female,0,1,Bank Employee,-,-
+751,Shwetha Jadhav,51,666,Female,0,1,Farmer,-,-
+752,Suma Prabhu,58,667,Female,0,1,Bank Employee,-,-
+753,Thomas Achar,21,667,Male,0,0,Student,-,-
+754,Gagan Kulkarni,50,668,Male,0,1,Software Engineer,-,-
+755,Manjula Kamat,61,669,Female,0,1,Nurse,-,-
+756,Sudeep Pai,47,669,Male,0,0,Tailor,-,-
+757,Swathi Deshpande,35,670,Female,0,1,Teacher,-,-
+758,Latha Alva,50,671,Female,0,1,Businessman,-,-
+759,Naveen Udupa,56,672,Male,0,1,Hotel Worker,-,-
+760,Rakesh Kulkarni,45,672,Male,0,0,Hotel Worker,-,-
+761,Savitha Shetty,35,672,Female,0,0,Bank Employee,-,-
+762,Parvathi Kini,50,673,Female,0,1,Software Engineer,-,-
+763,Anil Bhat,48,674,Male,0,1,Security Guard,-,-
+764,Shwetha Madiwal,22,675,Female,0,1,Hotel Worker,-,-
+765,Mary Pasha,60,675,Female,0,0,Hotel Worker,-,-
+766,Shivakumar Prabhu,68,676,Male,0,1,Hotel Worker,-,-
+767,Suma DSouza,16,676,Female,0,0,Tailor,-,-
+768,Soumya Patil,64,677,Female,0,1,Hotel Worker,-,-
+769,Naveen Gowda,42,678,Male,0,1,Auto Driver,-,-
+770,Hanumantha Bhat,69,678,Male,0,0,Tailor,-,-
+771,Bhagya Madiwal,59,680,Female,0,1,Farmer,-,-
+772,Shankar Pasha,26,681,Male,0,1,Retired Govt Servant,-,-
+773,Bhavya Pawar,17,682,Female,0,1,Farmer,-,-
+774,Yashoda Rai,26,683,Female,0,1,Auto Driver,-,-
+775,Navya Iyer,43,684,Female,0,1,Daily Wage Worker,-,-
+776,Sudeep Bhat,61,685,Male,0,1,Daily Wage Worker,-,-
+777,Rohan Fernandes,35,686,Male,0,1,Nurse,-,-
+778,Ayesha Iyer,25,687,Female,0,1,Businessman,-,-
+779,Hanumantha Chavan,20,688,Male,0,1,Daily Wage Worker,-,-
+780,Syed Sequeira,43,688,Male,0,0,Retired Govt Servant,-,-
+781,Radha Kotian,63,689,Female,0,1,Hotel Worker,-,-
+782,Salma Khan,61,690,Female,0,1,Daily Wage Worker,-,-
+783,Chandru Pinto,47,691,Male,0,1,Retired Govt Servant,-,-
+784,Ambika Devadiga,68,693,Female,0,1,Shop Owner,-,-
+785,Latha Pawar,32,694,Female,0,1,Hotel Worker,-,-
+786,Geetha Alva,38,695,Female,0,1,Businessman,-,-
+787,Rohan Swamy,39,696,Male,0,1,Shop Owner,-,-
+788,Jagadish Baig,22,696,Male,0,0,Businessman,-,-
+789,Ramya Reddy,49,697,Female,0,1,Auto Driver,-,-
+790,Madhu Kini,66,698,Male,0,1,Bank Employee,-,-
+791,Imran Kamath,45,698,Male,0,0,Student,-,-
+792,Asha Sharma,52,698,Female,0,0,Student,-,-
+793,Mohan Shanbhag,46,701,Male,0,1,Teacher,-,-
+794,Rohan Adiga,55,703,Male,0,1,Software Engineer,-,-
+795,Hema Patil,51,704,Female,0,1,Bank Employee,-,-
+796,Krishna Joshi,30,705,Male,0,1,Security Guard,-,-
+797,Vanitha Sait,61,705,Female,0,0,Software Engineer,-,-
+798,Asha Devadiga,16,707,Female,0,1,Student,-,-
+799,Pooja Kini,64,707,Female,0,0,Hotel Worker,-,-
+800,Joseph Lobo,58,709,Male,0,1,Auto Driver,-,-
+801,Harish Sharma,30,710,Male,0,1,Shop Owner,-,-
+802,Navya Hegde,71,711,Female,0,1,Student,-,-
+803,Prakash Swamy,61,712,Male,0,1,Daily Wage Worker,-,-
+804,Ravi Acharya,67,713,Male,0,1,Bank Employee,-,-
+805,Shilpa Ballal,70,715,Female,0,1,Student,-,-
+806,Abdul Bhat,51,716,Male,0,1,Retired Govt Servant,-,-
+807,Sharada Poojary,61,716,Female,0,0,Bank Employee,-,-
+808,Farhan Khan,24,716,Male,0,0,Daily Wage Worker,-,-
+809,Praveen Poojary,55,717,Male,0,1,Student,-,-
+810,Thomas Puthran,41,718,Male,0,1,Daily Wage Worker,-,-
+811,Navya Iyer,42,719,Female,0,1,Tailor,-,-
+812,Madhu Kulkarni,18,720,Male,0,1,Security Guard,-,-
+813,Geetha Kumar,37,720,Female,0,0,Retired Govt Servant,-,-
+814,Ramesh Udupa,45,720,Male,0,0,Shop Owner,-,-
+815,Anitha Nayak,27,721,Female,0,1,Farmer,-,-
+816,Vanitha Pai,32,722,Female,0,1,Shop Owner,-,-
+817,Rekha Kulkarni,59,723,Female,0,1,Teacher,-,-
+818,Anitha Angadi,61,724,Female,0,1,Daily Wage Worker,-,-
+819,Rajesh Biradar,23,726,Male,0,1,Student,-,-
+820,Raghavendra Puthran,22,728,Male,0,1,Teacher,-,-
+821,Anil Angadi,31,729,Male,0,1,Tailor,-,-
+822,Geetha Adiga,66,730,Female,0,1,Retired Govt Servant,-,-
+823,Kiran Pasha,54,731,Male,0,1,Daily Wage Worker,-,-
+824,Wilson Deshpande,70,734,Male,0,1,Nurse,-,-
+825,Deepa Biradar,19,735,Female,0,1,Homemaker,-,-
+826,Naveen Devadiga,35,736,Male,0,1,Daily Wage Worker,-,-
+827,Kavitha Hiremath,71,737,Female,0,1,Auto Driver,-,-
+828,Sunitha Naik,36,738,Female,0,1,Tailor,-,-
+829,Navya Udupa,27,740,Female,0,1,Software Engineer,-,-
+830,Satish Salian,17,741,Male,0,1,Software Engineer,-,-
+831,Vidya Chavan,38,741,Female,0,0,Teacher,-,-
+832,Shilpa Lobo,61,742,Female,0,1,Daily Wage Worker,-,-
+833,Spandana Kumar,51,742,Female,0,0,Retired Govt Servant,-,-
+834,Rekha Lobo,33,743,Female,0,1,Auto Driver,-,-
+835,Umesh Achar,51,744,Male,0,1,Teacher,-,-
+836,Gowri Pawar,33,745,Female,0,1,Student,-,-
+837,Parvathi Hiremath,29,746,Female,0,1,Auto Driver,-,-
+838,Rashmi Biradar,56,746,Female,0,0,Nurse,-,-
+839,Priya Salian,50,747,Female,0,1,Auto Driver,-,-
+840,Arun Iyengar,20,748,Male,0,1,Businessman,-,-
+841,Salma Hiremath,16,749,Female,0,1,Teacher,-,-
+842,Latha Pinto,54,750,Female,0,1,Tailor,-,-
+843,Manjula Hiremath,17,751,Female,0,1,Student,-,-
+844,Puneeth Rao,62,752,Male,0,1,Security Guard,-,-
+845,Irfan Bangera,58,753,Male,0,1,Homemaker,-,-
+846,Riyaz Sequeira,43,754,Male,0,1,Auto Driver,-,-
+847,Hanumantha Reddy,38,756,Male,0,1,Teacher,-,-
+848,Hema Naik,51,756,Female,0,0,Tailor,-,-
+849,Darshan Puthran,21,757,Male,0,1,Nurse,-,-
+850,Usha Patil,36,758,Female,0,1,Retired Govt Servant,-,-
+851,Ravi Kini,59,759,Male,0,1,Nurse,-,-
+852,Murali Reddy,68,760,Male,0,1,Hotel Worker,-,-
+853,Ramesh Naik,51,760,Male,0,0,Businessman,-,-
+854,Divya Pasha,65,761,Female,0,1,Security Guard,-,-
+855,Hanumantha Shanbhag,22,761,Male,0,0,Student,-,-
+856,Nagaraj Kulkarni,63,762,Male,0,1,Homemaker,-,-
+857,Seetha Sheikh,37,763,Female,0,1,Auto Driver,-,-
+858,Kavitha Kulkarni,66,764,Female,0,1,Businessman,-,-
+859,Radha Shanbhag,31,765,Female,0,1,Security Guard,-,-
+860,Pallavi Sharma,72,766,Female,0,1,Homemaker,-,-
+861,Bhavya Shetty,48,767,Female,0,1,Businessman,-,-
+862,Suresh Amin,18,768,Male,0,1,Hotel Worker,-,-
+863,Farhan Murthy,57,768,Male,0,0,Security Guard,-,-
+864,Mohan Deshpande,51,769,Male,0,1,Hotel Worker,-,-
+865,Lokesh Patil,69,770,Male,1,1,Tailor,-,-
+866,Nandini Sharma,49,771,Female,0,1,Teacher,-,-
+867,Seetha Sharma,62,772,Female,0,1,Bank Employee,-,-
+868,Ravi Shanbhag,25,775,Male,0,1,Bank Employee,-,-
+869,Puneeth Iyer,33,775,Male,0,0,Tailor,-,-
+870,Shivakumar Chavan,46,776,Male,0,1,Software Engineer,-,-
+871,Rajesh Rao,32,777,Male,0,1,Hotel Worker,-,-
+872,Geetha Nayak,22,778,Female,0,1,Teacher,-,-
+873,Ramya Joshi,44,779,Female,0,1,Teacher,-,-
+874,Shankar Devadiga,44,780,Male,0,1,Hotel Worker,-,-
+875,Dinesh DSouza,44,781,Male,0,1,Shop Owner,-,-
+876,Hanumantha Angadi,62,783,Male,0,1,Businessman,-,-
+877,Salman Rao,25,784,Male,0,1,Farmer,-,-
+878,Divya Iyer,60,784,Female,0,0,Homemaker,-,-
+879,Ramya Pai,48,785,Female,0,1,Tailor,-,-
+880,Pallavi Rao,38,786,Female,0,1,Security Guard,-,-
+881,Puneeth Patil,38,787,Male,0,1,Security Guard,-,-
+882,Geetha Joshi,56,788,Female,0,1,Businessman,-,-
+883,Salman Hegde,48,789,Male,0,1,Homemaker,-,-
+884,Asha Sheikh,44,789,Female,0,0,Bank Employee,-,-
+885,Srinivas Pasha,35,790,Male,0,1,Retired Govt Servant,-,-
+886,Arun DSouza,18,791,Male,0,1,Student,-,-
+887,Rajesh Patil,39,791,Male,0,0,Hotel Worker,-,-
+888,Ramya Achar,72,792,Female,0,1,Shop Owner,-,-
+889,Peter Poojary,30,793,Male,0,1,Software Engineer,-,-
+890,Satish Bhat,27,794,Male,0,1,Farmer,-,-
+891,Thomas Angadi,31,795,Male,0,1,Retired Govt Servant,-,-
+892,Gowri Kamath,54,795,Female,0,0,Bank Employee,-,-
+893,Thomas Madiwal,52,795,Male,0,0,Homemaker,-,-
+894,Jagadish Sheikh,29,796,Male,0,1,Teacher,-,-
+895,Radha DSouza,71,797,Female,0,1,Software Engineer,-,-
+896,Lokesh Prabhu,21,799,Male,0,1,Software Engineer,-,-
+897,Kavitha Devadiga,48,800,Female,0,1,Teacher,-,-
+898,Charan Khan,70,801,Male,0,1,Nurse,-,-
+899,Chetan Joshi,56,803,Male,0,1,Homemaker,-,-
+900,Shruthi Kamath,27,805,Female,0,1,Retired Govt Servant,-,-
+901,Siddaraju Iyengar,54,806,Male,0,1,Farmer,-,-
+902,Parvathi Adiga,18,807,Female,0,1,Student,-,-
+903,Ravi Udupa,39,808,Male,0,1,Software Engineer,-,-
+904,Raghavendra Kumar,20,808,Male,0,0,Student,-,-
+905,Parvathi Kattimani,34,808,Female,0,0,Student,-,-
+906,Meghana Kamath,53,809,Female,0,1,Farmer,-,-
+907,Kavitha Chavan,68,809,Female,0,0,Bank Employee,-,-
+908,Irfan Adiga,39,810,Male,0,1,Retired Govt Servant,-,-
+909,Deepa Bangera,57,811,Female,0,1,Teacher,-,-
+910,Puneeth Devadiga,58,813,Male,0,1,Auto Driver,-,-
+911,Parvathi Shetty,54,814,Female,0,1,Farmer,-,-
+912,Charan Sharma,41,815,Male,0,1,Auto Driver,-,-
+913,Farhan Chavan,63,816,Male,0,1,Daily Wage Worker,-,-
+914,Soumya Fernandes,39,817,Female,0,1,Auto Driver,-,-
+915,Yash Nayak,20,817,Male,0,0,Businessman,-,-
+916,Radha Kamath,41,818,Female,0,1,Homemaker,-,-
+917,Spandana Prabhu,16,819,Female,0,1,Farmer,-,-
+918,Gopal Sheikh,30,820,Male,0,1,Auto Driver,-,-
+919,Salma Hiremath,32,820,Female,0,0,Farmer,-,-
+920,Irfan Gowda,57,821,Male,0,1,Farmer,-,-
+921,Pavan Kumar,56,822,Male,0,1,Businessman,-,-
+922,Gagan Salian,60,823,Male,0,1,Daily Wage Worker,-,-
+923,Shobha Salian,24,824,Female,0,1,Security Guard,-,-
+924,Sunitha Karanth,18,825,Female,0,1,Auto Driver,-,-
+925,Yashoda Murthy,50,825,Female,0,0,Student,-,-
+926,Ravi Salian,40,825,Male,0,0,Bank Employee,-,-
+927,Charan Moily,70,827,Male,0,1,Farmer,-,-
+928,Soumya Karanth,71,828,Female,0,1,Nurse,-,-
+929,Prakash Sait,34,829,Male,0,1,Student,-,-
+930,Abdul Shanbhag,23,830,Male,0,1,Nurse,-,-
+931,Imran Sequeira,54,830,Male,0,0,Bank Employee,-,-
+932,Bhagya Bangera,59,832,Female,0,1,Farmer,-,-
+933,Kavitha Naik,62,833,Female,0,1,Student,-,-
+934,Sunitha Kotian,51,833,Female,0,0,Farmer,-,-
+935,Meghana Iyer,20,835,Female,0,1,Daily Wage Worker,-,-
+936,Harish Khan,33,836,Male,0,1,Teacher,-,-
+937,Gowri Biradar,42,837,Female,0,1,Shop Owner,-,-
+938,Yashoda Amin,37,839,Female,0,1,Retired Govt Servant,-,-
+939,Abdul Pai,37,840,Male,0,1,Student,-,-
+940,Sanjay Kamat,55,840,Male,0,0,Auto Driver,-,-
+941,Vanitha Adiga,21,841,Female,1,1,Farmer,-,-
+942,Rekha Kamath,46,841,Female,0,0,Tailor,-,-
+943,Navya Patil,27,841,Female,0,0,Shop Owner,-,-
+944,Chetan Pawar,46,842,Male,0,1,Student,-,-
+945,Bhavya Swamy,24,843,Female,0,1,Homemaker,-,-
+946,Abdul Acharya,69,843,Male,0,0,Businessman,-,-
+947,Darshan Pai,39,844,Male,0,1,Bank Employee,-,-
+948,Naveen Suvarna,52,845,Male,0,1,Retired Govt Servant,-,-
+949,Farhan Iyengar,25,845,Male,0,0,Daily Wage Worker,-,-
+950,Savitha Iyengar,37,846,Female,0,1,Retired Govt Servant,-,-
+951,Shivakumar Amin,27,846,Male,0,0,Security Guard,-,-
+952,Rajesh Shinde,24,846,Male,0,0,Hotel Worker,-,-
+953,Savitha Sharma,31,848,Female,0,1,Hotel Worker,-,-
+954,Saraswathi Iyengar,28,849,Female,0,1,Software Engineer,-,-
+955,Krishna Udupa,52,851,Male,0,1,Nurse,-,-
+956,Lakshmi Puthran,64,851,Female,0,0,Daily Wage Worker,-,-
+957,Suma Hiremath,30,852,Female,0,1,Teacher,-,-
+958,Satish Amin,44,853,Male,0,1,Tailor,-,-
+959,Savitha Patil,72,854,Female,0,1,Farmer,-,-
+960,Meghana Hegde,18,855,Female,0,1,Student,-,-
+961,Sanjay Moily,51,856,Male,0,1,Tailor,-,-
+962,Salman Sequeira,18,857,Male,0,1,Teacher,-,-
+963,Ravi Amin,18,858,Male,0,1,Homemaker,-,-
+964,Rashmi Alva,22,859,Female,0,1,Software Engineer,-,-
+965,Krishna Nayak,49,860,Male,0,1,Farmer,-,-
+966,Prakash Murthy,57,861,Male,0,1,Teacher,-,-
+967,Deepa Pinto,41,862,Female,0,1,Auto Driver,-,-
+968,Nagaraj Pasha,27,863,Male,0,1,Businessman,-,-
+969,Saraswathi Patil,23,864,Female,0,1,Hotel Worker,-,-
+970,Gopal Kotian,34,865,Male,0,1,Nurse,-,-
+971,Latha Gowda,32,866,Female,0,1,Teacher,-,-
+972,Chaitra Devadiga,44,867,Female,0,1,Retired Govt Servant,-,-
+973,Sharada Salian,51,868,Female,0,1,Student,-,-
+974,Vinod Pasha,40,868,Male,0,0,Auto Driver,-,-
+975,Vanitha Salian,30,869,Female,0,1,Auto Driver,-,-
+976,Abdul Rao,28,870,Male,0,1,Farmer,-,-
+977,Mary Udupa,57,871,Female,0,1,Homemaker,-,-
+978,Salman Sharma,30,873,Male,0,1,Farmer,-,-
+979,Mahesh Prabhu,61,873,Male,0,0,Homemaker,-,-
+980,Sanjay Shinde,34,873,Male,0,0,Student,-,-
+981,Spandana Hegde,30,874,Female,0,1,Shop Owner,-,-
+982,Bhagya Pinto,30,874,Female,0,0,Bank Employee,-,-
+983,Savitha Swamy,47,875,Female,0,1,Shop Owner,-,-
+984,Rakesh Deshpande,16,876,Male,0,1,Software Engineer,-,-
+985,Sandhya Sait,55,876,Female,0,0,Homemaker,-,-
+986,Manjula Iyer,66,876,Female,0,0,Daily Wage Worker,-,-
+987,Vidya Kamath,72,877,Female,0,1,Hotel Worker,-,-
+988,Rajesh Deshpande,62,879,Male,0,1,Security Guard,-,-
+989,Vijay Kamat,41,882,Male,0,1,Retired Govt Servant,-,-
+990,Shankar Acharya,22,883,Male,0,1,Student,-,-
+991,Spandana DSouza,22,884,Female,0,1,Nurse,-,-
+992,Anitha Amin,27,885,Female,0,1,Daily Wage Worker,-,-
+993,Nithin Pasha,44,885,Male,0,0,Auto Driver,-,-
+994,Lakshmi Fernandes,39,886,Female,0,1,Auto Driver,-,-
+995,Vikram Shinde,43,886,Male,0,0,Daily Wage Worker,-,-
+996,Gowri Udupa,32,887,Female,0,1,Businessman,-,-
+997,Satish Baig,25,887,Male,0,0,Hotel Worker,-,-
+998,Gopal Kamath,71,888,Male,0,1,Retired Govt Servant,-,-
+999,Ajay Madiwal,29,888,Male,0,0,Student,-,-
+1000,Sunitha Chavan,25,891,Female,0,1,Daily Wage Worker,-,-
+1001,Nithin Kumar,57,892,Male,0,1,Software Engineer,-,-
+1002,Ambika Angadi,16,893,Female,0,1,Businessman,-,-
+1003,Chaitra Devadiga,69,895,Female,0,1,Daily Wage Worker,-,-
+1004,Joseph Chavan,34,898,Male,0,1,Bank Employee,-,-
+1005,Imran DSouza,45,899,Male,0,1,Student,-,-
+1006,Ravi Chavan,58,900,Male,0,1,Businessman,-,-
+1007,Kiran Pasha,22,901,Male,0,1,Bank Employee,-,-
+1008,Mustafa Iyengar,35,902,Male,0,1,Nurse,-,-
+1009,Sharada Iyer,20,902,Female,0,0,Daily Wage Worker,-,-
+1010,Darshan Biradar,47,903,Male,0,1,Farmer,-,-
+1011,Anitha Shetty,18,904,Female,0,1,Nurse,-,-
+1012,Asha Prabhu,62,904,Female,0,0,Daily Wage Worker,-,-
+1013,Farhan Joshi,28,905,Male,0,1,Retired Govt Servant,-,-
+1014,Shruthi Kumar,20,906,Female,0,1,Farmer,-,-
+1015,Suma Pinto,61,907,Female,0,1,Auto Driver,-,-
+1016,Joseph Nayak,22,907,Male,0,0,Software Engineer,-,-
+1017,Bharath Prabhu,69,908,Male,0,1,Teacher,-,-
+1018,Ramya Naik,24,910,Female,0,1,Homemaker,-,-
+1019,Rashmi Gowda,31,911,Female,0,1,Farmer,-,-
+1020,Sandhya Salian,48,912,Female,0,1,Homemaker,-,-
+1021,Asha Bangera,65,913,Female,1,1,Security Guard,-,-
+1022,Bharath Gowda,16,914,Male,0,1,Teacher,-,-
+1023,Anitha Madiwal,31,914,Female,0,0,Shop Owner,-,-
+1024,Nisha Acharya,72,916,Female,0,1,Retired Govt Servant,-,-
+1025,Salma Kini,32,917,Female,0,1,Bank Employee,-,-
+1026,Meghana DSouza,51,918,Female,0,1,Retired Govt Servant,-,-
+1027,Thomas Hegde,19,919,Male,0,1,Retired Govt Servant,-,-
+1028,Charan Pasha,37,920,Male,0,1,Student,-,-
+1029,Arun Bangera,60,921,Male,0,1,Businessman,-,-
+1030,Navya Udupa,66,922,Female,0,1,Tailor,-,-
+1031,Gagan Patil,25,923,Male,0,1,Bank Employee,-,-
+1032,Rajesh Pinto,40,924,Male,0,1,Farmer,-,-
+1033,Salma Prabhu,60,924,Female,0,0,Shop Owner,-,-
+1034,Ramya Kumar,68,925,Female,0,1,Teacher,-,-
+1035,Suresh Sharma,27,926,Male,0,1,Software Engineer,-,-
+1036,Vidya Kulkarni,34,927,Female,0,1,Farmer,-,-
+1037,Pallavi Devadiga,66,928,Female,0,1,Nurse,-,-
+1038,Pooja Pai,68,929,Female,0,1,Farmer,-,-
+1039,Parvathi Gowda,72,930,Female,0,1,Tailor,-,-
+1040,Manjunath Madiwal,63,931,Male,0,1,Farmer,-,-
+1041,Vijay Achar,34,932,Male,0,1,Daily Wage Worker,-,-
+1042,Jagadish Suvarna,30,933,Male,0,1,Shop Owner,-,-
+1043,Kavitha Naik,31,933,Female,0,0,Tailor,-,-
+1044,Riyaz Iyer,33,934,Male,0,1,Auto Driver,-,-
+1045,Rekha Bangera,68,935,Female,0,1,Student,-,-
+1046,Manjunath Prabhu,53,936,Male,0,1,Student,-,-
+1047,Sunitha Rai,53,937,Female,0,1,Student,-,-
+1048,Mustafa Joshi,28,938,Male,0,1,Hotel Worker,-,-
+1049,Riyaz Achar,55,938,Male,0,0,Auto Driver,-,-
+1050,Charan Sharma,32,939,Male,0,1,Hotel Worker,-,-
+1051,Murali Alva,54,941,Male,0,1,Shop Owner,-,-
+1052,Divya Shinde,48,942,Female,0,1,Tailor,-,-
+1053,Chandru DSouza,30,943,Male,0,1,Teacher,-,-
+1054,Chandru Iyengar,42,944,Male,0,1,Tailor,-,-
+1055,Ambika Khan,43,945,Female,0,1,Software Engineer,-,-
+1056,Irfan Jadhav,37,946,Male,0,1,Businessman,-,-
+1057,Chandru Lobo,61,947,Male,0,1,Tailor,-,-
+1058,Puneeth Gowda,71,948,Male,0,1,Auto Driver,-,-
+1059,Chaitra Naik,31,949,Female,0,1,Homemaker,-,-
+1060,Shivakumar Prabhu,71,949,Male,0,0,Farmer,-,-
+1061,Sandhya Pai,66,950,Female,0,1,Shop Owner,-,-
+1062,Siddaraju Hiremath,25,951,Male,0,1,Shop Owner,-,-
+1063,Rajesh Rao,57,951,Male,0,0,Bank Employee,-,-
+1064,Navya Nayak,21,951,Female,0,0,Nurse,-,-
+1065,Vidya Joshi,19,952,Female,0,1,Software Engineer,-,-
+1066,Divya Puthran,69,953,Female,0,1,Bank Employee,-,-
+1067,Lakshmi Gowda,41,954,Female,0,1,Auto Driver,-,-
+1068,Shilpa Kamat,25,955,Female,0,1,Shop Owner,-,-
+1069,Rajesh Shetty,64,956,Male,0,1,Security Guard,-,-
+1070,Anand Angadi,42,957,Male,0,1,Nurse,-,-
+1071,Mary Ballal,64,958,Female,0,1,Bank Employee,-,-
+1072,Shruthi Shanbhag,20,959,Female,0,1,Farmer,-,-
+1073,Meghana Patil,58,960,Female,0,1,Businessman,-,-
+1074,Santhosh Shetty,35,960,Male,0,0,Farmer,-,-
+1075,Peter Reddy,65,961,Male,0,1,Homemaker,-,-
+1076,Chandru Shanbhag,26,961,Male,0,0,Software Engineer,-,-
+1077,Latha Pai,39,962,Female,0,1,Student,-,-
+1078,Sunitha Rai,56,963,Female,0,1,Student,-,-
+1079,Vijay Joshi,64,963,Male,0,0,Retired Govt Servant,-,-
+1080,Chetan Bangera,37,963,Male,0,0,Homemaker,-,-
+1081,Suma Kulkarni,18,964,Female,0,1,Shop Owner,-,-
+1082,Ayesha Salian,30,965,Female,0,1,Hotel Worker,-,-
+1083,Lakshmi Poojary,54,966,Female,0,1,Student,-,-
+1084,Vinod Poojary,20,967,Male,0,1,Bank Employee,-,-
+1085,Ramesh Biradar,33,968,Male,0,1,Shop Owner,-,-
+1086,Mahesh Khan,30,969,Male,0,1,Tailor,-,-
+1087,Irfan Sharma,19,970,Male,0,1,Daily Wage Worker,-,-
+1088,Ramesh Patil,50,970,Male,0,0,Businessman,-,-
+1089,Naveen Alva,70,971,Male,0,1,Bank Employee,-,-
+1090,Ramesh Kamat,52,971,Male,0,0,Auto Driver,-,-
+1091,Rashmi Naik,28,972,Female,0,1,Businessman,-,-
+1092,Ayesha Swamy,50,974,Female,0,1,Shop Owner,-,-
+1093,Anitha Pai,48,975,Female,0,1,Bank Employee,-,-
+1094,Farhan Murthy,21,975,Male,0,0,Teacher,-,-
+1095,Pallavi Prabhu,33,977,Female,0,1,Teacher,-,-
+1096,Vinod Sharma,38,977,Male,0,0,Nurse,-,-
+1097,Praveen Khan,19,977,Male,0,0,Retired Govt Servant,-,-
+1098,Nithin Shanbhag,30,978,Male,0,1,Hotel Worker,-,-
+1099,Anil Kini,55,978,Male,0,0,Teacher,-,-
+1100,Bhavya Devadiga,37,979,Female,0,1,Hotel Worker,-,-
+1101,Puneeth Udupa,42,979,Male,0,0,Retired Govt Servant,-,-
+1102,Umesh Patil,68,979,Male,0,0,Auto Driver,-,-
+1103,Vikram Rao,17,980,Male,0,1,Student,-,-
+1104,Suma Pasha,48,980,Female,0,0,Daily Wage Worker,-,-
+1105,Mohan Salian,60,980,Male,0,0,Student,-,-
+1106,Gagan Puthran,27,981,Male,0,1,Bank Employee,-,-
+1107,Harish Shinde,58,983,Male,0,1,Farmer,-,-
+1108,Shobha Biradar,23,984,Female,0,1,Daily Wage Worker,-,-
+1109,Sudeep Lobo,68,985,Male,0,1,Retired Govt Servant,-,-
+1110,Praveen Madiwal,56,986,Male,0,1,Student,-,-
+1111,Nandini Salian,20,987,Female,0,1,Software Engineer,-,-
+1112,Manjula Hiremath,48,988,Female,0,1,Daily Wage Worker,-,-
+1113,Sunil Prabhu,23,989,Male,0,1,Bank Employee,-,-
+1114,Kavitha Rai,32,990,Female,0,1,Shop Owner,-,-
+1115,Anitha Shanbhag,17,991,Female,0,1,Retired Govt Servant,-,-
+1116,Radha Khan,72,992,Female,0,1,Nurse,-,-
+1117,Seetha Jadhav,57,993,Female,0,1,Hotel Worker,-,-
+1118,Pavan Puthran,48,994,Male,0,1,Nurse,-,-
+1119,Anand Acharya,61,995,Male,0,1,Software Engineer,-,-
+1120,Syed Pai,61,995,Male,0,0,Student,-,-
+1121,Venkatesh Madiwal,54,996,Male,0,1,Homemaker,-,-
+1122,Sandhya Iyer,45,997,Female,0,1,Hotel Worker,-,-
+1123,Suresh DSouza,65,998,Male,0,1,Daily Wage Worker,-,-
+1124,Asha Pasha,44,999,Female,0,1,Security Guard,-,-
+1125,Nithin Rai,57,999,Male,1,0,Retired Govt Servant,-,-
+1126,Kavitha Pai,49,1000,Female,0,1,Hotel Worker,-,-
+1127,Divya Sequeira,67,1001,Female,0,1,Bank Employee,-,-
+1128,Ajay Rai,45,1001,Male,0,0,Security Guard,-,-
+1129,Chaitra Lobo,50,1003,Female,0,1,Hotel Worker,-,-
+1130,Ayesha Patil,32,1004,Female,0,1,Tailor,-,-
+1131,Rekha Deshpande,48,1005,Female,0,1,Nurse,-,-
+1132,Irfan Madiwal,38,1005,Male,0,0,Software Engineer,-,-
+1133,Bharath Sheikh,59,1005,Male,0,0,Nurse,-,-
+1134,Geetha Kotian,46,1006,Female,0,1,Auto Driver,-,-
+1135,Rohan Jadhav,58,1007,Male,0,1,Software Engineer,-,-
+1136,Manjunath Pasha,40,1008,Male,0,1,Student,-,-
+1137,Usha Shinde,23,1009,Female,0,1,Teacher,-,-
+1138,Ravi Baig,19,1009,Male,0,0,Retired Govt Servant,-,-
+1139,Irfan Shetty,17,1010,Male,0,1,Teacher,-,-
+1140,Farhan Iyengar,21,1011,Male,0,1,Shop Owner,-,-
+1141,Spandana Kulkarni,22,1013,Female,0,1,Businessman,-,-
+1142,Thomas Moily,65,1013,Male,0,0,Security Guard,-,-
+1143,Satish Khan,62,1014,Male,0,1,Homemaker,-,-
+1144,Nisha Udupa,26,1015,Female,0,1,Tailor,-,-
+1145,Siddaraju Baig,35,1016,Male,1,1,Shop Owner,-,-
+1146,Peter Jadhav,54,1017,Male,0,1,Bank Employee,-,-
+1147,Radha Adiga,49,1018,Female,0,1,Security Guard,-,-
+1148,Suresh Shetty,48,1020,Male,0,1,Businessman,-,-
+1149,Rajesh Pai,37,1020,Male,0,0,Hotel Worker,-,-
+1150,Abhishek Chavan,60,1021,Male,0,1,Daily Wage Worker,-,-
+1151,Abhishek Pasha,25,1022,Male,0,1,Nurse,-,-
+1152,Darshan Shetty,56,1023,Male,0,1,Student,-,-
+1153,Girish Pasha,24,1024,Male,0,1,Nurse,-,-
+1154,Dinesh Prabhu,61,1025,Male,0,1,Businessman,-,-
+1155,Prakash Biradar,60,1025,Male,0,0,Teacher,-,-
+1156,Joseph Madiwal,68,1026,Male,0,1,Software Engineer,-,-
+1157,Usha Prabhu,22,1027,Female,0,1,Shop Owner,-,-
+1158,Mahesh Pai,65,1028,Male,0,1,Bank Employee,-,-
+1159,Vikram Joshi,59,1029,Male,0,1,Security Guard,-,-
+1160,Vanitha Khan,22,1030,Female,0,1,Bank Employee,-,-
+1161,Suresh Bangera,34,1031,Male,0,1,Homemaker,-,-
+1162,Chaitra Kini,17,1031,Female,0,0,Tailor,-,-
+1163,Pavan Puthran,72,1032,Male,0,1,Software Engineer,-,-
+1164,Lakshmi Kumar,33,1032,Female,0,0,Tailor,-,-
+1165,Uma Pasha,47,1033,Female,0,1,Hotel Worker,-,-
+1166,Shwetha Bhat,65,1034,Female,0,1,Bank Employee,-,-
+1167,Jagadish Khan,50,1035,Male,0,1,Bank Employee,-,-
+1168,Naveen Puthran,25,1035,Male,0,0,Tailor,-,-
+1169,Latha Acharya,18,1036,Female,0,1,Security Guard,-,-
+1170,Prakash Bangera,57,1038,Male,0,1,Bank Employee,-,-
+1171,Anil Bangera,54,1040,Male,0,1,Security Guard,-,-
+1172,Shruthi Iyengar,50,1041,Female,0,1,Hotel Worker,-,-
+1173,Nisha Swamy,71,1042,Female,0,1,Teacher,-,-
+1174,Sharada Kulkarni,44,1044,Female,0,1,Businessman,-,-
+1175,Parvathi Kotian,62,1046,Female,0,1,Retired Govt Servant,-,-
+1176,Vanitha Puthran,45,1047,Female,0,1,Shop Owner,-,-
+1177,Murali Bhat,52,1048,Male,0,1,Software Engineer,-,-
+1178,Thomas Salian,37,1048,Male,0,0,Student,-,-
+1179,Shobha Iyer,41,1049,Female,0,1,Security Guard,-,-
+1180,Pallavi Adiga,44,1050,Female,0,1,Software Engineer,-,-
+1181,Lokesh Sequeira,23,1052,Male,0,1,Nurse,-,-
+1182,Priya Adiga,18,1053,Female,0,1,Businessman,-,-
+1183,Sunil Bhat,51,1054,Male,0,1,Farmer,-,-
+1184,Mary Bhat,57,1055,Female,0,1,Software Engineer,-,-
+1185,Divya Pai,26,1055,Female,0,0,Daily Wage Worker,-,-
+1186,Rakesh Baig,22,1055,Male,0,0,Daily Wage Worker,-,-
+1187,Bhavya Udupa,26,1056,Female,1,1,Bank Employee,-,-
+1188,Riyaz Pasha,23,1056,Male,0,0,Businessman,-,-
+1189,Suma Ballal,23,1058,Female,0,1,Tailor,-,-
+1190,Nandini Devadiga,41,1058,Female,0,0,Tailor,-,-
+1191,Wilson Alva,24,1060,Male,0,1,Hotel Worker,-,-
+1192,Syed Biradar,57,1061,Male,0,1,Software Engineer,-,-
+1193,Nisha Swamy,66,1062,Female,0,1,Homemaker,-,-
+1194,Nandini Madiwal,69,1063,Female,0,1,Teacher,-,-
+1195,Savitha Reddy,51,1064,Female,0,1,Student,-,-
+1196,Vanitha Pasha,34,1065,Female,0,1,Software Engineer,-,-
+1197,Manjunath Kulkarni,70,1065,Male,0,0,Bank Employee,-,-
+1198,Ganesh Kamath,51,1066,Male,0,1,Bank Employee,-,-
+1199,Vidya Lobo,71,1066,Female,0,0,Security Guard,-,-
+1200,Anil Adiga,61,1066,Male,0,0,Shop Owner,-,-
+1201,Yashoda Kulkarni,37,1067,Female,0,1,Auto Driver,-,-
+1202,Lokesh Kotian,20,1068,Male,0,1,Auto Driver,-,-
+1203,Rohan Madiwal,71,1069,Male,0,1,Teacher,-,-
+1204,Chandru Kini,20,1070,Male,0,1,Hotel Worker,-,-
+1205,Hanumantha Swamy,68,1071,Male,0,1,Farmer,-,-
+1206,Sanjay Kamath,38,1071,Male,0,0,Teacher,-,-
+1207,Sagar Jadhav,33,1072,Male,0,1,Teacher,-,-
+1208,Deepa Murthy,57,1072,Female,0,0,Auto Driver,-,-
+1209,Sunil Kamat,51,1072,Male,0,0,Retired Govt Servant,-,-
+1210,Abdul Salian,57,1073,Male,0,1,Hotel Worker,-,-
+1211,Vidya Shetty,65,1073,Female,0,0,Software Engineer,-,-
+1212,Farhan Hegde,45,1076,Male,0,1,Nurse,-,-
+1213,Girish Sequeira,23,1077,Male,0,1,Retired Govt Servant,-,-
+1214,Sharada Kamat,58,1078,Female,0,1,Software Engineer,-,-
+1215,Soumya Madiwal,40,1079,Female,0,1,Businessman,-,-
+1216,Shruthi Devadiga,61,1080,Female,0,1,Homemaker,-,-
+1217,Imran Jadhav,23,1081,Male,0,1,Farmer,-,-
+1218,Wilson Pasha,41,1082,Male,0,1,Software Engineer,-,-
+1219,Ganesh Devadiga,47,1083,Male,0,1,Student,-,-
+1220,Usha Amin,72,1084,Female,0,1,Tailor,-,-
+1221,Wilson Bangera,34,1085,Male,0,1,Daily Wage Worker,-,-
+1222,Anil Murthy,28,1086,Male,0,1,Daily Wage Worker,-,-
+1223,Chandru Fernandes,71,1087,Male,0,1,Teacher,-,-
+1224,Sunitha Kotian,47,1088,Female,0,1,Businessman,-,-
+1225,Prakash Biradar,39,1088,Male,0,0,Businessman,-,-
+1226,Priya Kamat,55,1090,Female,0,1,Farmer,-,-
+1227,Rekha Fernandes,39,1090,Female,0,0,Nurse,-,-
+1228,Gagan Hegde,38,1090,Male,0,0,Daily Wage Worker,-,-
+1229,Siddaraju Salian,17,1091,Male,0,1,Auto Driver,-,-
+1230,Vidya Iyengar,54,1091,Female,0,0,Nurse,-,-
+1231,Puneeth Kattimani,18,1092,Male,0,1,Student,-,-
+1232,Anil Swamy,36,1094,Male,0,1,Nurse,-,-
+1233,Thomas Amin,56,1094,Male,0,0,Security Guard,-,-
+1234,Thomas Adiga,67,1094,Male,0,0,Security Guard,-,-
+1235,Raghavendra Kamath,39,1095,Male,0,1,Daily Wage Worker,-,-
+1236,Chaitra Madiwal,17,1096,Female,0,1,Homemaker,-,-
+1237,Rashmi Khan,21,1098,Female,0,1,Nurse,-,-
+1238,Suresh Hegde,27,1098,Male,0,0,Farmer,-,-
+1239,Lakshmi Udupa,70,1099,Female,0,1,Software Engineer,-,-
+1240,Prakash Patil,20,1100,Male,0,1,Businessman,-,-
+1241,Venkatesh Ballal,56,1101,Male,0,1,Businessman,-,-
+1242,Srinivas Kamath,68,1101,Male,0,0,Student,-,-
+1243,Radha Chavan,21,1101,Female,1,0,Daily Wage Worker,-,-
+1244,Ramesh Pai,48,1102,Male,0,1,Shop Owner,-,-
+1245,Asha Alva,54,1104,Female,0,1,Retired Govt Servant,-,-
+1246,Shilpa Kulkarni,22,1105,Female,0,1,Software Engineer,-,-
+1247,Parvathi Iyer,21,1105,Female,0,0,Auto Driver,-,-
+1248,Shwetha Chavan,63,1106,Female,0,1,Security Guard,-,-
+1249,Vinod Hegde,17,1107,Male,0,1,Shop Owner,-,-
+1250,Vinod Moily,56,1108,Male,0,1,Homemaker,-,-
+1251,Usha Angadi,60,1109,Female,0,1,Farmer,-,-
+1252,Salman Amin,42,1110,Male,0,1,Farmer,-,-
+1253,Hema Kulkarni,60,1110,Female,0,0,Shop Owner,-,-
+1254,Rashmi Pasha,39,1110,Female,0,0,Student,-,-
+1255,Pavan Alva,20,1111,Male,0,1,Retired Govt Servant,-,-
+1256,Rajesh Naik,60,1112,Male,0,1,Daily Wage Worker,-,-
+1257,Abhishek Shanbhag,34,1113,Male,0,1,Farmer,-,-
+1258,Rakesh Biradar,43,1113,Male,0,0,Daily Wage Worker,-,-
+1259,Salman Alva,20,1115,Male,0,1,Farmer,-,-
+1260,Nandini Kotian,71,1116,Female,0,1,Businessman,-,-
+1261,Ramya Patil,18,1117,Female,0,1,Student,-,-
+1262,Shilpa Kumar,54,1118,Female,0,1,Bank Employee,-,-
+1263,Arun Naik,34,1119,Male,0,1,Bank Employee,-,-
+1264,Kiran Moily,62,1120,Male,0,1,Auto Driver,-,-
+1265,Priya Karanth,40,1121,Female,0,1,Retired Govt Servant,-,-
+1266,Prakash Puthran,51,1122,Male,0,1,Bank Employee,-,-
+1267,Darshan Kulkarni,63,1122,Male,0,0,Nurse,-,-
+1268,Thomas Biradar,48,1122,Male,0,0,Hotel Worker,-,-
+1269,Thomas Pinto,58,1123,Male,0,1,Nurse,-,-
+1270,Bhavya Murthy,16,1124,Female,0,1,Tailor,-,-
+1271,Salman Fernandes,44,1124,Male,0,0,Bank Employee,-,-
+1272,Irfan Adiga,58,1125,Male,0,1,Nurse,-,-
+1273,Salman Sharma,28,1126,Male,0,1,Teacher,-,-
+1274,Ayesha Suvarna,36,1127,Female,0,1,Retired Govt Servant,-,-
+1275,Shilpa Kini,46,1130,Female,0,1,Farmer,-,-
+1276,Vidya Kini,17,1131,Female,0,1,Security Guard,-,-
+1277,Shilpa Pawar,61,1131,Female,0,0,Businessman,-,-
+1278,Sunitha Swamy,42,1132,Female,0,1,Daily Wage Worker,-,-
+1279,Radha Pasha,47,1133,Female,0,1,Bank Employee,-,-
+1280,Usha Sait,37,1134,Female,0,1,Auto Driver,-,-
+1281,Pallavi Sequeira,49,1135,Female,0,1,Retired Govt Servant,-,-
+1282,Irfan Udupa,59,1136,Male,0,1,Shop Owner,-,-
+1283,Gagan Bangera,71,1137,Male,0,1,Software Engineer,-,-
+1284,Priya Salian,60,1138,Female,0,1,Security Guard,-,-
+1285,Vijay Ballal,60,1138,Male,0,0,Software Engineer,-,-
+1286,Shobha Deshpande,64,1140,Female,0,1,Farmer,-,-
+1287,Nandini Kulkarni,59,1141,Female,0,1,Teacher,-,-
+1288,Praveen Deshpande,31,1141,Male,0,0,Nurse,-,-
+1289,Seetha Deshpande,41,1141,Female,0,0,Bank Employee,-,-
+1290,Geetha Lobo,24,1142,Female,0,1,Nurse,-,-
+1291,Ravi Shanbhag,68,1143,Male,0,1,Software Engineer,-,-
+1292,Kiran Nayak,48,1143,Male,0,0,Retired Govt Servant,-,-
+1293,Mustafa Iyer,26,1144,Male,0,1,Bank Employee,-,-
+1294,Usha Iyer,38,1144,Female,0,0,Daily Wage Worker,-,-
+1295,Siddaraju Murthy,16,1144,Male,0,0,Hotel Worker,-,-
+1296,Swathi Joshi,53,1145,Female,0,1,Student,-,-
+1297,Anitha Adiga,44,1146,Female,0,1,Hotel Worker,-,-
+1298,Jagadish Swamy,55,1147,Male,0,1,Farmer,-,-
+1299,Vikram Hegde,19,1148,Male,0,1,Homemaker,-,-
+1300,Seetha Alva,31,1149,Female,0,1,Retired Govt Servant,-,-
+1301,Soumya Rao,48,1149,Female,0,0,Daily Wage Worker,-,-
+1302,Riyaz Karanth,50,1150,Male,0,1,Bank Employee,-,-
+1303,Arun Shanbhag,72,1150,Male,0,0,Daily Wage Worker,-,-
+1304,Madhu Udupa,72,1150,Male,0,0,Student,-,-
+1305,Arun Sait,50,1151,Male,0,1,Shop Owner,-,-
+1306,Suma Shanbhag,54,1152,Female,0,1,Retired Govt Servant,-,-
+1307,Kavitha Pawar,61,1152,Female,0,0,Teacher,-,-
+1308,Suma Rai,71,1152,Female,0,0,Farmer,-,-
+1309,Farhan Achar,34,1153,Male,0,1,Daily Wage Worker,-,-
+1310,Bhavya Deshpande,29,1154,Female,0,1,Teacher,-,-
+1311,Bharath Hiremath,20,1155,Male,0,1,Retired Govt Servant,-,-
+1312,Naveen Angadi,60,1155,Male,0,0,Daily Wage Worker,-,-
+1313,Sagar Udupa,33,1155,Male,0,0,Homemaker,-,-
+1314,Suresh Udupa,56,1157,Male,0,1,Farmer,-,-
+1315,Raghavendra Nayak,26,1158,Male,0,1,Shop Owner,-,-
+1316,Divya Hiremath,67,1158,Female,0,0,Businessman,-,-
+1317,Vikram Moily,58,1158,Male,0,0,Auto Driver,-,-
+1318,Gagan Biradar,60,1159,Male,0,1,Hotel Worker,-,-
+1319,Shwetha Kamat,22,1160,Female,0,1,Nurse,-,-
+1320,Hema Pawar,69,1162,Female,0,1,Farmer,-,-
+1321,Vikram Bhat,36,1163,Male,0,1,Daily Wage Worker,-,-
+1322,Meghana Karanth,69,1165,Female,0,1,Shop Owner,-,-
+1323,Riyaz Gowda,52,1165,Male,0,0,Shop Owner,-,-
+1324,Chandru Sequeira,46,1166,Male,0,1,Software Engineer,-,-
+1325,Spandana Patil,41,1167,Female,0,1,Tailor,-,-
+1326,Abhishek Sequeira,55,1169,Male,0,1,Auto Driver,-,-
+1327,Lakshmi Poojary,55,1169,Female,0,0,Businessman,-,-
+1328,Mustafa Angadi,49,1169,Male,0,0,Tailor,-,-
+1329,Bhavya Shetty,23,1170,Female,0,1,Businessman,-,-
+1330,Pallavi Kulkarni,65,1171,Female,0,1,Farmer,-,-
+1331,Rohan Pinto,53,1171,Male,0,0,Tailor,-,-
+1332,Priya Reddy,33,1172,Female,0,1,Hotel Worker,-,-
+1333,Raghavendra Kotian,47,1172,Male,0,0,Auto Driver,-,-
+1334,Hanumantha Shinde,40,1173,Male,0,1,Teacher,-,-
+1335,Venkatesh Naik,36,1174,Male,0,1,Nurse,-,-
+1336,Fathima Alva,57,1175,Female,0,1,Daily Wage Worker,-,-
+1337,Vidya Pawar,30,1176,Female,0,1,Retired Govt Servant,-,-
+1338,Srinivas Bhat,43,1177,Male,0,1,Shop Owner,-,-
+1339,Peter Fernandes,57,1177,Male,0,0,Daily Wage Worker,-,-
+1340,Darshan Kamat,54,1179,Male,0,1,Student,-,-
+1341,Shivakumar Joshi,60,1181,Male,0,1,Auto Driver,-,-
+1342,Saraswathi Devadiga,70,1182,Female,0,1,Hotel Worker,-,-
+1343,Spandana Amin,48,1183,Female,0,1,Businessman,-,-
+1344,Rekha Khan,62,1183,Female,0,0,Farmer,-,-
+1345,Shwetha Chavan,51,1184,Female,0,1,Tailor,-,-
+1346,Praveen Amin,23,1185,Male,0,1,Software Engineer,-,-
+1347,Ramesh Rai,22,1186,Male,0,1,Software Engineer,-,-
+1348,Shobha Prabhu,49,1187,Female,0,1,Teacher,-,-
+1349,Seetha Devadiga,41,1188,Female,0,1,Security Guard,-,-
+1350,Sharada Adiga,53,1189,Female,0,1,Nurse,-,-
+1351,Girish Achar,40,1190,Male,0,1,Security Guard,-,-
+1352,Shwetha Rao,58,1192,Female,0,1,Nurse,-,-
+1353,Uma Pawar,63,1193,Female,0,1,Teacher,-,-
+1354,Fathima Biradar,27,1195,Female,0,1,Auto Driver,-,-
+1355,Suresh Sheikh,17,1195,Male,0,0,Homemaker,-,-
+1356,Latha Murthy,53,1196,Female,0,1,Homemaker,-,-
+1357,Venkatesh Salian,22,1197,Male,0,1,Retired Govt Servant,-,-
+1358,Chaitra Kotian,33,1198,Female,0,1,Auto Driver,-,-
+1359,Kavitha Kulkarni,55,1198,Female,0,0,Bank Employee,-,-
+1360,Anand Acharya,63,1199,Male,0,1,Businessman,-,-
+1361,Hema Suvarna,66,1200,Female,1,1,Shop Owner,-,-
+1362,Parvathi Prabhu,42,1201,Female,0,1,Tailor,-,-
+1363,Pooja Shinde,32,1201,Female,0,0,Homemaker,-,-
+1364,Saraswathi Bhat,50,1202,Female,0,1,Bank Employee,-,-
+1365,Nithin Sharma,37,1204,Male,0,1,Bank Employee,-,-
+1366,Salman Karanth,51,1205,Male,0,1,Businessman,-,-
+1367,Uma Rai,53,1206,Female,0,1,Tailor,-,-
+1368,Pallavi Karanth,18,1207,Female,0,1,Daily Wage Worker,-,-
+1369,Sunitha Joshi,57,1208,Female,0,1,Shop Owner,-,-
+1370,Shobha Kotian,49,1209,Female,0,1,Bank Employee,-,-
+1371,Farhan DSouza,65,1210,Male,0,1,Bank Employee,-,-
+1372,Ambika Pinto,17,1211,Female,0,1,Software Engineer,-,-
+1373,Nandini Pawar,62,1212,Female,0,1,Homemaker,-,-
+1374,Bharath Madiwal,60,1213,Male,0,1,Teacher,-,-
+1375,Naveen Adiga,58,1214,Male,0,1,Teacher,-,-
+1376,Nisha Kamat,44,1215,Female,0,1,Student,-,-
+1377,Vidya Pai,32,1217,Female,0,1,Security Guard,-,-
+1378,Anil Shetty,69,1218,Male,0,1,Software Engineer,-,-
+1379,Dinesh Udupa,26,1218,Male,0,0,Software Engineer,-,-
+1380,Bhavya Pai,43,1219,Female,0,1,Nurse,-,-
+1381,Ambika Sharma,18,1220,Female,0,1,Daily Wage Worker,-,-
+1382,Srinivas Madiwal,35,1221,Male,0,1,Student,-,-
+1383,Latha Poojary,17,1223,Female,0,1,Homemaker,-,-
+1384,Venkatesh Patil,58,1225,Male,0,1,Student,-,-
+1385,Uma Moily,44,1226,Female,0,1,Teacher,-,-
+1386,Rashmi Lobo,60,1227,Female,0,1,Nurse,-,-
+1387,Manjula Sheikh,43,1228,Female,0,1,Nurse,-,-
+1388,Basavaraj Amin,38,1229,Male,0,1,Software Engineer,-,-
+1389,Pooja Salian,68,1231,Female,0,1,Tailor,-,-
+1390,Anitha Puthran,52,1232,Female,0,1,Hotel Worker,-,-
+1391,Wilson Kattimani,38,1233,Male,0,1,Bank Employee,-,-
+1392,Salma Kini,24,1233,Female,0,0,Retired Govt Servant,-,-
+1393,Mary Pai,47,1233,Female,0,0,Bank Employee,-,-
+1394,Vinod Iyer,17,1234,Male,0,1,Auto Driver,-,-
+1395,Ganesh Amin,62,1235,Male,0,1,Security Guard,-,-
+1396,Anitha Amin,58,1236,Female,0,1,Student,-,-
+1397,Kiran Kamath,50,1237,Male,0,1,Hotel Worker,-,-
+1398,Pallavi Ballal,21,1238,Female,0,1,Teacher,-,-
+1399,Saraswathi Iyengar,57,1239,Female,0,1,Auto Driver,-,-
+1400,Irfan Rai,69,1239,Male,0,0,Daily Wage Worker,-,-
+1401,Rekha Iyer,48,1240,Female,1,1,Daily Wage Worker,-,-
+1402,Sanjay Deshpande,69,1242,Male,0,1,Teacher,-,-
+1403,Vidya Fernandes,29,1243,Female,0,1,Teacher,-,-
+1404,Basavaraj Pai,55,1243,Male,0,0,Businessman,-,-
+1405,Harish Bhat,25,1244,Male,0,1,Software Engineer,-,-
+1406,Manjula DSouza,25,1245,Female,0,1,Auto Driver,-,-
+1407,Srinivas Acharya,67,1247,Male,0,1,Farmer,-,-
+1408,Nandini Shanbhag,51,1248,Female,0,1,Shop Owner,-,-
+1409,Murali Swamy,54,1249,Male,0,1,Tailor,-,-
+1410,Sanjay Shinde,41,1249,Male,0,0,Nurse,-,-
+1411,Pooja Lobo,56,1251,Female,0,1,Student,-,-
+1412,Parvathi Biradar,60,1251,Female,0,0,Student,-,-
+1413,Yash Alva,66,1252,Male,0,1,Software Engineer,-,-
+1414,Darshan Madiwal,68,1253,Male,0,1,Software Engineer,-,-
+1415,Srinivas Fernandes,59,1254,Male,0,1,Businessman,-,-
+1416,Asha Joshi,51,1255,Female,0,1,Security Guard,-,-
+1417,Anand Suvarna,22,1256,Male,0,1,Hotel Worker,-,-
+1418,Spandana Sequeira,54,1256,Female,0,0,Software Engineer,-,-
+1419,Ramesh Amin,38,1257,Male,0,1,Retired Govt Servant,-,-
+1420,Shwetha Swamy,66,1257,Female,0,0,Student,-,-
+1421,Imran Gowda,17,1258,Male,0,1,Bank Employee,-,-
+1422,Manjula Khan,66,1259,Female,0,1,Businessman,-,-
+1423,Chaitra Fernandes,64,1260,Female,0,1,Student,-,-
+1424,Deepa Suvarna,29,1261,Female,0,1,Auto Driver,-,-
+1425,Sandhya Poojary,56,1262,Female,0,1,Software Engineer,-,-
+1426,Swathi Khan,35,1263,Female,0,1,Tailor,-,-
+1427,Peter Iyengar,59,1264,Male,0,1,Bank Employee,-,-
+1428,Asha Udupa,23,1264,Female,0,0,Businessman,-,-
+1429,Irfan Kulkarni,47,1264,Male,0,0,Shop Owner,-,-
+1430,Rajesh Shetty,19,1265,Male,0,1,Homemaker,-,-
+1431,Peter Kumar,56,1266,Male,0,1,Teacher,-,-
+1432,Riyaz Alva,52,1267,Male,0,1,Farmer,-,-
+1433,Savitha Suvarna,52,1267,Female,0,0,Auto Driver,-,-
+1434,Shruthi Salian,54,1267,Female,0,0,Security Guard,-,-
+1435,Gowri Gowda,51,1268,Female,0,1,Nurse,-,-
+1436,Gowri Shanbhag,40,1269,Female,0,1,Teacher,-,-
+1437,Fathima Prabhu,44,1270,Female,0,1,Tailor,-,-
+1438,Jagadish Achar,57,1271,Male,0,1,Teacher,-,-
+1439,Basavaraj Madiwal,50,1271,Male,0,0,Student,-,-
+1440,Mohan Reddy,66,1271,Male,0,0,Shop Owner,-,-
+1441,Lokesh Karanth,71,1272,Male,0,1,Farmer,-,-
+1442,Anitha Alva,65,1275,Female,0,1,Daily Wage Worker,-,-
+1443,Puneeth Shanbhag,63,1276,Male,0,1,Teacher,-,-
+1444,Wilson Jadhav,24,1277,Male,0,1,Bank Employee,-,-
+1445,Pooja Poojary,25,1278,Female,0,1,Nurse,-,-
+1446,Mahesh Kotian,37,1279,Male,0,1,Bank Employee,-,-
+1447,Basavaraj Pinto,70,1280,Male,0,1,Retired Govt Servant,-,-
+1448,Mary Murthy,17,1280,Female,0,0,Nurse,-,-
+1449,Hanumantha Sequeira,16,1281,Male,0,1,Nurse,-,-
+1450,Vanitha Moily,32,1281,Female,0,0,Bank Employee,-,-
+1451,Yashoda Jadhav,40,1282,Female,0,1,Hotel Worker,-,-
+1452,Peter Khan,16,1282,Male,0,0,Teacher,-,-
+1453,Hanumantha Khan,68,1283,Male,0,1,Tailor,-,-
+1454,Imran Alva,36,1283,Male,0,0,Hotel Worker,-,-
+1455,Shwetha Alva,37,1284,Female,0,1,Auto Driver,-,-
+1456,Nagaraj Biradar,41,1285,Male,0,1,Security Guard,-,-
+1457,Sudeep Bhat,72,1286,Male,0,1,Teacher,-,-
+1458,Farhan Pinto,61,1287,Male,0,1,Teacher,-,-
+1459,Imran DSouza,17,1288,Male,0,1,Homemaker,-,-
+1460,Rakesh Devadiga,28,1291,Male,0,1,Security Guard,-,-
+1461,Shobha Gowda,42,1292,Female,0,1,Nurse,-,-
+1462,Sanjay Joshi,72,1293,Male,0,1,Daily Wage Worker,-,-
+1463,Sagar Suvarna,50,1293,Male,0,0,Retired Govt Servant,-,-
+1464,Usha Sait,16,1294,Female,0,1,Retired Govt Servant,-,-
+1465,Deepa Bhat,20,1295,Female,0,1,Security Guard,-,-
+1466,Chaitra Puthran,48,1296,Female,0,1,Teacher,-,-
+1467,Parvathi Prabhu,22,1297,Female,0,1,Teacher,-,-
+1468,Ayesha Shinde,28,1297,Female,0,0,Security Guard,-,-
+1469,Bhagya Swamy,68,1300,Female,0,1,Farmer,-,-
+1470,Seetha Hiremath,54,1301,Female,0,1,Retired Govt Servant,-,-
+1471,Sudeep Angadi,59,1302,Male,0,1,Teacher,-,-
+1472,Shilpa Bangera,47,1303,Female,0,1,Homemaker,-,-
+1473,Shilpa Nayak,55,1303,Female,0,0,Farmer,-,-
+1474,Radha Hegde,60,1304,Female,0,1,Teacher,-,-
+1475,Kavitha Patil,29,1305,Female,0,1,Software Engineer,-,-
+1476,Gagan Murthy,35,1306,Male,0,1,Student,-,-
+1477,Radha Murthy,70,1307,Female,0,1,Tailor,-,-
+1478,Mustafa Iyengar,30,1308,Male,0,1,Software Engineer,-,-
+1479,Arun Pai,61,1308,Male,0,0,Software Engineer,-,-
+1480,Bhavya Jadhav,64,1310,Female,0,1,Student,-,-
+1481,Dinesh Nayak,26,1312,Male,0,1,Bank Employee,-,-
+1482,Praveen Deshpande,64,1313,Male,0,1,Tailor,-,-
+1483,Naveen Gowda,52,1314,Male,0,1,Security Guard,-,-
+1484,Girish Naik,25,1315,Male,0,1,Auto Driver,-,-
+1485,Raghavendra Kamat,26,1315,Male,0,0,Software Engineer,-,-
+1486,Gowri Salian,39,1315,Female,0,0,Software Engineer,-,-
+1487,Harish Biradar,46,1316,Male,0,1,Security Guard,-,-
+1488,Parvathi Shinde,28,1317,Female,0,1,Businessman,-,-
+1489,Ajay Kotian,45,1317,Male,0,0,Shop Owner,-,-
+1490,Madhu Suvarna,22,1318,Male,0,1,Nurse,-,-
+1491,Santhosh Madiwal,16,1319,Male,0,1,Farmer,-,-
+1492,Shankar Reddy,67,1320,Male,0,1,Bank Employee,-,-
+1493,Pooja Jadhav,31,1321,Female,0,1,Businessman,-,-
+1494,Puneeth Pai,49,1321,Male,0,0,Shop Owner,-,-
+1495,Naveen Hiremath,41,1322,Male,0,1,Software Engineer,-,-
+1496,Manjula Shetty,62,1323,Female,0,1,Auto Driver,-,-
+1497,Abhishek Hiremath,60,1324,Male,0,1,Student,-,-
+1498,Anitha Achar,49,1324,Female,0,0,Shop Owner,-,-
+1499,Rohan Devadiga,61,1326,Male,0,1,Student,-,-
+1500,Rekha Gowda,22,1326,Female,0,0,Security Guard,-,-
+1501,Vidya Biradar,25,1327,Female,0,1,Bank Employee,-,-
+1502,Venkatesh Iyengar,31,1327,Male,0,0,Software Engineer,-,-
+1503,Satish Kattimani,28,1328,Male,0,1,Security Guard,-,-
+1504,Salma Khan,56,1329,Female,0,1,Auto Driver,-,-
+1505,Vanitha Shinde,43,1331,Female,1,1,Security Guard,-,-
+1506,Ramesh Adiga,59,1332,Male,0,1,Software Engineer,-,-
+1507,Salman Bhat,37,1333,Male,0,1,Businessman,-,-
+1508,Peter Angadi,40,1334,Male,0,1,Student,-,-
+1509,Ramesh Biradar,46,1335,Male,0,1,Software Engineer,-,-
+1510,Venkatesh Shetty,53,1335,Male,0,0,Teacher,-,-
+1511,Sandhya Hegde,35,1336,Female,0,1,Nurse,-,-
+1512,Rajesh Sait,50,1338,Male,0,1,Student,-,-
+1513,Anitha Iyer,25,1339,Female,0,1,Bank Employee,-,-
+1514,Meghana Devadiga,16,1341,Female,0,1,Businessman,-,-
+1515,Siddaraju Prabhu,69,1342,Male,0,1,Tailor,-,-
+1516,Anitha Iyengar,46,1343,Female,0,1,Hotel Worker,-,-
+1517,Imran Acharya,46,1344,Male,0,1,Bank Employee,-,-
+1518,Charan Shinde,56,1345,Male,0,1,Tailor,-,-
+1519,Farhan Kumar,37,1347,Male,0,1,Nurse,-,-
+1520,Gowri Rai,63,1348,Female,0,1,Teacher,-,-
+1521,Hanumantha Murthy,63,1349,Male,0,1,Farmer,-,-
+1522,Shwetha Deshpande,71,1349,Female,0,0,Businessman,-,-
+1523,Dinesh Angadi,28,1350,Male,0,1,Daily Wage Worker,-,-
+1524,Bharath Chavan,67,1351,Male,0,1,Security Guard,-,-
+1525,Venkatesh Naik,20,1351,Male,0,0,Tailor,-,-
+1526,Madhu Kamat,61,1352,Male,1,1,Student,-,-
+1527,Meghana Angadi,25,1353,Female,0,1,Auto Driver,-,-
+1528,Bharath Shetty,56,1355,Male,0,1,Shop Owner,-,-
+1529,Ravi Poojary,48,1357,Male,0,1,Tailor,-,-
+1530,Geetha Alva,24,1358,Female,0,1,Farmer,-,-
+1531,Farhan Shetty,22,1358,Male,0,0,Bank Employee,-,-
+1532,Dinesh Patil,20,1359,Male,0,1,Hotel Worker,-,-
+1533,Shivakumar Jadhav,70,1360,Male,0,1,Auto Driver,-,-
+1534,Shruthi Sharma,50,1361,Female,0,1,Farmer,-,-
+1535,Ajay Khan,40,1363,Male,0,1,Shop Owner,-,-
+1536,Spandana Puthran,30,1364,Female,0,1,Homemaker,-,-
+1537,Yashoda Biradar,67,1366,Female,0,1,Nurse,-,-
+1538,Krishna Udupa,57,1366,Male,0,0,Homemaker,-,-
+1539,Parvathi Adiga,48,1367,Female,0,1,Student,-,-
+1540,Rohan Gowda,39,1368,Male,0,1,Bank Employee,-,-
+1541,Umesh Devadiga,30,1369,Male,0,1,Nurse,-,-
+1542,Riyaz Alva,43,1370,Male,0,1,Daily Wage Worker,-,-
+1543,Navya Puthran,47,1371,Female,0,1,Shop Owner,-,-
+1544,Shobha Kattimani,58,1372,Female,0,1,Bank Employee,-,-
+1545,Suresh Lobo,60,1373,Male,0,1,Homemaker,-,-
+1546,Mohan Angadi,63,1375,Male,0,1,Shop Owner,-,-
+1547,Meghana Iyer,29,1376,Female,0,1,Auto Driver,-,-
+1548,Gagan Adiga,31,1376,Male,0,0,Shop Owner,-,-
+1549,Gowri Deshpande,20,1376,Female,0,0,Daily Wage Worker,-,-
+1550,Ajay Bhat,62,1377,Male,0,1,Nurse,-,-
+1551,Divya Pinto,55,1379,Female,0,1,Security Guard,-,-
+1552,Nandini Hegde,28,1381,Female,0,1,Auto Driver,-,-
+1553,Basavaraj Biradar,72,1382,Male,0,1,Daily Wage Worker,-,-
+1554,Anitha Gowda,29,1383,Female,0,1,Student,-,-
+1555,Rakesh Swamy,38,1384,Male,0,1,Teacher,-,-
+1556,Rohan Deshpande,40,1385,Male,0,1,Businessman,-,-
+1557,Pavan Karanth,19,1386,Male,0,1,Businessman,-,-
+1558,Ganesh Achar,46,1387,Male,0,1,Daily Wage Worker,-,-
+1559,Mohan Salian,33,1390,Male,0,1,Student,-,-
+1560,Umesh Achar,47,1391,Male,0,1,Teacher,-,-
+1561,Raghavendra Murthy,63,1391,Male,0,0,Teacher,-,-
+1562,Puneeth Iyengar,32,1393,Male,0,1,Homemaker,-,-
+1563,Nandini Baig,71,1394,Female,0,1,Tailor,-,-
+1564,Gagan Ballal,44,1395,Male,0,1,Tailor,-,-
+1565,Dinesh Udupa,63,1396,Male,0,1,Daily Wage Worker,-,-
+1566,Irfan Iyer,23,1396,Male,0,0,Retired Govt Servant,-,-
+1567,Anitha Kamat,63,1397,Female,0,1,Tailor,-,-
+1568,Anil Kamat,25,1398,Male,0,1,Student,-,-
+1569,Umesh Kini,69,1398,Male,0,0,Daily Wage Worker,-,-
+1570,Seetha Gowda,38,1400,Female,0,1,Homemaker,-,-
+1571,Syed Kotian,54,1401,Male,0,1,Bank Employee,-,-
+1572,Shobha Ballal,45,1402,Female,0,1,Daily Wage Worker,-,-
+1573,Puneeth Fernandes,59,1403,Male,0,1,Student,-,-
+1574,Rohan Kulkarni,67,1403,Male,0,0,Security Guard,-,-
+1575,Spandana Reddy,37,1403,Female,0,0,Student,-,-
+1576,Priya Madiwal,54,1405,Female,0,1,Security Guard,-,-
+1577,Uma Bhat,16,1405,Female,0,0,Nurse,-,-
+1578,Shankar Pasha,21,1406,Male,0,1,Farmer,-,-
+1579,Jagadish Salian,41,1407,Male,0,1,Retired Govt Servant,-,-
+1580,Ramya Gowda,62,1408,Female,0,1,Farmer,-,-
+1581,Harish Madiwal,67,1409,Male,0,1,Security Guard,-,-
+1582,Farhan Hegde,20,1410,Male,0,1,Tailor,-,-
+1583,Karthik Sheikh,24,1410,Male,0,0,Hotel Worker,-,-
+1584,Rakesh Puthran,24,1411,Male,0,1,Homemaker,-,-
+1585,Usha Kotian,23,1412,Female,0,1,Bank Employee,-,-
+1586,Rashmi Madiwal,54,1413,Female,0,1,Auto Driver,-,-
+1587,Mahesh Sharma,46,1414,Male,0,1,Auto Driver,-,-
+1588,Sagar Shetty,23,1414,Male,1,0,Nurse,-,-
+1589,Bharath Shanbhag,16,1414,Male,1,0,Businessman,-,-
+1590,Bharath Pinto,16,1415,Male,0,1,Auto Driver,-,-
+1591,Spandana Pinto,38,1416,Female,0,1,Hotel Worker,-,-
+1592,Meghana Acharya,33,1418,Female,0,1,Software Engineer,-,-
+1593,Salma Kattimani,41,1419,Female,0,1,Teacher,-,-
+1594,Swathi Karanth,53,1420,Female,0,1,Businessman,-,-
+1595,Umesh Shetty,64,1420,Male,0,0,Teacher,-,-
+1596,Ramesh Gowda,55,1421,Male,0,1,Auto Driver,-,-
+1597,Vanitha Rai,65,1422,Female,0,1,Businessman,-,-
+1598,Venkatesh Pinto,53,1422,Male,0,0,Farmer,-,-
+1599,Abhishek Swamy,29,1422,Male,0,0,Security Guard,-,-
+1600,Uma Fernandes,37,1424,Female,0,1,Retired Govt Servant,-,-
+1601,Priya Kattimani,49,1425,Female,0,1,Shop Owner,-,-
+1602,Prakash Rai,69,1426,Male,0,1,Hotel Worker,-,-
+1603,Sandhya Salian,26,1428,Female,0,1,Student,-,-
+1604,Bhavya Sheikh,27,1428,Female,0,0,Tailor,-,-
+1605,Raghavendra Gowda,40,1428,Male,0,0,Retired Govt Servant,-,-
+1606,Wilson Pinto,65,1429,Male,0,1,Daily Wage Worker,-,-
+1607,Swathi Kulkarni,20,1430,Female,0,1,Tailor,-,-
+1608,Radha Gowda,53,1431,Female,0,1,Hotel Worker,-,-
+1609,Pallavi Acharya,22,1432,Female,0,1,Teacher,-,-
+1610,Rohan Sheikh,49,1433,Male,0,1,Student,-,-
+1611,Anitha Acharya,20,1434,Female,0,1,Software Engineer,-,-
+1612,Harish Jadhav,42,1435,Male,0,1,Retired Govt Servant,-,-
+1613,Gagan Sheikh,71,1436,Male,0,1,Bank Employee,-,-
+1614,Meghana Khan,42,1438,Female,0,1,Nurse,-,-
+1615,Meghana Salian,32,1438,Female,0,0,Homemaker,-,-
+1616,Vikram Devadiga,47,1439,Male,0,1,Daily Wage Worker,-,-
+1617,Vikram Sait,57,1440,Male,0,1,Nurse,-,-
+1618,Sagar Alva,28,1443,Male,0,1,Businessman,-,-
+1619,Vinod Kulkarni,25,1444,Male,0,1,Teacher,-,-
+1620,Chaitra Sheikh,53,1445,Female,0,1,Software Engineer,-,-
+1621,Shobha Amin,37,1446,Female,0,1,Homemaker,-,-
+1622,Navya Salian,37,1447,Female,0,1,Software Engineer,-,-
+1623,Parvathi Kotian,64,1448,Female,0,1,Businessman,-,-
+1624,Ganesh Kamath,31,1449,Male,0,1,Teacher,-,-
+1625,Pallavi Murthy,59,1449,Female,0,0,Shop Owner,-,-
+1626,Bhagya Madiwal,70,1450,Female,0,1,Farmer,-,-
+1627,Manjula Sequeira,68,1451,Female,0,1,Farmer,-,-
+1628,Puneeth Sait,25,1452,Male,0,1,Nurse,-,-
+1629,Sunitha Karanth,66,1453,Female,0,1,Shop Owner,-,-
+1630,Uma Nayak,26,1454,Female,1,1,Tailor,-,-
+1631,Sunil Pawar,32,1454,Male,1,0,Shop Owner,-,-
+1632,Abdul Biradar,52,1455,Male,0,1,Homemaker,-,-
+1633,Darshan Rao,69,1456,Male,0,1,Retired Govt Servant,-,-
+1634,Santhosh Suvarna,21,1456,Male,0,0,Farmer,-,-
+1635,Divya Lobo,58,1456,Female,0,0,Bank Employee,-,-
+1636,Gagan Naik,71,1457,Male,0,1,Daily Wage Worker,-,-
+1637,Pooja Kamath,41,1460,Female,0,1,Nurse,-,-
+1638,Sagar Adiga,17,1461,Male,0,1,Homemaker,-,-
+1639,Farhan Lobo,61,1462,Male,0,1,Homemaker,-,-
+1640,Rajesh Khan,39,1463,Male,0,1,Homemaker,-,-
+1641,Nagaraj Kotian,67,1463,Male,0,0,Software Engineer,-,-
+1642,Nithin Hegde,46,1463,Male,0,0,Software Engineer,-,-
+1643,Latha Karanth,31,1467,Female,0,1,Teacher,-,-
+1644,Vidya Iyer,31,1469,Female,0,1,Auto Driver,-,-
+1645,Naveen Angadi,39,1470,Male,0,1,Security Guard,-,-
+1646,Kavitha Sequeira,35,1471,Female,0,1,Bank Employee,-,-
+1647,Satish Shinde,52,1472,Male,0,1,Software Engineer,-,-
+1648,Santhosh Hegde,35,1473,Male,0,1,Daily Wage Worker,-,-
+1649,Bhavya Salian,45,1474,Female,0,1,Retired Govt Servant,-,-
+1650,Shwetha Kamath,26,1476,Female,0,1,Bank Employee,-,-
+1651,Gagan Kumar,28,1477,Male,0,1,Daily Wage Worker,-,-
+1652,Vikram Kini,19,1478,Male,0,1,Retired Govt Servant,-,-
+1653,Shivakumar Pasha,25,1479,Male,0,1,Nurse,-,-
+1654,Pooja Sharma,23,1479,Female,0,0,Farmer,-,-
+1655,Rekha Gowda,34,1480,Female,0,1,Tailor,-,-
+1656,Swathi Reddy,19,1481,Female,0,1,Daily Wage Worker,-,-
+1657,Vinod Bhat,51,1482,Male,0,1,Homemaker,-,-
+1658,Yash Acharya,23,1483,Male,0,1,Hotel Worker,-,-
+1659,Naveen Pawar,48,1483,Male,0,0,Student,-,-
+1660,Shobha Sait,37,1484,Female,0,1,Businessman,-,-
+1661,Lokesh Rao,56,1484,Male,0,0,Daily Wage Worker,-,-
+1662,Bhagya Kulkarni,55,1484,Female,0,0,Retired Govt Servant,-,-
+1663,Kavitha Bangera,66,1485,Female,0,1,Student,-,-
+1664,Bharath Acharya,53,1486,Male,0,1,Software Engineer,-,-
+1665,Salman Jadhav,70,1487,Male,0,1,Retired Govt Servant,-,-
+1666,Gagan Naik,66,1488,Male,0,1,Student,-,-
+1667,Dinesh Ballal,20,1489,Male,0,1,Student,-,-
+1668,Irfan Bangera,18,1490,Male,0,1,Student,-,-
+1669,Ayesha Kini,60,1492,Female,0,1,Businessman,-,-
+1670,Pooja Kamat,38,1493,Female,0,1,Nurse,-,-
+1671,Sudeep Sequeira,20,1494,Male,0,1,Tailor,-,-
+1672,Satish Bhat,62,1494,Male,0,0,Tailor,-,-
+1673,Vijay Baig,66,1496,Male,0,1,Student,-,-
+1674,Joseph Lobo,47,1497,Male,0,1,Security Guard,-,-
+1675,Chaitra Achar,59,1498,Female,0,1,Bank Employee,-,-
+1676,Abhishek Deshpande,26,1498,Male,0,0,Businessman,-,-
+1677,Chetan Joshi,22,1499,Male,0,1,Auto Driver,-,-
+1678,Shankar Iyengar,40,1500,Male,0,1,Auto Driver,-,-
+1679,Imran DSouza,42,1501,Male,0,1,Retired Govt Servant,-,-
+1680,Salma Adiga,29,1502,Female,0,1,Nurse,-,-
+1681,Dinesh Amin,45,1503,Male,0,1,Retired Govt Servant,-,-
+1682,Mary Nayak,50,1503,Female,0,0,Shop Owner,-,-
+1683,Kavitha Sharma,59,1504,Female,0,1,Nurse,-,-
+1684,Venkatesh Shetty,30,1506,Male,0,1,Software Engineer,-,-
+1685,Sagar Alva,37,1507,Male,0,1,Student,-,-
+1686,Divya Prabhu,55,1508,Female,0,1,Bank Employee,-,-
+1687,Suma Pawar,17,1509,Female,0,1,Nurse,-,-
+1688,Bharath Lobo,69,1509,Male,0,0,Daily Wage Worker,-,-
+1689,Syed Kumar,46,1510,Male,0,1,Security Guard,-,-
+1690,Kavitha Swamy,47,1511,Female,0,1,Hotel Worker,-,-
+1691,Nagaraj Reddy,72,1512,Male,0,1,Bank Employee,-,-
+1692,Shivakumar Madiwal,21,1512,Male,0,0,Tailor,-,-
+1693,Parvathi Shinde,53,1513,Female,0,1,Student,-,-
+1694,Thomas Rao,35,1516,Male,0,1,Software Engineer,-,-
+1695,Imran Sequeira,43,1517,Male,0,1,Farmer,-,-
+1696,Radha Pinto,61,1518,Female,0,1,Farmer,-,-
+1697,Sunil Kamath,60,1518,Male,0,0,Daily Wage Worker,-,-
+1698,Rekha Nayak,30,1519,Female,0,1,Daily Wage Worker,-,-
+1699,Srinivas Poojary,25,1520,Male,0,1,Student,-,-
+1700,Syed Sheikh,55,1521,Male,0,1,Software Engineer,-,-
+1701,Asha Kattimani,37,1522,Female,0,1,Software Engineer,-,-
+1702,Mary Shinde,25,1523,Female,0,1,Nurse,-,-
+1703,Gowri Khan,36,1523,Female,0,0,Student,-,-
+1704,Parvathi Ballal,68,1525,Female,0,1,Nurse,-,-
+1705,Bhagya Adiga,67,1526,Female,0,1,Shop Owner,-,-
+1706,Ambika Sharma,57,1527,Female,0,1,Auto Driver,-,-
+1707,Dinesh Kumar,21,1528,Male,0,1,Farmer,-,-
+1708,Thomas Hiremath,68,1528,Male,0,0,Businessman,-,-
+1709,Usha Kumar,26,1529,Female,0,1,Auto Driver,-,-
+1710,Vidya Shanbhag,34,1530,Female,0,1,Shop Owner,-,-
+1711,Shilpa Gowda,49,1531,Female,0,1,Farmer,-,-
+1712,Parvathi Khan,70,1532,Female,0,1,Hotel Worker,-,-
+1713,Divya Rao,26,1533,Female,0,1,Hotel Worker,-,-
+1714,Vanitha Sequeira,53,1533,Female,0,0,Retired Govt Servant,-,-
+1715,Vijay DSouza,18,1534,Male,0,1,Homemaker,-,-
+1716,Suresh Kulkarni,18,1535,Male,0,1,Software Engineer,-,-
+1717,Lokesh Moily,35,1535,Male,0,0,Homemaker,-,-
+1718,Rekha Pai,69,1536,Female,0,1,Nurse,-,-
+1719,Saraswathi Fernandes,54,1537,Female,0,1,Software Engineer,-,-
+1720,Bharath Khan,62,1538,Male,0,1,Businessman,-,-
+1721,Wilson Sequeira,23,1539,Male,0,1,Software Engineer,-,-
+1722,Santhosh Puthran,70,1539,Male,0,0,Student,-,-
+1723,Abhishek Kulkarni,16,1540,Male,0,1,Auto Driver,-,-
+1724,Sandhya Nayak,71,1541,Female,0,1,Nurse,-,-
+1725,Ayesha Kini,66,1542,Female,0,1,Software Engineer,-,-
+1726,Sunitha Pasha,49,1545,Female,0,1,Farmer,-,-
+1727,Swathi Iyengar,32,1545,Female,0,0,Shop Owner,-,-
+1728,Puneeth Iyer,70,1546,Male,0,1,Shop Owner,-,-
+1729,Ramya Pinto,28,1547,Female,0,1,Teacher,-,-
+1730,Mahesh Pasha,69,1548,Male,0,1,Businessman,-,-
+1731,Siddaraju Shanbhag,18,1549,Male,0,1,Security Guard,-,-
+1732,Girish Pasha,35,1550,Male,0,1,Farmer,-,-
+1733,Bhagya Pai,65,1551,Female,0,1,Bank Employee,-,-
+1734,Rekha Swamy,25,1552,Female,0,1,Businessman,-,-
+1735,Manjunath Naik,72,1553,Male,0,1,Bank Employee,-,-
+1736,Vijay Sheikh,42,1553,Male,0,0,Bank Employee,-,-
+1737,Peter Iyer,17,1553,Male,0,0,Hotel Worker,-,-
+1738,Gopal Prabhu,67,1554,Male,0,1,Businessman,-,-
+1739,Irfan Udupa,62,1556,Male,0,1,Shop Owner,-,-
+1740,Sagar Pai,20,1557,Male,0,1,Nurse,-,-
+1741,Murali Achar,47,1558,Male,0,1,Teacher,-,-
+1742,Pallavi Sharma,32,1559,Female,0,1,Student,-,-
+1743,Suresh Suvarna,23,1561,Male,0,1,Nurse,-,-
+1744,Yashoda Ballal,46,1562,Female,0,1,Student,-,-
+1745,Irfan Khan,57,1563,Male,0,1,Homemaker,-,-
+1746,Shobha Murthy,25,1565,Female,0,1,Security Guard,-,-
+1747,Raghavendra Amin,29,1565,Male,0,0,Hotel Worker,-,-
+1748,Srinivas Jadhav,17,1565,Male,0,0,Nurse,-,-
+1749,Salman Kotian,25,1566,Male,0,1,Bank Employee,-,-
+1750,Gagan Poojary,69,1568,Male,0,1,Hotel Worker,-,-
+1751,Shivakumar Moily,27,1569,Male,0,1,Bank Employee,-,-
+1752,Shivakumar Baig,36,1569,Male,0,0,Businessman,-,-
+1753,Thomas Salian,69,1570,Male,0,1,Daily Wage Worker,-,-
+1754,Praveen Khan,34,1571,Male,0,1,Nurse,-,-
+1755,Riyaz Iyengar,50,1571,Male,0,0,Software Engineer,-,-
+1756,Shankar Iyer,51,1572,Male,0,1,Teacher,-,-
+1757,Srinivas Gowda,42,1573,Male,0,1,Retired Govt Servant,-,-
+1758,Murali Shanbhag,19,1573,Male,0,0,Bank Employee,-,-
+1759,Kiran Iyengar,65,1574,Male,0,1,Farmer,-,-
+1760,Anil Patil,43,1574,Male,0,0,Bank Employee,-,-
+1761,Manjula Ballal,36,1576,Female,0,1,Daily Wage Worker,-,-
+1762,Salma Baig,59,1577,Female,0,1,Shop Owner,-,-
+1763,Uma Pawar,26,1578,Female,0,1,Bank Employee,-,-
+1764,Nithin Achar,27,1579,Male,0,1,Student,-,-
+1765,Rakesh Moily,39,1580,Male,0,1,Student,-,-
+1766,Harish Achar,29,1580,Male,0,0,Homemaker,-,-
+1767,Charan Sequeira,71,1581,Male,0,1,Nurse,-,-
+1768,Radha Madiwal,52,1582,Female,0,1,Businessman,-,-
+1769,Shilpa Sait,46,1583,Female,0,1,Security Guard,-,-
+1770,Mary Amin,69,1583,Female,0,0,Security Guard,-,-
+1771,Karthik Jadhav,54,1586,Male,0,1,Tailor,-,-
+1772,Sagar Naik,70,1587,Male,0,1,Teacher,-,-
+1773,Srinivas Suvarna,54,1588,Male,0,1,Auto Driver,-,-
+1774,Dinesh Suvarna,72,1589,Male,0,1,Homemaker,-,-
+1775,Uma Prabhu,36,1590,Female,0,1,Student,-,-
+1776,Ganesh Udupa,53,1591,Male,0,1,Security Guard,-,-
+1777,Shruthi Reddy,32,1592,Female,0,1,Hotel Worker,-,-
+1778,Deepa Salian,33,1593,Female,0,1,Student,-,-
+1779,Shruthi Devadiga,62,1593,Female,0,0,Hotel Worker,-,-
+1780,Raghavendra Nayak,31,1594,Male,0,1,Software Engineer,-,-
+1781,Mustafa Hegde,49,1595,Male,0,1,Software Engineer,-,-
+1782,Radha Kini,18,1596,Female,0,1,Nurse,-,-
+1783,Deepa Pai,19,1597,Female,0,1,Tailor,-,-
+1784,Dinesh Naik,71,1598,Male,0,1,Farmer,-,-
+1785,Anand Salian,49,1598,Male,0,0,Farmer,-,-
+1786,Mohan Poojary,55,1599,Male,0,1,Teacher,-,-
+1787,Ambika Prabhu,33,1600,Female,0,1,Shop Owner,-,-
+1788,Usha Pai,23,1602,Female,0,1,Security Guard,-,-
+1789,Meghana Moily,67,1604,Female,0,1,Hotel Worker,-,-
+1790,Hanumantha Kumar,61,1605,Male,0,1,Shop Owner,-,-
+1791,Madhu Fernandes,40,1608,Male,0,1,Businessman,-,-
+1792,Gowri Prabhu,31,1609,Female,0,1,Farmer,-,-
+1793,Ramya Kulkarni,72,1610,Female,0,1,Businessman,-,-
+1794,Meghana Hegde,53,1611,Female,0,1,Farmer,-,-
+1795,Prakash Prabhu,57,1612,Male,0,1,Auto Driver,-,-
+1796,Hema Sait,56,1613,Female,0,1,Security Guard,-,-
+1797,Navya Sharma,28,1614,Female,0,1,Auto Driver,-,-
+1798,Vikram Prabhu,57,1615,Male,0,1,Student,-,-
+1799,Ravi Alva,65,1616,Male,0,1,Auto Driver,-,-
+1800,Syed Shetty,29,1617,Male,0,1,Teacher,-,-
+1801,Abdul Fernandes,49,1618,Male,0,1,Farmer,-,-
+1802,Naveen Kamath,46,1618,Male,0,0,Shop Owner,-,-
+1803,Lakshmi Iyer,23,1618,Female,0,0,Homemaker,-,-
+1804,Ramya Ballal,23,1619,Female,0,1,Software Engineer,-,-
+1805,Shilpa Bhat,20,1620,Female,0,1,Businessman,-,-
+1806,Rekha Shanbhag,17,1622,Female,0,1,Businessman,-,-
+1807,Pooja Pasha,27,1623,Female,0,1,Homemaker,-,-
+1808,Ganesh Kulkarni,30,1624,Male,0,1,Businessman,-,-
+1809,Parvathi Bangera,71,1625,Female,0,1,Teacher,-,-
+1810,Hanumantha Sequeira,21,1626,Male,0,1,Businessman,-,-
+1811,Hema Patil,19,1627,Female,0,1,Daily Wage Worker,-,-
+1812,Umesh Bangera,67,1627,Male,0,0,Bank Employee,-,-
+1813,Shilpa Jadhav,63,1628,Female,0,1,Shop Owner,-,-
+1814,Sandhya Madiwal,40,1629,Female,0,1,Nurse,-,-
+1815,Yashoda Baig,62,1630,Female,0,1,Homemaker,-,-
+1816,Abhishek Bhat,70,1631,Male,0,1,Auto Driver,-,-
+1817,Sunil Bangera,62,1631,Male,0,0,Teacher,-,-
+1818,Sagar Amin,21,1631,Male,0,0,Security Guard,-,-
+1819,Salma Lobo,41,1632,Female,0,1,Auto Driver,-,-
+1820,Prakash DSouza,67,1634,Male,0,1,Bank Employee,-,-
+1821,Anil Udupa,48,1635,Male,0,1,Software Engineer,-,-
+1822,Sandhya Jadhav,46,1636,Female,0,1,Hotel Worker,-,-
+1823,Lokesh Kamat,51,1636,Male,0,0,Farmer,-,-
+1824,Ganesh Pai,54,1637,Male,0,1,Farmer,-,-
+1825,Dinesh Sait,68,1638,Male,0,1,Tailor,-,-
+1826,Ramya Shinde,24,1639,Female,0,1,Retired Govt Servant,-,-
+1827,Murali Shanbhag,40,1642,Male,0,1,Nurse,-,-
+1828,Sandhya Pai,72,1643,Female,0,1,Security Guard,-,-
+1829,Uma Kini,35,1644,Female,0,1,Retired Govt Servant,-,-
+1830,Usha Amin,59,1645,Female,0,1,Software Engineer,-,-
+1831,Anand Devadiga,17,1646,Male,0,1,Farmer,-,-
+1832,Sharada Biradar,63,1647,Female,0,1,Bank Employee,-,-
+1833,Gopal Swamy,24,1648,Male,0,1,Homemaker,-,-
+1834,Lokesh Kamath,28,1649,Male,0,1,Farmer,-,-
+1835,Swathi Sheikh,44,1649,Female,0,0,Security Guard,-,-
+1836,Latha Pai,39,1651,Female,0,1,Bank Employee,-,-
+1837,Nagaraj Pai,28,1651,Male,0,0,Retired Govt Servant,-,-
+1838,Anand Rao,41,1652,Male,0,1,Software Engineer,-,-
+1839,Bhavya Angadi,26,1653,Female,0,1,Nurse,-,-
+1840,Divya Khan,72,1654,Female,0,1,Businessman,-,-
+1841,Darshan Pinto,27,1655,Male,0,1,Daily Wage Worker,-,-
+1842,Pavan Hiremath,51,1655,Male,0,0,Tailor,-,-
+1843,Yashoda Rao,72,1655,Female,0,0,Student,-,-
+1844,Darshan Kamat,50,1656,Male,0,1,Auto Driver,-,-
+1845,Gagan Pai,53,1656,Male,0,0,Bank Employee,-,-
+1846,Venkatesh Moily,58,1658,Male,0,1,Teacher,-,-
+1847,Priya Shinde,72,1659,Female,0,1,Businessman,-,-
+1848,Yash Lobo,45,1660,Male,0,1,Shop Owner,-,-
+1849,Gagan Kattimani,67,1661,Male,0,1,Daily Wage Worker,-,-
+1850,Abdul Shetty,31,1661,Male,0,0,Auto Driver,-,-
+1851,Hema Sheikh,62,1662,Female,0,1,Shop Owner,-,-
+1852,Vidya Rao,20,1663,Female,0,1,Software Engineer,-,-
+1853,Ayesha Acharya,41,1663,Female,0,0,Nurse,-,-
+1854,Shobha Joshi,38,1663,Female,0,0,Daily Wage Worker,-,-
+1855,Usha Devadiga,46,1664,Female,0,1,Software Engineer,-,-
+1856,Vidya Kamat,62,1665,Female,0,1,Shop Owner,-,-
+1857,Shruthi Achar,39,1666,Female,0,1,Homemaker,-,-
+1858,Farhan Lobo,24,1668,Male,0,1,Farmer,-,-
+1859,Bharath Sharma,16,1669,Male,0,1,Hotel Worker,-,-
+1860,Geetha Deshpande,71,1670,Female,0,1,Security Guard,-,-
+1861,Srinivas Gowda,69,1671,Male,0,1,Businessman,-,-
+1862,Divya Kotian,38,1672,Female,0,1,Tailor,-,-
+1863,Geetha Devadiga,20,1672,Female,0,0,Businessman,-,-
+1864,Shivakumar Iyer,61,1673,Male,0,1,Tailor,-,-
+1865,Deepa Biradar,23,1674,Female,0,1,Software Engineer,-,-
+1866,Chetan Pai,25,1674,Male,0,0,Bank Employee,-,-
+1867,Kavitha Rao,71,1678,Female,0,1,Teacher,-,-
+1868,Ayesha Amin,34,1679,Female,0,1,Teacher,-,-
+1869,Shwetha Pai,59,1680,Female,0,1,Security Guard,-,-
+1870,Mohan Baig,52,1681,Male,0,1,Nurse,-,-
+1871,Yashoda Baig,57,1682,Female,0,1,Farmer,-,-
+1872,Mahesh Lobo,50,1683,Male,0,1,Auto Driver,-,-
+1873,Salma Sait,20,1684,Female,0,1,Auto Driver,-,-
+1874,Nandini Amin,66,1685,Female,0,1,Businessman,-,-
+1875,Gowri Chavan,36,1685,Female,0,0,Shop Owner,-,-
+1876,Mustafa Iyer,22,1686,Male,0,1,Bank Employee,-,-
+1877,Dinesh Biradar,16,1687,Male,0,1,Businessman,-,-
+1878,Imran Adiga,68,1688,Male,0,1,Nurse,-,-
+1879,Savitha Kumar,50,1689,Female,0,1,Nurse,-,-
+1880,Hema Hegde,28,1690,Female,0,1,Hotel Worker,-,-
+1881,Krishna Bangera,67,1691,Male,0,1,Security Guard,-,-
+1882,Imran Poojary,18,1692,Male,0,1,Hotel Worker,-,-
+1883,Ganesh DSouza,19,1692,Male,0,0,Software Engineer,-,-
+1884,Rashmi Bhat,56,1692,Female,0,0,Daily Wage Worker,-,-
+1885,Nisha Madiwal,65,1693,Female,0,1,Retired Govt Servant,-,-
+1886,Ramesh Sharma,69,1693,Male,0,0,Student,-,-
+1887,Deepa Hegde,23,1694,Female,0,1,Homemaker,-,-
+1888,Vinod Kulkarni,21,1695,Male,0,1,Nurse,-,-
+1889,Swathi Pawar,63,1696,Female,0,1,Hotel Worker,-,-
+1890,Riyaz Sequeira,59,1696,Male,0,0,Tailor,-,-
+1891,Kiran Pai,53,1697,Male,0,1,Shop Owner,-,-
+1892,Mustafa Kamat,22,1698,Male,0,1,Daily Wage Worker,-,-
+1893,Kavitha Ballal,50,1699,Female,0,1,Tailor,-,-
+1894,Riyaz Shetty,22,1701,Male,0,1,Software Engineer,-,-
+1895,Kiran Lobo,44,1702,Male,0,1,Software Engineer,-,-
+1896,Jagadish Pawar,37,1703,Male,0,1,Homemaker,-,-
+1897,Manjunath Iyengar,56,1703,Male,0,0,Bank Employee,-,-
+1898,Lokesh Achar,53,1704,Male,0,1,Daily Wage Worker,-,-
+1899,Nandini Kattimani,58,1706,Female,0,1,Daily Wage Worker,-,-
+1900,Sudeep Alva,32,1706,Male,0,0,Security Guard,-,-
+1901,Ramesh Shinde,33,1706,Male,0,0,Businessman,-,-
+1902,Gowri Chavan,56,1707,Female,0,1,Daily Wage Worker,-,-
+1903,Anitha Joshi,17,1708,Female,0,1,Daily Wage Worker,-,-
+1904,Chaitra Prabhu,46,1709,Female,0,1,Teacher,-,-
+1905,Hema Swamy,62,1709,Female,0,0,Businessman,-,-
+1906,Sharada Kini,18,1709,Female,0,0,Hotel Worker,-,-
+1907,Nithin Sheikh,27,1710,Male,0,1,Hotel Worker,-,-
+1908,Irfan Kamat,39,1711,Male,0,1,Farmer,-,-
+1909,Abdul Bangera,51,1713,Male,0,1,Auto Driver,-,-
+1910,Ganesh Shinde,59,1713,Male,0,0,Student,-,-
+1911,Wilson Kumar,38,1714,Male,0,1,Retired Govt Servant,-,-
+1912,Salman Kamath,26,1715,Male,0,1,Daily Wage Worker,-,-
+1913,Nandini Biradar,35,1716,Female,0,1,Daily Wage Worker,-,-
+1914,Harish Joshi,57,1718,Male,0,1,Daily Wage Worker,-,-
+1915,Shankar Kotian,53,1719,Male,0,1,Security Guard,-,-
+1916,Manjunath Poojary,38,1720,Male,0,1,Tailor,-,-
+1917,Shilpa Suvarna,50,1721,Female,0,1,Teacher,-,-
+1918,Riyaz Gowda,72,1722,Male,0,1,Student,-,-
+1919,Sunil Kattimani,49,1722,Male,0,0,Auto Driver,-,-
+1920,Saraswathi DSouza,46,1723,Female,0,1,Bank Employee,-,-
+1921,Anitha Alva,38,1723,Female,0,0,Software Engineer,-,-
+1922,Nandini Kumar,31,1724,Female,0,1,Farmer,-,-
+1923,Mahesh Jadhav,38,1725,Male,0,1,Daily Wage Worker,-,-
+1924,Chandru Pawar,72,1725,Male,0,0,Student,-,-
+1925,Shivakumar Madiwal,71,1725,Male,0,0,Shop Owner,-,-
+1926,Spandana Deshpande,16,1726,Female,0,1,Hotel Worker,-,-
+1927,Krishna Alva,62,1726,Male,0,0,Homemaker,-,-
+1928,Asha Lobo,60,1727,Female,0,1,Auto Driver,-,-
+1929,Ramya Alva,53,1728,Female,0,1,Bank Employee,-,-
+1930,Vikram Pasha,24,1729,Male,0,1,Shop Owner,-,-
+1931,Umesh Naik,24,1730,Male,0,1,Retired Govt Servant,-,-
+1932,Venkatesh Lobo,55,1731,Male,0,1,Hotel Worker,-,-
+1933,Nithin Gowda,44,1732,Male,0,1,Bank Employee,-,-
+1934,Santhosh Kulkarni,60,1733,Male,0,1,Student,-,-
+1935,Jagadish Deshpande,54,1734,Male,0,1,Security Guard,-,-
+1936,Sandhya Kamath,16,1735,Female,0,1,Businessman,-,-
+1937,Pavan Joshi,34,1736,Male,0,1,Teacher,-,-
+1938,Asha Prabhu,19,1736,Female,0,0,Farmer,-,-
+1939,Raghavendra Shinde,24,1737,Male,0,1,Hotel Worker,-,-
+1940,Ramesh Bangera,33,1737,Male,0,0,Businessman,-,-
+1941,Santhosh Khan,59,1738,Male,0,1,Nurse,-,-
+1942,Arun Amin,42,1739,Male,0,1,Farmer,-,-
+1943,Gopal Alva,61,1741,Male,0,1,Teacher,-,-
+1944,Ramya Hiremath,22,1742,Female,0,1,Daily Wage Worker,-,-
+1945,Farhan Acharya,45,1743,Male,0,1,Student,-,-
+1946,Lakshmi Jadhav,45,1744,Female,0,1,Retired Govt Servant,-,-
+1947,Murali Poojary,45,1744,Male,0,0,Student,-,-
+1948,Darshan Iyengar,27,1744,Male,0,0,Nurse,-,-
+1949,Kavitha Adiga,40,1746,Female,0,1,Nurse,-,-
+1950,Parvathi Reddy,41,1747,Female,0,1,Homemaker,-,-
+1951,Dinesh DSouza,58,1748,Male,0,1,Auto Driver,-,-
+1952,Venkatesh Pai,67,1748,Male,0,0,Tailor,-,-
+1953,Abhishek Devadiga,56,1748,Male,0,0,Daily Wage Worker,-,-
+1954,Shobha Sequeira,53,1749,Female,0,1,Tailor,-,-
+1955,Kavitha Biradar,18,1750,Female,0,1,Farmer,-,-
+1956,Priya Kamath,41,1751,Female,0,1,Security Guard,-,-
+1957,Suresh Patil,59,1751,Male,0,0,Software Engineer,-,-
+1958,Raghavendra Angadi,23,1752,Male,0,1,Hotel Worker,-,-
+1959,Farhan Kini,28,1753,Male,0,1,Bank Employee,-,-
+1960,Shivakumar Rao,35,1754,Male,0,1,Bank Employee,-,-
+1961,Shwetha Ballal,19,1755,Female,0,1,Security Guard,-,-
+1962,Ravi Shinde,57,1756,Male,0,1,Bank Employee,-,-
+1963,Usha Amin,18,1757,Female,0,1,Homemaker,-,-
+1964,Anil Alva,29,1758,Male,0,1,Teacher,-,-
+1965,Darshan Patil,46,1759,Male,0,1,Teacher,-,-
+1966,Thomas Hiremath,39,1760,Male,0,1,Teacher,-,-
+1967,Rajesh Fernandes,21,1760,Male,0,0,Businessman,-,-
+1968,Mary Gowda,16,1761,Female,0,1,Homemaker,-,-
+1969,Karthik Kulkarni,61,1762,Male,0,1,Retired Govt Servant,-,-
+1970,Gagan Madiwal,43,1763,Male,0,1,Auto Driver,-,-
+1971,Farhan Angadi,28,1764,Male,0,1,Farmer,-,-
+1972,Chandru Rai,65,1765,Male,0,1,Auto Driver,-,-
+1973,Praveen Shanbhag,35,1766,Male,0,1,Security Guard,-,-
+1974,Meghana Poojary,17,1767,Female,0,1,Shop Owner,-,-
+1975,Naveen DSouza,39,1767,Male,0,0,Teacher,-,-
+1976,Divya Iyer,55,1769,Female,0,1,Nurse,-,-
+1977,Nagaraj Sequeira,46,1769,Male,0,0,Security Guard,-,-
+1978,Jagadish Hegde,23,1770,Male,0,1,Student,-,-
+1979,Savitha Suvarna,31,1771,Female,0,1,Auto Driver,-,-
+1980,Basavaraj Hiremath,50,1771,Male,0,0,Daily Wage Worker,-,-
+1981,Hema Jadhav,67,1772,Female,0,1,Businessman,-,-
+1982,Murali Moily,34,1773,Male,0,1,Shop Owner,-,-
+1983,Lokesh Pinto,28,1774,Male,0,1,Farmer,-,-
+1984,Mohan Jadhav,49,1774,Male,0,0,Software Engineer,-,-
+1985,Naveen Rao,22,1774,Male,0,0,Hotel Worker,-,-
+1986,Seetha Devadiga,67,1775,Female,0,1,Tailor,-,-
+1987,Rajesh Iyengar,72,1777,Male,0,1,Auto Driver,-,-
+1988,Yashoda Patil,22,1778,Female,0,1,Software Engineer,-,-
+1989,Yash Khan,41,1779,Male,0,1,Businessman,-,-
+1990,Puneeth Nayak,36,1780,Male,0,1,Software Engineer,-,-
+1991,Spandana Chavan,30,1781,Female,0,1,Bank Employee,-,-
+1992,Peter Shinde,52,1782,Male,0,1,Auto Driver,-,-
+1993,Shobha Hegde,22,1783,Female,0,1,Software Engineer,-,-
+1994,Darshan Shinde,71,1785,Male,0,1,Security Guard,-,-
+1995,Raghavendra Bangera,56,1786,Male,0,1,Homemaker,-,-
+1996,Jagadish Puthran,41,1787,Male,0,1,Daily Wage Worker,-,-
+1997,Radha Shanbhag,30,1787,Female,0,0,Tailor,-,-
+1998,Krishna Rao,20,1788,Male,0,1,Security Guard,-,-
+1999,Deepa Swamy,35,1789,Female,0,1,Nurse,-,-
+2000,Usha Chavan,58,1790,Female,0,1,Daily Wage Worker,-,-
+2001,Abdul Adiga,60,1791,Male,0,1,Auto Driver,-,-
+2002,Nandini Iyengar,44,1791,Female,0,0,Software Engineer,-,-
+2003,Venkatesh Madiwal,25,1792,Male,0,1,Tailor,-,-
+2004,Savitha Sharma,56,1793,Female,0,1,Nurse,-,-
+2005,Nagaraj Alva,29,1796,Male,0,1,Retired Govt Servant,-,-
+2006,Suma Alva,49,1797,Female,0,1,Farmer,-,-
+2007,Thomas Joshi,18,1798,Male,0,1,Tailor,-,-
+2008,Ramesh Prabhu,70,1800,Male,0,1,Teacher,-,-
+2009,Salman Kamath,66,1801,Male,0,1,Tailor,-,-
+2010,Charan Sait,25,1802,Male,0,1,Shop Owner,-,-
+2011,Sunil Kotian,19,1803,Male,0,1,Hotel Worker,-,-
+2012,Suresh Alva,23,1804,Male,0,1,Homemaker,-,-
+2013,Sandhya Pinto,71,1805,Female,0,1,Businessman,-,-
+2014,Anand Sharma,67,1806,Male,0,1,Shop Owner,-,-
+2015,Geetha Kattimani,44,1807,Female,0,1,Security Guard,-,-
+2016,Mary Bangera,60,1808,Female,0,1,Teacher,-,-
+2017,Rekha Shetty,52,1809,Female,0,1,Retired Govt Servant,-,-
+2018,Salma Udupa,19,1809,Female,0,0,Software Engineer,-,-
+2019,Venkatesh Joshi,66,1810,Male,0,1,Tailor,-,-
+2020,Kavitha Baig,69,1811,Female,0,1,Homemaker,-,-
+2021,Ajay Chavan,44,1812,Male,0,1,Homemaker,-,-
+2022,Mohan Kattimani,50,1813,Male,0,1,Retired Govt Servant,-,-
+2023,Navya Acharya,50,1814,Female,0,1,Software Engineer,-,-
+2024,Sanjay Joshi,23,1816,Male,0,1,Auto Driver,-,-
+2025,Farhan Joshi,19,1818,Male,0,1,Retired Govt Servant,-,-
+2026,Rashmi Gowda,54,1819,Female,0,1,Hotel Worker,-,-
+2027,Jagadish Kotian,70,1820,Male,0,1,Nurse,-,-
+2028,Bhavya Moily,62,1821,Female,0,1,Hotel Worker,-,-
+2029,Ajay Joshi,24,1821,Male,0,0,Retired Govt Servant,-,-
+2030,Parvathi Pasha,46,1822,Female,0,1,Teacher,-,-
+2031,Geetha Alva,26,1823,Female,0,1,Student,-,-
+2032,Shankar Sharma,40,1827,Male,0,1,Hotel Worker,-,-
+2033,Naveen Suvarna,63,1828,Male,0,1,Student,-,-
+2034,Meghana Reddy,65,1829,Female,0,1,Businessman,-,-
+2035,Latha Moily,17,1830,Female,0,1,Farmer,-,-
+2036,Imran Poojary,19,1830,Male,0,0,Shop Owner,-,-
+2037,Fathima Kotian,42,1831,Female,0,1,Businessman,-,-
+2038,Rekha Swamy,21,1832,Female,0,1,Hotel Worker,-,-
+2039,Sagar Salian,43,1834,Male,0,1,Hotel Worker,-,-
+2040,Mary Fernandes,35,1834,Female,0,0,Homemaker,-,-
+2041,Kiran Shinde,48,1834,Male,0,0,Daily Wage Worker,-,-
+2042,Peter Swamy,42,1835,Male,0,1,Teacher,-,-
+2043,Nagaraj Madiwal,27,1836,Male,0,1,Bank Employee,-,-
+2044,Shilpa Ballal,59,1836,Female,0,0,Teacher,-,-
+2045,Meghana Angadi,29,1837,Female,0,1,Farmer,-,-
+2046,Charan Ballal,25,1837,Male,0,0,Student,-,-
+2047,Vidya Kumar,29,1838,Female,0,1,Shop Owner,-,-
+2048,Savitha Biradar,68,1839,Female,0,1,Software Engineer,-,-
+2049,Gopal Bangera,72,1841,Male,0,1,Teacher,-,-
+2050,Sanjay Udupa,64,1842,Male,0,1,Homemaker,-,-
+2051,Ramya Patil,41,1843,Female,0,1,Teacher,-,-
+2052,Ajay Kattimani,22,1844,Male,0,1,Bank Employee,-,-
+2053,Mary Salian,53,1846,Female,0,1,Retired Govt Servant,-,-
+2054,Hanumantha Ballal,62,1848,Male,0,1,Hotel Worker,-,-
+2055,Fathima Reddy,31,1849,Female,0,1,Shop Owner,-,-
+2056,Rekha Shanbhag,44,1851,Female,0,1,Businessman,-,-
+2057,Rekha Poojary,61,1852,Female,0,1,Homemaker,-,-
+2058,Hema Jadhav,16,1853,Female,0,1,Student,-,-
+2059,Uma Adiga,61,1854,Female,0,1,Bank Employee,-,-
+2060,Prakash Hegde,16,1855,Male,0,1,Hotel Worker,-,-
+2061,Saraswathi Pinto,20,1855,Female,0,0,Homemaker,-,-
+2062,Rohan Shinde,69,1857,Male,0,1,Tailor,-,-
+2063,Rajesh Ballal,30,1858,Male,0,1,Daily Wage Worker,-,-
+2064,Ayesha Lobo,27,1859,Female,0,1,Software Engineer,-,-
+2065,Ramya Patil,28,1860,Female,0,1,Auto Driver,-,-
+2066,Gopal Adiga,60,1862,Male,0,1,Student,-,-
+2067,Harish Pasha,61,1864,Male,0,1,Daily Wage Worker,-,-
+2068,Ramesh Pasha,58,1864,Male,0,0,Bank Employee,-,-
+2069,Lakshmi Angadi,36,1865,Female,0,1,Farmer,-,-
+2070,Manjunath Gowda,20,1866,Male,0,1,Homemaker,-,-
+2071,Mohan Madiwal,49,1867,Male,0,1,Tailor,-,-
+2072,Salma Shetty,27,1867,Female,0,0,Tailor,-,-
+2073,Vijay Khan,65,1868,Male,0,1,Student,-,-
+2074,Chaitra Ballal,33,1869,Female,0,1,Teacher,-,-
+2075,Meghana Prabhu,68,1870,Female,0,1,Shop Owner,-,-
+2076,Srinivas Sharma,57,1871,Male,0,1,Bank Employee,-,-
+2077,Nisha Iyengar,45,1872,Female,0,1,Homemaker,-,-
+2078,Vidya Chavan,36,1874,Female,0,1,Security Guard,-,-
+2079,Kiran Madiwal,72,1876,Male,0,1,Homemaker,-,-
+2080,Murali Murthy,61,1876,Male,0,0,Shop Owner,-,-
+2081,Yashoda Sequeira,54,1877,Female,0,1,Daily Wage Worker,-,-
+2082,Praveen Rao,19,1878,Male,0,1,Auto Driver,-,-
+2083,Srinivas Iyer,39,1879,Male,0,1,Tailor,-,-
+2084,Hanumantha Fernandes,27,1881,Male,0,1,Tailor,-,-
+2085,Shilpa Reddy,61,1882,Female,0,1,Bank Employee,-,-
+2086,Gagan Pawar,20,1883,Male,0,1,Student,-,-
+2087,Shivakumar Baig,70,1884,Male,0,1,Farmer,-,-
+2088,Krishna Kotian,66,1884,Male,0,0,Auto Driver,-,-
+2089,Spandana Madiwal,29,1885,Female,0,1,Homemaker,-,-
+2090,Darshan Hegde,67,1886,Male,0,1,Student,-,-
+2091,Srinivas Patil,51,1888,Male,0,1,Auto Driver,-,-
+2092,Charan Shinde,35,1889,Male,0,1,Homemaker,-,-
+2093,Manjunath Amin,71,1889,Male,0,0,Security Guard,-,-
+2094,Kavitha Karanth,60,1890,Female,0,1,Software Engineer,-,-
+2095,Shivakumar Iyer,41,1890,Male,0,0,Daily Wage Worker,-,-
+2096,Murali Kamath,31,1891,Male,0,1,Tailor,-,-
+2097,Hanumantha Kamath,66,1892,Male,0,1,Retired Govt Servant,-,-
+2098,Wilson Achar,40,1893,Male,0,1,Retired Govt Servant,-,-
+2099,Mahesh Pai,24,1893,Male,0,0,Businessman,-,-
+2100,Radha Murthy,34,1893,Female,0,0,Software Engineer,-,-
+2101,Yashoda Udupa,21,1894,Female,0,1,Student,-,-
+2102,Kiran Alva,57,1895,Male,0,1,Student,-,-
+2103,Vijay Rao,58,1896,Male,0,1,Auto Driver,-,-
+2104,Gopal Sequeira,32,1897,Male,0,1,Homemaker,-,-
+2105,Anitha Suvarna,64,1897,Female,0,0,Hotel Worker,-,-
+2106,Bhavya Bangera,49,1897,Female,0,0,Teacher,-,-
+2107,Harish Moily,45,1898,Male,0,1,Tailor,-,-
+2108,Murali Sait,33,1899,Male,0,1,Student,-,-
+2109,Dinesh Pawar,54,1899,Male,0,0,Student,-,-
+2110,Vidya Prabhu,66,1900,Female,0,1,Retired Govt Servant,-,-
+2111,Farhan Lobo,23,1901,Male,0,1,Hotel Worker,-,-
+2112,Madhu Achar,58,1902,Male,0,1,Hotel Worker,-,-
+2113,Irfan Prabhu,55,1902,Male,0,0,Daily Wage Worker,-,-
+2114,Vanitha Sheikh,17,1903,Female,0,1,Security Guard,-,-
+2115,Dinesh Ballal,19,1905,Male,0,1,Software Engineer,-,-
+2116,Riyaz Rai,17,1908,Male,0,1,Hotel Worker,-,-
+2117,Bhavya Prabhu,29,1909,Female,0,1,Shop Owner,-,-
+2118,Rekha Biradar,23,1910,Female,0,1,Retired Govt Servant,-,-
+2119,Fathima Deshpande,24,1910,Female,0,0,Tailor,-,-
+2120,Saraswathi Lobo,26,1911,Female,0,1,Nurse,-,-
+2121,Ramya Baig,19,1912,Female,0,1,Daily Wage Worker,-,-
+2122,Nagaraj Reddy,30,1913,Male,0,1,Daily Wage Worker,-,-
+2123,Ambika Bhat,49,1914,Female,0,1,Hotel Worker,-,-
+2124,Ayesha Joshi,34,1915,Female,0,1,Nurse,-,-
+2125,Joseph Kattimani,67,1916,Male,0,1,Retired Govt Servant,-,-
+2126,Ramya Iyengar,43,1918,Female,0,1,Retired Govt Servant,-,-
+2127,Rashmi Gowda,47,1920,Female,0,1,Businessman,-,-
+2128,Syed Karanth,21,1920,Male,0,0,Teacher,-,-
+2129,Raghavendra Murthy,28,1921,Male,0,1,Retired Govt Servant,-,-
+2130,Gagan Acharya,23,1921,Male,0,0,Daily Wage Worker,-,-
+2131,Rekha Shinde,70,1921,Female,0,0,Security Guard,-,-
+2132,Sandhya Udupa,47,1923,Female,0,1,Shop Owner,-,-
+2133,Salman Alva,25,1924,Male,0,1,Software Engineer,-,-
+2134,Nithin Khan,23,1925,Male,0,1,Retired Govt Servant,-,-
+2135,Manjula Poojary,46,1926,Female,0,1,Tailor,-,-
+2136,Girish Swamy,21,1928,Male,0,1,Businessman,-,-
+2137,Raghavendra Moily,44,1929,Male,0,1,Auto Driver,-,-
+2138,Satish Kattimani,30,1930,Male,0,1,Homemaker,-,-
+2139,Puneeth Suvarna,26,1932,Male,0,1,Hotel Worker,-,-
+2140,Harish Rai,34,1935,Male,0,1,Retired Govt Servant,-,-
+2141,Parvathi Prabhu,64,1935,Female,0,0,Shop Owner,-,-
+2142,Gopal Bangera,56,1936,Male,0,1,Businessman,-,-
+2143,Thomas Khan,62,1936,Male,0,0,Homemaker,-,-
+2144,Sagar Kulkarni,39,1936,Male,0,0,Businessman,-,-
+2145,Chetan Udupa,51,1937,Male,0,1,Businessman,-,-
+2146,Uma Bhat,17,1938,Female,0,1,Tailor,-,-
+2147,Joseph Udupa,41,1939,Male,0,1,Hotel Worker,-,-
+2148,Uma Salian,66,1940,Female,0,1,Retired Govt Servant,-,-
+2149,Radha Kulkarni,42,1941,Female,0,1,Security Guard,-,-
+2150,Santhosh Ballal,29,1941,Male,0,0,Homemaker,-,-
+2151,Thomas Sequeira,45,1942,Male,0,1,Teacher,-,-
+2152,Ravi Ballal,20,1943,Male,0,1,Nurse,-,-
+2153,Hema Pasha,17,1944,Female,0,1,Shop Owner,-,-
+2154,Abhishek Poojary,50,1944,Male,0,0,Student,-,-
+2155,Ramesh Lobo,34,1945,Male,0,1,Tailor,-,-
+2156,Lokesh Poojary,63,1946,Male,0,1,Businessman,-,-
+2157,Soumya Achar,34,1947,Female,0,1,Daily Wage Worker,-,-
+2158,Jagadish Kini,42,1947,Male,0,0,Security Guard,-,-
+2159,Vijay Hegde,58,1948,Male,0,1,Teacher,-,-
+2160,Ajay Kamath,27,1949,Male,0,1,Daily Wage Worker,-,-
+2161,Ramya Fernandes,44,1949,Female,0,0,Security Guard,-,-
+2162,Karthik Devadiga,21,1951,Male,0,1,Nurse,-,-
+2163,Yash Hiremath,36,1951,Male,0,0,Security Guard,-,-
+2164,Venkatesh Ballal,42,1952,Male,0,1,Security Guard,-,-
+2165,Sunitha Achar,66,1952,Female,0,0,Shop Owner,-,-
+2166,Suma Pawar,23,1953,Female,0,1,Homemaker,-,-
+2167,Pavan Sheikh,61,1954,Male,0,1,Security Guard,-,-
+2168,Yashoda Shinde,21,1956,Female,0,1,Auto Driver,-,-
+2169,Priya Shinde,22,1957,Female,0,1,Bank Employee,-,-
+2170,Vanitha Iyengar,50,1958,Female,0,1,Software Engineer,-,-
+2171,Shruthi Bhat,70,1958,Female,0,0,Hotel Worker,-,-
+2172,Nithin Jadhav,24,1959,Male,0,1,Bank Employee,-,-
+2173,Arun Naik,69,1960,Male,0,1,Businessman,-,-
+2174,Venkatesh Kumar,36,1960,Male,0,0,Daily Wage Worker,-,-
+2175,Rohan Sequeira,22,1960,Male,0,0,Teacher,-,-
+2176,Shobha Kumar,23,1961,Female,0,1,Nurse,-,-
+2177,Venkatesh Shanbhag,61,1962,Male,0,1,Auto Driver,-,-
+2178,Naveen Iyengar,26,1963,Male,0,1,Farmer,-,-
+2179,Jagadish Ballal,70,1964,Male,0,1,Shop Owner,-,-
+2180,Wilson Nayak,59,1965,Male,0,1,Software Engineer,-,-
+2181,Suma Poojary,40,1965,Female,0,0,Tailor,-,-
+2182,Santhosh Hegde,25,1966,Male,0,1,Homemaker,-,-
+2183,Salma Swamy,37,1967,Female,0,1,Businessman,-,-
+2184,Geetha Pasha,39,1967,Female,0,0,Nurse,-,-
+2185,Seetha Jadhav,45,1968,Female,0,1,Businessman,-,-
+2186,Salma Kulkarni,48,1968,Female,0,0,Retired Govt Servant,-,-
+2187,Santhosh Iyer,35,1969,Male,0,1,Software Engineer,-,-
+2188,Manjula Acharya,42,1969,Female,0,0,Homemaker,-,-
+2189,Ganesh Sequeira,37,1970,Male,0,1,Auto Driver,-,-
+2190,Bhavya Murthy,49,1971,Female,0,1,Farmer,-,-
+2191,Uma Sheikh,20,1976,Female,0,1,Businessman,-,-
+2192,Jagadish Sharma,40,1977,Male,0,1,Bank Employee,-,-
+2193,Saraswathi Sheikh,52,1978,Female,0,1,Homemaker,-,-
+2194,Naveen Pai,35,1979,Male,0,1,Daily Wage Worker,-,-
+2195,Deepa Iyengar,61,1980,Female,0,1,Student,-,-
+2196,Ayesha Shetty,23,1981,Female,0,1,Retired Govt Servant,-,-
+2197,Gopal Achar,38,1982,Male,0,1,Student,-,-
+2198,Latha Hiremath,50,1983,Female,0,1,Auto Driver,-,-
+2199,Darshan Karanth,29,1984,Male,0,1,Bank Employee,-,-
+2200,Manjula Lobo,64,1985,Female,0,1,Businessman,-,-
+2201,Basavaraj Madiwal,61,1986,Male,0,1,Security Guard,-,-
+2202,Shivakumar Hegde,58,1986,Male,0,0,Businessman,-,-
+2203,Parvathi Baig,25,1988,Female,0,1,Retired Govt Servant,-,-
+2204,Imran Iyer,36,1989,Male,0,1,Retired Govt Servant,-,-
+2205,Darshan Jadhav,70,1990,Male,0,1,Security Guard,-,-
+2206,Joseph Iyengar,23,1990,Male,0,0,Student,-,-
+2207,Rajesh Amin,28,1991,Male,0,1,Homemaker,-,-
+2208,Suma Salian,59,1993,Female,0,1,Businessman,-,-
+2209,Mahesh Khan,30,1994,Male,0,1,Hotel Worker,-,-
+2210,Soumya Pinto,53,1994,Female,0,0,Security Guard,-,-
+2211,Madhu Iyer,53,1996,Male,0,1,Student,-,-
+2212,Geetha Bangera,25,1997,Female,0,1,Farmer,-,-
+2213,Fathima Hegde,36,1998,Female,0,1,Hotel Worker,-,-
+2214,Soumya Rao,27,1999,Female,0,1,Tailor,-,-
+2215,Bhagya Fernandes,58,1999,Female,0,0,Student,-,-
+2216,Divya Udupa,42,2000,Female,0,1,Student,-,-
+2217,Thomas Chavan,67,2001,Male,0,1,Bank Employee,-,-
+2218,Salman Kumar,31,2002,Male,0,1,Software Engineer,-,-
+2219,Salman Poojary,60,2003,Male,0,1,Hotel Worker,-,-
+2220,Madhu Sait,62,2004,Male,0,1,Shop Owner,-,-
+2221,Vijay Shanbhag,56,2004,Male,0,0,Retired Govt Servant,-,-
+2222,Priya Achar,63,2004,Female,0,0,Businessman,-,-
+2223,Nagaraj Rai,32,2005,Male,0,1,Businessman,-,-
+2224,Rajesh Devadiga,25,2006,Male,0,1,Hotel Worker,-,-
+2225,Suma Angadi,66,2007,Female,0,1,Nurse,-,-
+2226,Spandana Kotian,63,2008,Female,0,1,Retired Govt Servant,-,-
+2227,Chetan Pawar,71,2008,Male,0,0,Farmer,-,-
+2228,Spandana Suvarna,43,2009,Female,0,1,Daily Wage Worker,-,-
+2229,Joseph Salian,16,2010,Male,0,1,Hotel Worker,-,-
+2230,Peter Shetty,34,2011,Male,0,1,Software Engineer,-,-
+2231,Ramya Pinto,48,2011,Female,0,0,Hotel Worker,-,-
+2232,Basavaraj Pai,21,2011,Male,0,0,Tailor,-,-
+2233,Manjula Kumar,27,2012,Female,0,1,Homemaker,-,-
+2234,Bharath Acharya,54,2012,Male,0,0,Bank Employee,-,-
+2235,Uma Hiremath,58,2014,Female,0,1,Student,-,-
+2236,Abdul Reddy,72,2014,Male,0,0,Software Engineer,-,-
+2237,Imran Karanth,23,2015,Male,0,1,Shop Owner,-,-
+2238,Ramya Hegde,59,2016,Female,0,1,Homemaker,-,-
+2239,Priya Adiga,39,2017,Female,0,1,Retired Govt Servant,-,-
+2240,Peter Achar,67,2018,Male,0,1,Shop Owner,-,-
+2241,Pavan Nayak,46,2019,Male,0,1,Hotel Worker,-,-
+2242,Manjula Prabhu,17,2020,Female,0,1,Farmer,-,-
+2243,Usha Puthran,58,2021,Female,0,1,Software Engineer,-,-
+2244,Manjula Khan,65,2021,Female,0,0,Homemaker,-,-
+2245,Manjunath Kamath,29,2021,Male,0,0,Daily Wage Worker,-,-
+2246,Umesh Hiremath,24,2023,Male,0,1,Auto Driver,-,-
+2247,Divya Hegde,51,2023,Female,0,0,Shop Owner,-,-
+2248,Shilpa Kamat,19,2024,Female,0,1,Software Engineer,-,-
+2249,Rakesh Kotian,29,2025,Male,0,1,Businessman,-,-
+2250,Bhavya Kulkarni,54,2026,Female,0,1,Tailor,-,-
+2251,Suresh Prabhu,57,2027,Male,0,1,Security Guard,-,-
+2252,Gopal Rai,29,2029,Male,0,1,Security Guard,-,-
+2253,Irfan Swamy,48,2030,Male,0,1,Bank Employee,-,-
+2254,Mahesh Bhat,63,2031,Male,0,1,Bank Employee,-,-
+2255,Naveen Gowda,32,2032,Male,0,1,Teacher,-,-
+2256,Rashmi Salian,49,2033,Female,0,1,Hotel Worker,-,-
+2257,Yash Moily,44,2034,Male,0,1,Daily Wage Worker,-,-
+2258,Siddaraju Udupa,53,2035,Male,0,1,Software Engineer,-,-
+2259,Wilson Fernandes,20,2035,Male,1,0,Retired Govt Servant,-,-
+2260,Ravi Kamath,17,2037,Male,0,1,Auto Driver,-,-
+2261,Nithin DSouza,42,2038,Male,0,1,Daily Wage Worker,-,-
+2262,Spandana Sait,58,2040,Female,0,1,Homemaker,-,-
+2263,Yash Kulkarni,38,2040,Male,0,0,Security Guard,-,-
+2264,Divya Pinto,19,2043,Female,0,1,Hotel Worker,-,-
+2265,Suma Kamath,36,2045,Female,0,1,Daily Wage Worker,-,-
+2266,Joseph Kamath,43,2046,Male,0,1,Daily Wage Worker,-,-
+2267,Navya Karanth,48,2046,Female,0,0,Tailor,-,-
+2268,Dinesh Salian,62,2047,Male,0,1,Daily Wage Worker,-,-
+2269,Rohan Acharya,40,2048,Male,0,1,Hotel Worker,-,-
+2270,Siddaraju Udupa,39,2049,Male,0,1,Farmer,-,-
+2271,Venkatesh Jadhav,24,2050,Male,0,1,Homemaker,-,-
+2272,Jagadish Kamat,69,2050,Male,0,0,Farmer,-,-
+2273,Peter Suvarna,71,2050,Male,0,0,Bank Employee,-,-
+2274,Gowri Amin,62,2051,Female,0,1,Teacher,-,-
+2275,Vijay Shanbhag,36,2051,Male,0,0,Businessman,-,-
+2276,Hanumantha Nayak,39,2052,Male,0,1,Farmer,-,-
+2277,Murali Prabhu,43,2053,Male,0,1,Daily Wage Worker,-,-
+2278,Sharada Khan,48,2054,Female,0,1,Security Guard,-,-
+2279,Bharath Poojary,41,2055,Male,0,1,Homemaker,-,-
+2280,Mahesh Devadiga,27,2056,Male,0,1,Homemaker,-,-
+2281,Lakshmi Sequeira,43,2057,Female,0,1,Shop Owner,-,-
+2282,Mary Khan,23,2058,Female,0,1,Security Guard,-,-
+2283,Sudeep Kini,24,2059,Male,0,1,Tailor,-,-
+2284,Riyaz Sheikh,64,2059,Male,0,0,Farmer,-,-
+2285,Priya Sheikh,22,2060,Female,0,1,Daily Wage Worker,-,-
+2286,Rajesh Salian,38,2060,Male,0,0,Hotel Worker,-,-
+2287,Sandhya Iyer,34,2062,Female,0,1,Businessman,-,-
+2288,Nagaraj Achar,21,2063,Male,0,1,Tailor,-,-
+2289,Lakshmi Deshpande,36,2064,Female,0,1,Hotel Worker,-,-
+2290,Salman Kulkarni,41,2066,Male,0,1,Homemaker,-,-
+2291,Nisha Patil,65,2066,Female,0,0,Businessman,-,-
+2292,Shobha DSouza,37,2067,Female,0,1,Auto Driver,-,-
+2293,Rajesh Suvarna,44,2070,Male,0,1,Security Guard,-,-
+2294,Salman Kumar,51,2071,Male,0,1,Auto Driver,-,-
+2295,Shankar Devadiga,54,2072,Male,0,1,Software Engineer,-,-
+2296,Kavitha Madiwal,48,2073,Female,0,1,Businessman,-,-
+2297,Nandini Shanbhag,26,2074,Female,0,1,Shop Owner,-,-
+2298,Spandana Khan,70,2075,Female,0,1,Teacher,-,-
+2299,Sunitha Rai,63,2076,Female,0,1,Student,-,-
+2300,Girish Deshpande,62,2077,Male,0,1,Student,-,-
+2301,Murali Kamat,36,2078,Male,0,1,Businessman,-,-
+2302,Kavitha Udupa,30,2078,Female,0,0,Security Guard,-,-
+2303,Abdul Lobo,52,2078,Male,0,0,Student,-,-
+2304,Abhishek Salian,72,2080,Male,0,1,Software Engineer,-,-
+2305,Usha Kumar,38,2081,Female,0,1,Tailor,-,-
+2306,Wilson Patil,68,2082,Male,0,1,Retired Govt Servant,-,-
+2307,Spandana Swamy,45,2083,Female,0,1,Teacher,-,-
+2308,Chandru Rao,37,2084,Male,0,1,Tailor,-,-
+2309,Priya Gowda,45,2085,Female,0,1,Retired Govt Servant,-,-
+2310,Puneeth Puthran,41,2085,Male,0,0,Businessman,-,-
+2311,Parvathi Naik,34,2086,Female,0,1,Shop Owner,-,-
+2312,Shivakumar Naik,17,2087,Male,0,1,Homemaker,-,-
+2313,Ambika Biradar,39,2091,Female,0,1,Tailor,-,-
+2314,Sandhya Chavan,59,2092,Female,0,1,Shop Owner,-,-
+2315,Mary Kamat,33,2093,Female,0,1,Student,-,-
+2316,Sandhya Bangera,66,2093,Female,0,0,Tailor,-,-
+2317,Puneeth Reddy,26,2093,Male,0,0,Daily Wage Worker,-,-
+2318,Chetan Shinde,32,2094,Male,0,1,Businessman,-,-
+2319,Bhavya Kamat,16,2095,Female,0,1,Homemaker,-,-
+2320,Manjula Devadiga,29,2096,Female,0,1,Software Engineer,-,-
+2321,Sharada Fernandes,44,2097,Female,0,1,Retired Govt Servant,-,-
+2322,Meghana Rai,40,2098,Female,0,1,Homemaker,-,-
+2323,Ganesh DSouza,70,2099,Male,0,1,Bank Employee,-,-
+2324,Charan Madiwal,53,2100,Male,0,1,Teacher,-,-
+2325,Soumya Naik,63,2100,Female,1,0,Shop Owner,-,-
+2326,Srinivas Baig,27,2101,Male,0,1,Teacher,-,-
+2327,Abdul Iyengar,69,2102,Male,0,1,Farmer,-,-
+2328,Wilson Sheikh,42,2102,Male,0,0,Homemaker,-,-
+2329,Shobha Rai,39,2104,Female,0,1,Security Guard,-,-
+2330,Karthik Poojary,71,2105,Male,0,1,Retired Govt Servant,-,-
+2331,Harish Prabhu,48,2106,Male,0,1,Teacher,-,-
+2332,Asha Rai,19,2107,Female,0,1,Businessman,-,-
+2333,Kavitha Kattimani,55,2108,Female,0,1,Hotel Worker,-,-
+2334,Umesh Kotian,19,2108,Male,0,0,Daily Wage Worker,-,-
+2335,Charan Ballal,53,2109,Male,0,1,Nurse,-,-
+2336,Srinivas Naik,34,2109,Male,0,0,Shop Owner,-,-
+2337,Vanitha Bangera,68,2109,Female,0,0,Tailor,-,-
+2338,Kiran Naik,70,2110,Male,0,1,Nurse,-,-
+2339,Rekha Kotian,67,2111,Female,0,1,Student,-,-
+2340,Anitha Kumar,59,2112,Female,0,1,Nurse,-,-
+2341,Syed Biradar,42,2113,Male,0,1,Retired Govt Servant,-,-
+2342,Shilpa Suvarna,38,2115,Female,0,1,Businessman,-,-
+2343,Gowri Devadiga,63,2116,Female,0,1,Bank Employee,-,-
+2344,Nagaraj Iyengar,26,2117,Male,0,1,Bank Employee,-,-
+2345,Shilpa Salian,27,2118,Female,0,1,Student,-,-
+2346,Basavaraj Angadi,17,2121,Male,0,1,Hotel Worker,-,-
+2347,Srinivas Rai,48,2122,Male,0,1,Security Guard,-,-
+2348,Dinesh Madiwal,60,2123,Male,0,1,Software Engineer,-,-
+2349,Gowri Kumar,56,2124,Female,0,1,Nurse,-,-
+2350,Ayesha Bhat,72,2125,Female,0,1,Software Engineer,-,-
+2351,Wilson Naik,43,2126,Male,0,1,Security Guard,-,-
+2352,Chaitra Angadi,55,2126,Female,0,0,Retired Govt Servant,-,-
+2353,Fathima Pai,60,2126,Female,0,0,Daily Wage Worker,-,-
+2354,Bhavya Swamy,46,2127,Female,0,1,Tailor,-,-
+2355,Kavitha Bhat,65,2129,Female,0,1,Hotel Worker,-,-
+2356,Bharath Udupa,38,2130,Male,0,1,Businessman,-,-
+2357,Divya Rao,53,2131,Female,0,1,Bank Employee,-,-
+2358,Parvathi Bhat,50,2133,Female,0,1,Tailor,-,-
+2359,Deepa DSouza,17,2134,Female,0,1,Student,-,-
+2360,Divya Murthy,54,2135,Female,0,1,Security Guard,-,-
+2361,Sharada Alva,59,2136,Female,0,1,Student,-,-
+2362,Abhishek Bangera,19,2137,Male,0,1,Homemaker,-,-
+2363,Chaitra Acharya,54,2138,Female,0,1,Student,-,-
+2364,Anand Pawar,34,2139,Male,0,1,Daily Wage Worker,-,-
+2365,Gowri Shanbhag,71,2139,Female,0,0,Teacher,-,-
+2366,Charan Iyengar,31,2140,Male,0,1,Hotel Worker,-,-
+2367,Joseph Sharma,23,2141,Male,0,1,Hotel Worker,-,-
+2368,Santhosh Shanbhag,53,2142,Male,0,1,Software Engineer,-,-
+2369,Pooja Chavan,22,2144,Female,0,1,Teacher,-,-
+2370,Ravi Joshi,19,2145,Male,0,1,Tailor,-,-
+2371,Usha Gowda,60,2146,Female,0,1,Teacher,-,-
+2372,Divya Acharya,46,2148,Female,0,1,Nurse,-,-
+2373,Mahesh Swamy,16,2149,Male,0,1,Farmer,-,-
+2374,Gagan Kattimani,33,2150,Male,0,1,Tailor,-,-
+2375,Charan Ballal,50,2150,Male,0,0,Businessman,-,-
+2376,Vanitha Achar,26,2151,Female,0,1,Hotel Worker,-,-
+2377,Salma Poojary,25,2152,Female,0,1,Bank Employee,-,-
+2378,Soumya Murthy,35,2153,Female,0,1,Shop Owner,-,-
+2379,Ramesh Prabhu,49,2153,Male,0,0,Daily Wage Worker,-,-
+2380,Gopal Kamat,65,2154,Male,0,1,Student,-,-
+2381,Raghavendra Sharma,18,2155,Male,0,1,Hotel Worker,-,-
+2382,Fathima Pasha,65,2156,Female,0,1,Tailor,-,-
+2383,Suresh Kotian,52,2157,Male,0,1,Nurse,-,-
+2384,Satish Nayak,39,2159,Male,0,1,Security Guard,-,-
+2385,Soumya Hiremath,65,2160,Female,0,1,Businessman,-,-
+2386,Ramesh Madiwal,33,2161,Male,0,1,Software Engineer,-,-
+2387,Jagadish Hiremath,32,2162,Male,0,1,Security Guard,-,-
+2388,Meghana Iyer,65,2163,Female,0,1,Teacher,-,-
+2389,Gagan Sharma,30,2164,Male,0,1,Tailor,-,-
+2390,Swathi Shanbhag,59,2166,Female,0,1,Teacher,-,-
+2391,Ganesh Deshpande,32,2167,Male,0,1,Homemaker,-,-
+2392,Ajay Biradar,72,2167,Male,0,0,Retired Govt Servant,-,-
+2393,Madhu Chavan,31,2167,Male,0,0,Businessman,-,-
+2394,Pooja Ballal,47,2168,Female,0,1,Farmer,-,-
+2395,Sanjay Kattimani,25,2169,Male,0,1,Tailor,-,-
+2396,Vikram Alva,59,2169,Male,0,0,Farmer,-,-
+2397,Usha Sharma,16,2170,Female,0,1,Businessman,-,-
+2398,Imran Pawar,30,2171,Male,0,1,Teacher,-,-
+2399,Shwetha Adiga,41,2172,Female,1,1,Farmer,-,-
+2400,Navya DSouza,63,2172,Female,0,0,Bank Employee,-,-
+2401,Swathi Iyer,65,2173,Female,0,1,Daily Wage Worker,-,-
+2402,Kavitha Poojary,38,2173,Female,0,0,Daily Wage Worker,-,-
+2403,Rashmi Poojary,21,2174,Female,0,1,Auto Driver,-,-
+2404,Sanjay Adiga,64,2174,Male,0,0,Teacher,-,-
+2405,Priya Shanbhag,64,2175,Female,0,1,Shop Owner,-,-
+2406,Yash Jadhav,47,2176,Male,0,1,Nurse,-,-
+2407,Divya Naik,28,2177,Female,0,1,Daily Wage Worker,-,-
+2408,Vanitha Chavan,72,2178,Female,0,1,Nurse,-,-
+2409,Savitha Iyengar,54,2179,Female,0,1,Teacher,-,-
+2410,Shankar Chavan,28,2180,Male,0,1,Shop Owner,-,-
+2411,Rakesh Pai,70,2181,Male,0,1,Businessman,-,-
+2412,Mohan Sait,39,2182,Male,0,1,Auto Driver,-,-
+2413,Prakash Kumar,27,2183,Male,0,1,Nurse,-,-
+2414,Uma Kini,21,2184,Female,0,1,Hotel Worker,-,-
+2415,Syed Patil,32,2185,Male,0,1,Security Guard,-,-
+2416,Anitha Bangera,45,2186,Female,0,1,Teacher,-,-
+2417,Harish Kamath,54,2187,Male,0,1,Tailor,-,-
+2418,Suma Iyengar,47,2188,Female,0,1,Shop Owner,-,-
+2419,Asha Nayak,66,2189,Female,0,1,Bank Employee,-,-
+2420,Parvathi Ballal,37,2189,Female,0,0,Teacher,-,-
+2421,Gagan Khan,37,2189,Male,0,0,Auto Driver,-,-
+2422,Shilpa Acharya,40,2190,Female,0,1,Tailor,-,-
+2423,Irfan Karanth,61,2190,Male,0,0,Student,-,-
+2424,Shwetha Lobo,48,2191,Female,0,1,Hotel Worker,-,-
+2425,Seetha Kamath,57,2192,Female,0,1,Auto Driver,-,-
+2426,Suma Shinde,70,2193,Female,0,1,Bank Employee,-,-
+2427,Jagadish DSouza,23,2194,Male,0,1,Retired Govt Servant,-,-
+2428,Peter Shanbhag,31,2195,Male,0,1,Nurse,-,-
+2429,Shivakumar Nayak,57,2196,Male,0,1,Security Guard,-,-
+2430,Puneeth Nayak,58,2197,Male,0,1,Homemaker,-,-
+2431,Seetha Achar,23,2198,Female,0,1,Auto Driver,-,-
+2432,Nandini Kulkarni,58,2200,Female,0,1,Teacher,-,-
+2433,Gopal Shetty,66,2202,Male,0,1,Bank Employee,-,-
+2434,Praveen Shinde,62,2203,Male,0,1,Hotel Worker,-,-
+2435,Geetha Deshpande,30,2204,Female,0,1,Bank Employee,-,-
+2436,Darshan Rao,58,2205,Male,0,1,Nurse,-,-
+2437,Swathi Lobo,43,2207,Female,0,1,Hotel Worker,-,-
+2438,Deepa Moily,16,2208,Female,0,1,Daily Wage Worker,-,-
+2439,Ramya Pinto,66,2209,Female,0,1,Homemaker,-,-
+2440,Sunitha Prabhu,21,2212,Female,0,1,Homemaker,-,-
+2441,Manjunath Puthran,36,2213,Male,0,1,Farmer,-,-
+2442,Raghavendra Kamat,53,2214,Male,0,1,Tailor,-,-
+2443,Chandru Rai,66,2214,Male,0,0,Farmer,-,-
+2444,Chetan Patil,16,2215,Male,0,1,Student,-,-
+2445,Vijay Adiga,57,2216,Male,0,1,Software Engineer,-,-
+2446,Chaitra Sait,38,2216,Female,0,0,Daily Wage Worker,-,-
+2447,Mohan Kumar,21,2216,Male,0,0,Daily Wage Worker,-,-
+2448,Sharada Kini,29,2217,Female,0,1,Hotel Worker,-,-
+2449,Girish Biradar,58,2218,Male,0,1,Auto Driver,-,-
+2450,Rajesh Reddy,34,2219,Male,0,1,Auto Driver,-,-
+2451,Suma Reddy,51,2220,Female,0,1,Auto Driver,-,-
+2452,Naveen Sheikh,67,2220,Male,0,0,Security Guard,-,-
+2453,Sanjay Hegde,45,2221,Male,0,1,Hotel Worker,-,-
+2454,Yashoda Nayak,69,2222,Female,0,1,Farmer,-,-
+2455,Anil Kulkarni,21,2222,Male,0,0,Homemaker,-,-
+2456,Thomas Biradar,28,2222,Male,0,0,Retired Govt Servant,-,-
+2457,Navya Puthran,53,2223,Female,0,1,Businessman,-,-
+2458,Mohan Hiremath,64,2225,Male,0,1,Teacher,-,-
+2459,Latha Pinto,32,2226,Female,0,1,Homemaker,-,-
+2460,Rakesh Swamy,33,2228,Male,0,1,Tailor,-,-
+2461,Syed Kattimani,55,2229,Male,0,1,Retired Govt Servant,-,-
+2462,Suma Shanbhag,66,2229,Female,0,0,Homemaker,-,-
+2463,Vinod Iyer,18,2230,Male,0,1,Homemaker,-,-
+2464,Darshan Reddy,64,2231,Male,0,1,Retired Govt Servant,-,-
+2465,Praveen DSouza,48,2232,Male,0,1,Nurse,-,-
+2466,Raghavendra Lobo,67,2235,Male,0,1,Bank Employee,-,-
+2467,Krishna DSouza,53,2236,Male,0,1,Teacher,-,-
+2468,Gopal Adiga,42,2237,Male,0,1,Student,-,-
+2469,Divya Baig,68,2238,Female,0,1,Farmer,-,-
+2470,Savitha Angadi,16,2239,Female,0,1,Teacher,-,-
+2471,Madhu Pai,41,2240,Male,0,1,Farmer,-,-
+2472,Vikram Acharya,22,2241,Male,0,1,Nurse,-,-
+2473,Vikram Biradar,71,2242,Male,0,1,Auto Driver,-,-
+2474,Shobha Shanbhag,63,2243,Female,0,1,Tailor,-,-
+2475,Rekha Bhat,16,2244,Female,0,1,Auto Driver,-,-
+2476,Gowri Naik,58,2245,Female,0,1,Nurse,-,-
+2477,Vikram Gowda,22,2246,Male,0,1,Bank Employee,-,-
+2478,Lakshmi Kumar,70,2247,Female,0,1,Teacher,-,-
+2479,Ramya Angadi,53,2248,Female,0,1,Student,-,-
+2480,Sandhya Rai,50,2249,Female,0,1,Farmer,-,-
+2481,Deepa Pawar,59,2250,Female,0,1,Hotel Worker,-,-
+2482,Anitha Shinde,63,2251,Female,0,1,Auto Driver,-,-
+2483,Suresh DSouza,26,2252,Male,0,1,Businessman,-,-
+2484,Hanumantha Swamy,68,2253,Male,0,1,Bank Employee,-,-
+2485,Shilpa Deshpande,58,2254,Female,0,1,Software Engineer,-,-
+2486,Vinod Fernandes,60,2255,Male,0,1,Tailor,-,-
+2487,Hema Iyer,35,2256,Female,0,1,Shop Owner,-,-
+2488,Imran Lobo,55,2257,Male,0,1,Hotel Worker,-,-
+2489,Uma Shetty,16,2258,Female,0,1,Daily Wage Worker,-,-
+2490,Vidya Jadhav,58,2259,Female,0,1,Businessman,-,-
+2491,Abhishek Madiwal,23,2260,Male,0,1,Shop Owner,-,-
+2492,Radha Naik,24,2261,Female,0,1,Security Guard,-,-
+2493,Mustafa Adiga,44,2261,Male,0,0,Daily Wage Worker,-,-
+2494,Karthik Adiga,61,2262,Male,0,1,Nurse,-,-
+2495,Venkatesh Kamath,51,2262,Male,0,0,Student,-,-
+2496,Riyaz Sait,69,2262,Male,0,0,Bank Employee,-,-
+2497,Imran Naik,59,2263,Male,0,1,Hotel Worker,-,-
+2498,Radha Kumar,55,2264,Female,0,1,Teacher,-,-
+2499,Basavaraj Achar,65,2265,Male,0,1,Shop Owner,-,-
+2500,Hanumantha Udupa,19,2265,Male,0,0,Nurse,-,-
+2501,Sharada Kini,19,2266,Female,0,1,Farmer,-,-
+2502,Salma Gowda,46,2267,Female,0,1,Teacher,-,-
+2503,Radha Kini,52,2268,Female,0,1,Software Engineer,-,-
+2504,Rakesh Shetty,41,2270,Male,0,1,Auto Driver,-,-
+2505,Spandana Udupa,52,2271,Female,0,1,Teacher,-,-
+2506,Thomas Alva,21,2272,Male,0,1,Auto Driver,-,-
+2507,Vinod Moily,46,2272,Male,0,0,Tailor,-,-
+2508,Umesh Bangera,70,2272,Male,0,0,Tailor,-,-
+2509,Manjunath Bhat,44,2273,Male,0,1,Shop Owner,-,-
+2510,Vanitha Iyengar,61,2274,Female,0,1,Auto Driver,-,-
+2511,Pavan Patil,27,2275,Male,0,1,Nurse,-,-
+2512,Nandini Achar,58,2276,Female,0,1,Software Engineer,-,-
+2513,Charan Pinto,59,2277,Male,0,1,Software Engineer,-,-
+2514,Vijay Shinde,63,2278,Male,0,1,Security Guard,-,-
+2515,Manjunath Fernandes,24,2279,Male,0,1,Nurse,-,-
+2516,Imran Amin,38,2282,Male,0,1,Bank Employee,-,-
+2517,Pooja Angadi,71,2284,Female,0,1,Daily Wage Worker,-,-
+2518,Raghavendra Devadiga,70,2285,Male,0,1,Auto Driver,-,-
+2519,Manjula Acharya,34,2286,Female,0,1,Teacher,-,-
+2520,Ganesh Kamat,33,2286,Male,0,0,Retired Govt Servant,-,-
+2521,Hema Chavan,71,2286,Female,0,0,Auto Driver,-,-
+2522,Vanitha Pasha,22,2287,Female,0,1,Businessman,-,-
+2523,Manjunath Sheikh,39,2288,Male,0,1,Auto Driver,-,-
+2524,Mohan Patil,69,2289,Male,0,1,Nurse,-,-
+2525,Ramya Pai,65,2289,Female,0,0,Homemaker,-,-
+2526,Yash Kattimani,41,2290,Male,0,1,Hotel Worker,-,-
+2527,Syed Swamy,62,2290,Male,0,0,Retired Govt Servant,-,-
+2528,Anil Chavan,43,2291,Male,0,1,Tailor,-,-
+2529,Divya Khan,63,2292,Female,0,1,Hotel Worker,-,-
+2530,Ambika Moily,50,2293,Female,0,1,Homemaker,-,-
+2531,Bharath Puthran,57,2293,Male,0,0,Homemaker,-,-
+2532,Ganesh Nayak,19,2294,Male,0,1,Farmer,-,-
+2533,Ramya Suvarna,48,2294,Female,0,0,Hotel Worker,-,-
+2534,Rohan Pasha,65,2295,Male,0,1,Homemaker,-,-
+2535,Parvathi Iyer,34,2296,Female,0,1,Retired Govt Servant,-,-
+2536,Navya Kattimani,25,2297,Female,0,1,Retired Govt Servant,-,-
+2537,Yashoda Salian,72,2297,Female,0,0,Businessman,-,-
+2538,Puneeth Pasha,43,2297,Male,0,0,Teacher,-,-
+2539,Shobha Kamath,71,2298,Female,0,1,Nurse,-,-
+2540,Anand Bhat,21,2301,Male,0,1,Security Guard,-,-
+2541,Ravi Adiga,64,2302,Male,0,1,Farmer,-,-
+2542,Vijay Sheikh,49,2304,Male,0,1,Hotel Worker,-,-
+2543,Mary Iyer,58,2305,Female,0,1,Security Guard,-,-
+2544,Santhosh Chavan,23,2306,Male,0,1,Security Guard,-,-
+2545,Bharath Karanth,40,2308,Male,0,1,Teacher,-,-
+2546,Praveen Baig,54,2309,Male,0,1,Retired Govt Servant,-,-
+2547,Harish Iyer,30,2310,Male,0,1,Shop Owner,-,-
+2548,Lokesh Sharma,56,2312,Male,0,1,Student,-,-
+2549,Deepa Kulkarni,42,2313,Female,0,1,Software Engineer,-,-
+2550,Manjunath Bangera,18,2315,Male,0,1,Hotel Worker,-,-
+2551,Hanumantha Poojary,50,2316,Male,0,1,Shop Owner,-,-
+2552,Usha Angadi,38,2317,Female,0,1,Software Engineer,-,-
+2553,Nithin Poojary,57,2318,Male,0,1,Bank Employee,-,-
+2554,Sagar Fernandes,18,2318,Male,0,0,Bank Employee,-,-
+2555,Yash Sheikh,25,2319,Male,0,1,Farmer,-,-
+2556,Riyaz Kumar,37,2319,Male,0,0,Farmer,-,-
+2557,Dinesh Murthy,39,2322,Male,0,1,Auto Driver,-,-
+2558,Manjunath Sharma,48,2323,Male,0,1,Security Guard,-,-
+2559,Kavitha Shetty,30,2325,Female,0,1,Hotel Worker,-,-
+2560,Spandana Sequeira,19,2325,Female,0,0,Farmer,-,-
+2561,Shivakumar Nayak,47,2326,Male,0,1,Hotel Worker,-,-
+2562,Bhagya Joshi,28,2327,Female,0,1,Hotel Worker,-,-
+2563,Jagadish Pai,28,2330,Male,0,1,Student,-,-
+2564,Chaitra Kini,69,2331,Female,0,1,Tailor,-,-
+2565,Priya Iyengar,50,2333,Female,0,1,Shop Owner,-,-
+2566,Krishna Suvarna,18,2334,Male,0,1,Hotel Worker,-,-
+2567,Puneeth Reddy,61,2336,Male,0,1,Daily Wage Worker,-,-
+2568,Pallavi Pasha,26,2337,Female,0,1,Farmer,-,-
+2569,Manjunath Iyengar,19,2338,Male,0,1,Daily Wage Worker,-,-
+2570,Rekha Rao,62,2339,Female,0,1,Homemaker,-,-
+2571,Puneeth Lobo,67,2339,Male,0,0,Software Engineer,-,-
+2572,Anitha DSouza,23,2340,Female,0,1,Shop Owner,-,-
+2573,Hanumantha Devadiga,37,2344,Male,0,1,Teacher,-,-
+2574,Deepa Chavan,52,2346,Female,0,1,Daily Wage Worker,-,-
+2575,Prakash Bangera,44,2347,Male,0,1,Nurse,-,-
+2576,Rakesh Bangera,36,2347,Male,0,0,Hotel Worker,-,-
+2577,Syed Jadhav,38,2348,Male,0,1,Retired Govt Servant,-,-
+2578,Raghavendra Angadi,53,2348,Male,0,0,Businessman,-,-
+2579,Rashmi Rai,39,2349,Female,0,1,Homemaker,-,-
+2580,Ajay Nayak,72,2350,Male,0,1,Hotel Worker,-,-
+2581,Gowri Adiga,32,2351,Female,0,1,Bank Employee,-,-
+2582,Vanitha Kini,53,2352,Female,0,1,Nurse,-,-
+2583,Anand Shanbhag,22,2353,Male,0,1,Software Engineer,-,-
+2584,Rajesh Rao,32,2354,Male,0,1,Nurse,-,-
+2585,Wilson Swamy,57,2356,Male,0,1,Hotel Worker,-,-
+2586,Rajesh Salian,63,2356,Male,0,0,Tailor,-,-
+2587,Asha Sait,71,2357,Female,0,1,Nurse,-,-
+2588,Swathi Reddy,52,2358,Female,0,1,Security Guard,-,-
+2589,Fathima Shetty,26,2359,Female,0,1,Student,-,-
+2590,Priya Pawar,26,2360,Female,0,1,Homemaker,-,-
+2591,Gopal Kamat,49,2361,Male,0,1,Security Guard,-,-
+2592,Asha Alva,32,2361,Female,0,0,Software Engineer,-,-
+2593,Seetha Biradar,71,2362,Female,0,1,Farmer,-,-
+2594,Sunitha Ballal,49,2364,Female,0,1,Software Engineer,-,-
+2595,Sharada Pasha,50,2365,Female,0,1,Businessman,-,-
+2596,Bhavya Shinde,26,2366,Female,0,1,Farmer,-,-
+2597,Nithin Salian,34,2367,Male,0,1,Software Engineer,-,-
+2598,Vinod Shinde,17,2368,Male,0,1,Tailor,-,-
+2599,Nagaraj Alva,37,2368,Male,0,0,Software Engineer,-,-
+2600,Meghana Alva,46,2369,Female,0,1,Student,-,-
+2601,Rohan Pai,70,2369,Male,0,0,Hotel Worker,-,-
+2602,Sanjay Amin,36,2370,Male,0,1,Software Engineer,-,-
+2603,Gowri Amin,56,2371,Female,0,1,Software Engineer,-,-
+2604,Usha Acharya,55,2372,Female,0,1,Retired Govt Servant,-,-
+2605,Puneeth Sharma,21,2373,Male,0,1,Nurse,-,-
+2606,Murali Udupa,39,2374,Male,0,1,Farmer,-,-
+2607,Vijay Shinde,61,2374,Male,0,0,Bank Employee,-,-
+2608,Nithin Hiremath,52,2375,Male,0,1,Software Engineer,-,-
+2609,Ramya Rai,24,2375,Female,0,0,Hotel Worker,-,-
+2610,Shivakumar DSouza,40,2377,Male,0,1,Bank Employee,-,-
+2611,Latha Swamy,62,2379,Female,0,1,Nurse,-,-
+2612,Ramya Patil,69,2380,Female,0,1,Auto Driver,-,-
+2613,Abhishek Kamath,60,2382,Male,0,1,Retired Govt Servant,-,-
+2614,Shilpa Baig,17,2383,Female,0,1,Homemaker,-,-
+2615,Farhan Madiwal,28,2386,Male,0,1,Homemaker,-,-
+2616,Sharada Puthran,43,2387,Female,0,1,Bank Employee,-,-
+2617,Fathima Shinde,22,2387,Female,0,0,Software Engineer,-,-
+2618,Suresh Shetty,56,2388,Male,0,1,Security Guard,-,-
+2619,Harish Prabhu,24,2389,Male,0,1,Hotel Worker,-,-
+2620,Chaitra Khan,57,2391,Female,0,1,Daily Wage Worker,-,-
+2621,Ajay Iyengar,56,2392,Male,0,1,Homemaker,-,-
+2622,Navya Adiga,35,2392,Female,0,0,Nurse,-,-
+2623,Shwetha Hegde,27,2393,Female,0,1,Nurse,-,-
+2624,Soumya Shinde,33,2394,Female,0,1,Hotel Worker,-,-
+2625,Deepa Jadhav,71,2395,Female,0,1,Tailor,-,-
+2626,Kiran Kamat,27,2395,Male,0,0,Teacher,-,-
+2627,Ramesh Kini,21,2396,Male,0,1,Tailor,-,-
+2628,Mary DSouza,46,2397,Female,0,1,Businessman,-,-
+2629,Praveen Biradar,30,2397,Male,0,0,Hotel Worker,-,-
+2630,Anand Iyengar,49,2398,Male,0,1,Auto Driver,-,-
+2631,Anand Puthran,19,2399,Male,0,1,Farmer,-,-
+2632,Basavaraj Biradar,54,2400,Male,0,1,Farmer,-,-
+2633,Raghavendra Amin,36,2400,Male,0,0,Teacher,-,-
+2634,Venkatesh Acharya,32,2400,Male,0,0,Farmer,-,-
+2635,Raghavendra Suvarna,28,2401,Male,0,1,Hotel Worker,-,-
+2636,Pooja Iyengar,47,2402,Female,0,1,Security Guard,-,-
+2637,Geetha Kattimani,27,2403,Female,0,1,Auto Driver,-,-
+2638,Asha Kattimani,22,2404,Female,0,1,Nurse,-,-
+2639,Deepa Rao,34,2404,Female,0,0,Hotel Worker,-,-
+2640,Pavan Alva,56,2406,Male,0,1,Bank Employee,-,-
+2641,Soumya Salian,67,2406,Female,0,0,Businessman,-,-
+2642,Harish Lobo,67,2406,Male,0,0,Software Engineer,-,-
+2643,Savitha Kamath,21,2407,Female,0,1,Retired Govt Servant,-,-
+2644,Siddaraju Kulkarni,59,2409,Male,0,1,Security Guard,-,-
+2645,Ravi Moily,26,2411,Male,0,1,Daily Wage Worker,-,-
+2646,Mahesh Pasha,68,2412,Male,0,1,Shop Owner,-,-

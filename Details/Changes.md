@@ -1,4 +1,56 @@
 # Daily Changelog
+
+---
+
+## Rebuild — DRISHTI v2.0 (July 25, 2026, later session)
+
+The platform was rebranded **DRISHTI** and hardened end-to-end for submission.
+
+### Data — the foundation everything else stood on
+- **Replaced the corpus.** The shipped DB held **10 FIRs with worldwide-random
+  coordinates** (Pacific/Antarctic) and non-Karnataka districts, so the "Karnataka
+  crime map" was empty at any sane viewport. New `backend/scripts/generate_data.py`
+  (stdlib-only, seeded, deterministic) builds **2,412 FIRs / 58 stations across the
+  14 real districts**, 24 months, with hour-of-day crime signatures, 8 gang
+  structures, 73 repeat offenders, and deliberately injected spikes for the alert
+  engine. Exports CSV mirrors so the DB and the committed CSVs never drift.
+- **Deleted `scripts/generate_mock_data.py`** — it wrote a second, incompatible
+  schema into the *same* file, corrupting the DB and then crashing mid-write.
+- **Fixed `build_embeddings.py`**, which queried a table (`CaseMaster`) that does not
+  exist — the FAISS index could never be built, so similarity search was dead code.
+  The index now builds; semantic search returns real cosine-ranked matches.
+
+### Backend
+- Real **spike detection** replaced the hardcoded `/insights` text; added
+  `/risk-scores` (explainable district risk with drivers), `/time-patterns`
+  (day × hour), `/categories`, `/graph/repeat-offenders`, and `/api/auth/login`.
+- **Copilot now answers with real numbers** computed from live queries (it previously
+  replied `Mock response based on: User Question: ...`). Intent routing, param
+  extraction, hotspot/network/comparison synthesis, SSE token streaming.
+- **Link analysis fixed:** accused nodes are collapsed **one node per person**
+  (`person_id`), so a repeat offender no longer fragments into duplicate nodes and
+  the shared-case links he exists to reveal actually appear (30 nodes → 14, same 29 edges).
+- Month-aligned trend windows (a mid-month cut-off rendered as a phantom dip),
+  CWD-independent paths, pinned requirements, CORS/credentials corrected.
+
+### Frontend
+- Rebuilt on a **"tactical console" design system** (gold-on-navy, hairline grids,
+  corner-tick panels, mono readouts) with a **CVD-validated chart palette**.
+- **New Case Matcher page** — the FAISS feature previously had *no UI at all*.
+- Hardened API layer (status checks, timeouts, encoded params), error boundaries,
+  **persistent login** (session survived nothing before — every refresh logged you out),
+  loading/empty/error states, and **all fabricated fallback data deleted** — the old
+  dashboard silently rendered invented crime statistics when the backend was down.
+- Route-level code splitting: initial bundle **2.98 MB → 250 kB**.
+- Restored `optimizeDeps.exclude: ['maplibre-gl']` after confirming its removal
+  reproduced the WebWorker crash noted below — the map rendered blank without it.
+
+**Verified:** every endpoint returns 2xx (401 only where intended), full browser
+walkthrough of all five modules with **zero runtime console errors**, lint clean,
+production build green.
+
+---
+
 **Date:** July 25, 2026
 
 Here is a summary of all the major development work accomplished today to build out the KSP Analytics platform for the hackathon:

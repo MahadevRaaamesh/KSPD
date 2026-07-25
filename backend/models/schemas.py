@@ -80,6 +80,7 @@ class CrimeCluster(BaseModel):
     longitude: float
     count: int
     crime_category: Optional[str] = None
+    minor_head: Optional[str] = None
 
 # ──── Graph Models ────
 

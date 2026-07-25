@@ -5,6 +5,9 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   optimizeDeps: {
-    exclude: ['maplibre-gl']
-  }
+    // maplibre-gl spawns its tile-parsing web worker from a URL relative to
+    // its own module. Pre-bundling it into .vite/deps breaks that URL and the
+    // worker 404s, leaving a blank map canvas. Serve it unbundled in dev.
+    exclude: ['maplibre-gl'],
+  },
 })

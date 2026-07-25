@@ -1,16 +1,59 @@
 ROWID,station_name,district,latitude,longitude,unit_type,state
-1,Tinsukia PS,Coimbatore,28.0577775,152.597142,Police Station,Karnataka
-2,Sirsa PS,Coimbatore,83.9037095,-77.137136,Police Station,Karnataka
-3,Katihar PS,Coimbatore,-86.3610095,49.345522,Police Station,Karnataka
-4,Malegaon PS,Gandhidham,-61.874614,176.606289,Police Station,Karnataka
-5,Shahjahanpur PS,Gandhidham,85.265093,34.374516,Police Station,Karnataka
-6,Raurkela Industrial Township PS,Gandhidham,5.798576,-6.266236,Police Station,Karnataka
-7,Agartala PS,Jalna,-83.295291,-154.838285,Police Station,Karnataka
-8,Nellore PS,Jalna,-61.946706,43.517159,Police Station,Karnataka
-9,Vasai-Virar PS,Jalna,-81.12999,31.613753,Police Station,Karnataka
-10,Hajipur PS,Kota,-76.5129125,-140.521988,Police Station,Karnataka
-11,Bilaspur PS,Kota,-47.6734975,145.491277,Police Station,Karnataka
-12,Hindupur PS,Kota,-54.666831,13.877199,Police Station,Karnataka
-13,Pimpri-Chinchwad PS,Jalna,65.6237305,-128.626529,Police Station,Karnataka
-14,Bongaigaon PS,Jalna,-31.452575,114.252456,Police Station,Karnataka
-15,Rourkela PS,Jalna,-46.2309855,82.876322,Police Station,Karnataka
+1,Cubbon Park PS,Bengaluru City,12.988331,77.537601,Law & Order,Karnataka
+2,Koramangala PS,Bengaluru City,12.944604,77.561385,Law & Order,Karnataka
+3,Whitefield PS,Bengaluru City,12.999977,77.615804,Law & Order,Karnataka
+4,Yeshwanthpur PS,Bengaluru City,13.018662,77.545033,Law & Order,Karnataka
+5,Jayanagar PS,Bengaluru City,12.962231,77.538176,Law & Order,Karnataka
+6,Indiranagar PS,Bengaluru City,12.937837,77.595243,Law & Order,Karnataka
+7,Devaraja PS,Mysuru,12.238984,76.603261,Law & Order,Karnataka
+8,Lashkar PS,Mysuru,12.313786,76.644793,Law & Order,Karnataka
+9,Kuvempunagar PS,Mysuru,12.262253,76.650112,Law & Order,Karnataka
+10,Saraswathipuram PS,Mysuru,12.332932,76.58018,Law & Order,Karnataka
+11,Barke PS,Mangaluru,12.950798,74.879777,Law & Order,Karnataka
+12,Kadri PS,Mangaluru,12.89493,74.814658,Law & Order,Karnataka
+13,Ullal PS,Mangaluru,12.968966,74.836391,Law & Order,Karnataka
+14,Surathkal PS,Mangaluru,12.86523,74.807606,Law & Order,Karnataka
+15,Panambur PS,Mangaluru,12.955799,74.868447,Law & Order,Karnataka
+16,Vidyanagar PS,Hubballi-Dharwad,15.401555,75.151568,Law & Order,Karnataka
+17,Old Hubballi PS,Hubballi-Dharwad,15.369047,75.180774,Law & Order,Karnataka
+18,Dharwad Town PS,Hubballi-Dharwad,15.350124,75.130245,Law & Order,Karnataka
+19,Gokul Road PS,Hubballi-Dharwad,15.404229,75.138222,Law & Order,Karnataka
+20,Camp PS,Belagavi,15.893105,74.506982,Law & Order,Karnataka
+21,Tilakwadi PS,Belagavi,15.874249,74.443199,Law & Order,Karnataka
+22,Shahapur PS,Belagavi,15.817048,74.472427,Law & Order,Karnataka
+23,Khade Bazar PS,Belagavi,15.799275,74.465635,Law & Order,Karnataka
+24,Station Bazar PS,Kalaburagi,17.28182,76.807657,Law & Order,Karnataka
+25,Brahmpur PS,Kalaburagi,17.345982,76.81808,Law & Order,Karnataka
+26,Chowk PS,Kalaburagi,17.314122,76.799441,Law & Order,Karnataka
+27,MSK Mill PS,Kalaburagi,17.301737,76.886699,Law & Order,Karnataka
+28,Cowl Bazar PS,Ballari,15.157164,76.934496,Law & Order,Karnataka
+29,Bruce Pete PS,Ballari,15.099937,76.948895,Law & Order,Karnataka
+30,Toranagallu PS,Ballari,15.099008,76.906935,Law & Order,Karnataka
+31,Kampli Road PS,Ballari,15.198143,76.9382,Law & Order,Karnataka
+32,Doddapete PS,Shivamogga,13.936734,75.590254,Law & Order,Karnataka
+33,Vinoba Nagar PS,Shivamogga,13.971042,75.60122,Law & Order,Karnataka
+34,Kote PS,Shivamogga,13.897386,75.511952,Law & Order,Karnataka
+35,Tilak Nagar PS,Shivamogga,13.907754,75.540229,Law & Order,Karnataka
+36,Tumakuru Town PS,Tumakuru,13.304518,77.167149,Law & Order,Karnataka
+37,Kyathsandra PS,Tumakuru,13.384364,77.091761,Law & Order,Karnataka
+38,Antharasanahalli PS,Tumakuru,13.357853,77.101476,Law & Order,Karnataka
+39,Sira Gate PS,Tumakuru,13.388946,77.109062,Law & Order,Karnataka
+40,KTJ Nagar PS,Davanagere,14.436186,75.891395,Law & Order,Karnataka
+41,Azad Nagar PS,Davanagere,14.471764,75.893329,Law & Order,Karnataka
+42,Nittuvalli PS,Davanagere,14.47455,75.969539,Law & Order,Karnataka
+43,Bethur Road PS,Davanagere,14.452328,75.888118,Law & Order,Karnataka
+44,Gandhi Chowk PS,Vijayapura,16.889905,75.711143,Law & Order,Karnataka
+45,Adarsh Nagar PS,Vijayapura,16.781109,75.655654,Law & Order,Karnataka
+46,Jorapur Peth PS,Vijayapura,16.783358,75.725294,Law & Order,Karnataka
+47,Station Road PS,Vijayapura,16.86525,75.700659,Law & Order,Karnataka
+48,Malpe PS,Udupi,13.288523,74.727894,Law & Order,Karnataka
+49,Manipal PS,Udupi,13.400435,74.745594,Law & Order,Karnataka
+50,Kaup PS,Udupi,13.397429,74.785394,Law & Order,Karnataka
+51,Udupi Town PS,Udupi,13.282278,74.768587,Law & Order,Karnataka
+52,Hassan Town PS,Hassan,13.028605,76.104036,Law & Order,Karnataka
+53,Pension Mohalla PS,Hassan,12.978819,76.116515,Law & Order,Karnataka
+54,Salagame Road PS,Hassan,12.960186,76.091772,Law & Order,Karnataka
+55,Ramanagara Town PS,Ramanagara,12.710347,77.335558,Law & Order,Karnataka
+56,Channapatna PS,Ramanagara,12.761002,77.252707,Law & Order,Karnataka
+57,Bidadi PS,Ramanagara,12.71597,77.242538,Law & Order,Karnataka
+58,Kanakapura Road PS,Ramanagara,12.765415,77.325562,Law & Order,Karnataka

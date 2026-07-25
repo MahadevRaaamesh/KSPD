@@ -18,10 +18,10 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy application code
 COPY . .
 
-# Generate the mock SQLite DB and FAISS index during the build 
+# Generate the mock SQLite DB and FAISS index during the build
 # so it is bundled in the container for AppSail deployment
-RUN python scripts/generate_mock_data.py || echo "Warning: Data generation failed"
-RUN python scripts/build_embeddings.py || echo "Warning: Embedding generation failed"
+RUN python scripts/generate_data.py
+RUN python scripts/build_embeddings.py
 
 # Expose port (Catalyst AppSail automatically assigns a port, usually 9000, 
 # but FastAPI defaults to 8000. Catalyst will inject X_ZOHO_CATALYST_LISTEN_PORT)

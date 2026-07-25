@@ -3,7 +3,8 @@ from typing import List, Optional
 from models.schemas import OverviewStats, TrendDataPoint, DistrictStat, IPCStat, StationStat
 from services.analytics_service import (
     get_overview_stats, get_crime_trends, get_district_stats,
-    get_top_ipc_sections, get_station_stats, get_insights
+    get_top_ipc_sections, get_station_stats, get_insights,
+    get_risk_scores, get_time_patterns, get_categories,
 )
 
 router = APIRouter()
@@ -15,9 +16,10 @@ async def overview():
 @router.get("/trends", response_model=List[TrendDataPoint])
 async def crime_trends(
     district: Optional[str] = Query(None, description="Filter by district"),
-    crime_category: Optional[str] = Query(None, description="Filter by crime category")
+    crime_category: Optional[str] = Query(None, description="Filter by crime major head"),
+    months: int = Query(12, ge=1, le=24, description="Window size in months"),
 ):
-    return await get_crime_trends(district=district, crime_category=crime_category)
+    return await get_crime_trends(district=district, crime_category=crime_category, months=months)
 
 @router.get("/districts", response_model=List[DistrictStat])
 async def district_stats():
@@ -36,3 +38,17 @@ async def station_stats(
 @router.get("/insights", response_model=List[dict])
 async def insights():
     return await get_insights()
+
+@router.get("/risk-scores", response_model=List[dict])
+async def risk_scores():
+    return await get_risk_scores()
+
+@router.get("/time-patterns", response_model=dict)
+async def time_patterns(
+    district: Optional[str] = Query(None, description="Filter by district")
+):
+    return await get_time_patterns(district=district)
+
+@router.get("/categories", response_model=List[dict])
+async def categories():
+    return await get_categories()

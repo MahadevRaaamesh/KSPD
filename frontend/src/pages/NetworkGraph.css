@@ -1,140 +1,308 @@
-.graph-container {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  gap: 1.5rem;
-}
+/* ============================================================
+   NetworkGraph — criminal network explorer.
+   Full-bleed page: fixed left rail + cytoscape canvas with
+   floating overlays (legend, actions, trace pill, profile).
+   ============================================================ */
 
-.graph-split-layout {
-  display: flex;
-  gap: 1.5rem;
+.netx {
   flex: 1;
-  overflow: hidden;
-  height: calc(100vh - 180px);
-}
-
-.graph-table-pane {
-  flex: 0 0 320px;
   display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  padding: 0;
+  min-height: 0;
 }
 
-.table-search-box {
-  padding: 1rem;
-  border-bottom: 1px solid var(--border-color);
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-.search-icon {
-  position: absolute;
-  left: 1.75rem;
-  color: var(--text-secondary);
-}
-
-.table-search-input {
-  width: 100%;
-  background: rgba(0, 0, 0, 0.3);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-sm);
-  padding: 0.5rem 1rem 0.5rem 2.5rem;
-  color: var(--text-primary);
-  font-family: inherit;
-  outline: none;
-  transition: border-color var(--transition-fast);
-}
-
-.table-search-input:focus {
-  border-color: var(--accent-primary);
-}
-
-.accused-list {
-  flex: 1;
+/* ---------------- Left rail ---------------- */
+.netx-rail {
+  width: 304px;
+  flex-shrink: 0;
+  border-right: 1px solid var(--line);
+  background: var(--bg-panel);
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
 }
 
-.accused-row {
+.netx-search {
+  padding: 16px 14px 14px;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.netx-search .row { gap: 8px; }
+
+.netx-search-btn { padding: 8px 11px; flex-shrink: 0; }
+
+.netx-search-note {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  color: var(--status-warning);
+}
+
+.netx-list {
+  padding: 14px 14px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.netx-list .micro-label { margin-bottom: 4px; }
+
+/* ---- Offender cards ---- */
+.offender-card {
+  display: block;
+  width: 100%;
+  text-align: left;
+  font-family: var(--font-ui);
+  background: var(--bg-inset);
+  border: 1px solid var(--line);
+  border-left: 2px solid transparent;
+  border-radius: var(--radius-sm);
+  padding: 10px 12px;
+  color: var(--ink-primary);
+  cursor: pointer;
+  transition: background var(--t-fast), border-color var(--t-fast);
+}
+
+.offender-card:hover {
+  background: var(--bg-hover);
+  border-color: var(--line-strong);
+  border-left-color: var(--ink-faint);
+}
+
+.offender-card:focus-visible {
+  outline: 2px solid var(--accent-line);
+  outline-offset: 1px;
+}
+
+.offender-card.active {
+  background: var(--accent-dim);
+  border-color: var(--accent-line);
+  border-left: 2px solid var(--accent);
+}
+
+.offender-head {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  padding: 1rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-  cursor: pointer;
-  transition: background var(--transition-fast);
+  justify-content: space-between;
+  gap: 8px;
 }
 
-.accused-row:hover {
-  background: rgba(255, 255, 255, 0.05);
+.offender-name {
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
 }
 
-.accused-row.active {
-  background: rgba(59, 130, 246, 0.2);
-  border-left: 3px solid var(--accent-primary);
+.offender-id {
+  font-size: 10.5px;
+  color: var(--ink-muted);
+  letter-spacing: 0.05em;
+  margin-top: 3px;
 }
 
-.accused-icon {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background: rgba(239, 68, 68, 0.2);
-  color: #ef4444;
+.offender-line {
+  font-size: 11.5px;
+  color: var(--ink-muted);
+  margin-top: 3px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ---------------- Graph canvas ---------------- */
+.netx-canvas {
+  flex: 1;
+  min-width: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle radial vignette above the canvas, below the overlays */
+.netx-canvas::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+  background: radial-gradient(ellipse 120% 100% at 50% 45%, transparent 58%, rgba(5, 8, 13, 0.5) 100%);
+}
+
+/* ---- Legend (top-left) ---- */
+.netx-legend {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 5;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px 13px;
+  max-width: 440px;
+  padding: 8px 12px;
+  background: rgba(18, 24, 38, 0.88);
+}
+
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-secondary);
+  white-space: nowrap;
+}
+
+.legend-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  border: 1px solid rgba(10, 14, 21, 0.8);
+}
+
+/* ---- View actions (top-right) ---- */
+.netx-actions {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 5;
+  display: flex;
+  gap: 2px;
+  padding: 3px;
+  background: rgba(18, 24, 38, 0.88);
+}
+
+.netx-actions .btn {
+  padding: 5px 11px;
+  font-size: 12px;
+}
+
+/* ---- Trace pill (top-center) ---- */
+.trace-pill {
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 6;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 6px 15px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--accent-line);
+  background: rgba(18, 24, 38, 0.94);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--accent-bright);
+}
+
+.trace-pill .spinner {
+  width: 12px;
+  height: 12px;
+  border-width: 2px;
+}
+
+/* ---- Graph error pill (top-center) ---- */
+.netx-error-pill {
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 6;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  max-width: 60%;
+  padding: 6px 10px 6px 15px;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(208, 59, 59, 0.5);
+  background: rgba(18, 24, 38, 0.94);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: #ff9d9d;
+}
+
+.netx-error-close {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
+  padding: 3px;
+  border: none;
+  border-radius: 50%;
+  background: none;
+  color: inherit;
+  cursor: pointer;
   flex-shrink: 0;
 }
 
-.accused-name {
-  font-weight: 500;
-  font-size: 0.95rem;
-}
+.netx-error-close:hover { background: var(--bg-hover); }
 
-.accused-meta {
-  font-size: 0.8rem;
-  color: var(--text-secondary);
-  margin-top: 0.25rem;
-}
-
-.no-results {
-  padding: 2rem;
-  text-align: center;
-  color: var(--text-secondary);
-  font-size: 0.9rem;
-}
-
-.graph-canvas-wrapper {
-  flex: 1;
-  position: relative;
-  overflow: hidden;
-  background: var(--bg-secondary);
-}
-
-.loading-badge {
+/* ---- Subject profile (bottom-left) ---- */
+.netx-profile {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
-  background: var(--accent-primary);
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: var(--radius-full);
-  font-size: 0.85rem;
-  font-weight: 500;
-  z-index: 10;
-  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.2);
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+  left: 14px;
+  bottom: 14px;
+  z-index: 5;
+  width: 300px;
+  padding: 14px 16px 15px;
+  background: rgba(18, 24, 38, 0.95);
 }
 
-.loading-badge::after {
-  content: '';
-  width: 12px;
-  height: 12px;
-  border: 2px solid white;
-  border-right-color: transparent;
-  border-radius: 50%;
-  animation: map-spin 1s linear infinite;
+.netx-profile-close {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  padding: 4px 6px;
+  z-index: 1;
+}
+
+.netx-profile-name {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin: 8px 0 2px;
+  padding-right: 22px;
+}
+
+.netx-profile-id {
+  font-size: 11px;
+  color: var(--ink-muted);
+  letter-spacing: 0.05em;
+}
+
+.netx-profile-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.netx-profile-mo { margin-top: 13px; }
+
+.netx-mo-chips { margin-top: 7px; }
+
+.netx-profile-active {
+  margin-top: 11px;
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  color: var(--ink-muted);
+}
+
+/* ---- Empty canvas ---- */
+.netx-empty {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
 }

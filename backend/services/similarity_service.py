@@ -1,7 +1,6 @@
 import os
 import json
-import numpy as np
-from typing import Optional, List
+from typing import Optional
 from config import settings
 from models.schemas import SimilaritySearchResponse, SimilarFIRResult, FIR
 from adapters.database import execute_query
@@ -21,16 +20,23 @@ class SimilarityService:
             return
 
         if not os.path.exists(settings.FAISS_INDEX_PATH):
-            print(f"Warning: FAISS index not found at {settings.FAISS_INDEX_PATH}. Run build_embeddings.py first.")
+            print(f"Warning: FAISS index not found at {settings.FAISS_INDEX_PATH}. "
+                  "Semantic search disabled — run scripts/build_embeddings.py to enable it.")
             return
-            
+
         print("Loading FAISS index...")
-        self.index = faiss.read_index(settings.FAISS_INDEX_PATH)
-        
-        id_map_path = settings.FAISS_INDEX_PATH.replace(".faiss", "_id_map.json")
-        with open(id_map_path, "r") as f:
-            self.id_map = {int(k): int(v) for k, v in json.load(f).items()}
-            
+        try:
+            self.index = faiss.read_index(settings.FAISS_INDEX_PATH)
+            id_map_path = settings.FAISS_INDEX_PATH.replace(".faiss", "_id_map.json")
+            with open(id_map_path, "r") as f:
+                self.id_map = {int(k): int(v) for k, v in json.load(f).items()}
+        except (OSError, ValueError, json.JSONDecodeError) as e:
+            print(f"Warning: could not load FAISS index/id map ({e}). "
+                  "Semantic search disabled — rebuild with scripts/build_embeddings.py.")
+            self.index = None
+            self.id_map = None
+            return
+
         print(f"Loading Embedding Model {settings.EMBEDDING_MODEL_NAME}...")
         self.model = SentenceTransformer(settings.EMBEDDING_MODEL_NAME)
         print("Similarity Service Initialized.")

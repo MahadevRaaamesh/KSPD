@@ -21,6 +21,34 @@ class GraphBuilder:
     def build(self) -> GraphData:
         return GraphData(nodes=list(self.nodes.values()), edges=self.edges)
 
+
+async def _canonical_accused_ids(person_ids: List[str]) -> Dict[str, int]:
+    """
+    The Accused table stores one row per FIR appearance, so the same person
+    owns many ROWIDs. Link analysis needs one node per *person*, otherwise a
+    repeat offender fragments into unconnected duplicates and the shared-case
+    links he exists to reveal never appear. Collapse each person onto their
+    lowest ROWID — still a valid /graph/accused/{id} handle for drill-down.
+    """
+    ids = [p for p in dict.fromkeys(person_ids) if p]
+    if not ids:
+        return {}
+    placeholders = ", ".join(f":p{i}" for i in range(len(ids)))
+    params = {f"p{i}": pid for i, pid in enumerate(ids)}
+    rows = await execute_query(
+        f"SELECT person_id, MIN(ROWID) as rid FROM Accused "
+        f"WHERE person_id IN ({placeholders}) GROUP BY person_id",
+        params,
+    )
+    return {r["person_id"]: r["rid"] for r in rows}
+
+
+def _accused_node_id(acc: Dict[str, Any], canonical: Dict[str, int]) -> str:
+    pid = acc.get("person_id")
+    rid = canonical.get(pid, acc["ROWID"]) if pid else acc["ROWID"]
+    return f"accused_{rid}"
+
+
 async def get_case_graph(fir_id: int) -> GraphData:
     builder = GraphBuilder()
     
@@ -49,32 +77,43 @@ async def get_case_graph(fir_id: int) -> GraphData:
         builder.add_node(cat_node_id, label=fir["crime_major_head"], node_type="CrimeCategory", properties={})
         builder.add_edge(fir_node_id, cat_node_id, "CATEGORIZED_AS")
 
-    # 2. Fetch Accused
+    # 2. Fetch Accused, collapsed to one node per person
     acc_query = "SELECT * FROM Accused WHERE fir_rowid = :fir_id"
     accused_list = await execute_query(acc_query, {"fir_id": fir_id})
-    
+    person_ids = [a["person_id"] for a in accused_list if a.get("person_id")]
+    canonical = await _canonical_accused_ids(person_ids)
+
     for acc in accused_list:
-        acc_node_id = f"accused_{acc['ROWID']}"
-        builder.add_node(acc_node_id, label=acc["name"], node_type="Accused", properties={"age": acc.get("age")})
+        acc_node_id = _accused_node_id(acc, canonical)
+        builder.add_node(
+            acc_node_id, label=acc["name"], node_type="Accused",
+            properties={"age": acc.get("age"), "person_id": acc.get("person_id")},
+        )
         builder.add_edge(acc_node_id, fir_node_id, "ACCUSED_IN")
-        
-        # Look for other cases this accused is in
-        other_cases_query = """
-            SELECT c.ROWID as CaseMasterID, c.fir_number
+
+    # Prior cases for the same people — one query, not one per accused
+    if person_ids:
+        placeholders = ", ".join(f":q{i}" for i in range(len(person_ids)))
+        params = {f"q{i}": pid for i, pid in enumerate(person_ids)}
+        params["fir_id"] = fir_id
+        other_cases = await execute_query(
+            f"""
+            SELECT a.person_id, c.ROWID as rid, c.fir_number, c.crime_major_head
             FROM Accused a
             JOIN FIRs c ON a.fir_rowid = c.ROWID
-            WHERE a.name = :name AND c.ROWID != :fir_id
-        """
-        other_cases = await execute_query(other_cases_query, {"name": acc["name"], "fir_id": fir_id})
+            WHERE a.person_id IN ({placeholders}) AND c.ROWID != :fir_id
+            """,
+            params,
+        )
         for oc in other_cases:
-            oc_node_id = f"fir_{oc['CaseMasterID']}"
+            oc_node_id = f"fir_{oc['rid']}"
             builder.add_node(
-                oc_node_id, 
-                label=oc.get("fir_number") or f"Case #{oc['CaseMasterID']}", 
-                node_type="Case", 
-                properties={}
+                oc_node_id,
+                label=oc.get("fir_number") or f"Case #{oc['rid']}",
+                node_type="Case",
+                properties={"category": oc.get("crime_major_head")},
             )
-            builder.add_edge(acc_node_id, oc_node_id, "ACCUSED_IN")
+            builder.add_edge(f"accused_{canonical[oc['person_id']]}", oc_node_id, "ACCUSED_IN")
 
     # 3. Fetch Victims
     vic_query = "SELECT * FROM Victims WHERE fir_rowid = :fir_id"
@@ -110,40 +149,100 @@ async def get_accused_network(accused_id: int) -> GraphData:
         return builder.build()
         
     primary_acc = acc_res[0]
-    primary_node_id = f"accused_{primary_acc['ROWID']}"
-    builder.add_node(primary_node_id, label=primary_acc["name"], node_type="Accused", properties={"age": primary_acc.get("age")})
-    
-    # 2. Fetch all FIRs for this accused by Name (to link across cases)
-    firs_query = """
-        SELECT c.*
-        FROM Accused a
-        JOIN FIRs c ON a.fir_rowid = c.ROWID
-        WHERE a.name = :name
-    """
-    firs = await execute_query(firs_query, {"name": primary_acc["name"]})
-    
+    pid = primary_acc.get("person_id")
+
+    # 2. Every FIR this person appears in — matched on person_id so two
+    #    officers sharing a common name never merge into one subject.
+    if pid:
+        firs = await execute_query(
+            "SELECT c.* FROM Accused a JOIN FIRs c ON a.fir_rowid = c.ROWID WHERE a.person_id = :pid",
+            {"pid": pid},
+        )
+        canonical = await _canonical_accused_ids([pid])
+    else:
+        firs = await execute_query(
+            "SELECT c.* FROM Accused a JOIN FIRs c ON a.fir_rowid = c.ROWID WHERE a.name = :name",
+            {"name": primary_acc["name"]},
+        )
+        canonical = {}
+
+    primary_node_id = _accused_node_id(primary_acc, canonical)
+    builder.add_node(
+        primary_node_id, label=primary_acc["name"], node_type="Accused",
+        properties={"age": primary_acc.get("age"), "person_id": pid},
+    )
+
     for fir in firs:
         fir_node_id = f"fir_{fir['ROWID']}"
         builder.add_node(fir_node_id, label=fir.get("fir_number") or f"Case #{fir['ROWID']}", node_type="Case", properties={"category": fir.get("crime_major_head")})
         builder.add_edge(primary_node_id, fir_node_id, "ACCUSED_IN")
-        
-        # 3. For each FIR, get Co-Accused
-        co_acc_query = "SELECT * FROM Accused WHERE fir_rowid = :fir_id AND name != :name"
-        co_accused = await execute_query(co_acc_query, {"fir_id": fir["ROWID"], "name": primary_acc["name"]})
-        
+
+    # 3. Co-accused across those FIRs, also collapsed one-node-per-person, so a
+    #    shared associate visibly bridges every case he took part in.
+    fir_ids = [fir["ROWID"] for fir in firs]
+    if fir_ids:
+        placeholders = ", ".join(f":fid{i}" for i in range(len(fir_ids)))
+        params = {f"fid{i}": fid for i, fid in enumerate(fir_ids)}
+        co_accused = await execute_query(
+            f"SELECT * FROM Accused WHERE fir_rowid IN ({placeholders})", params
+        )
+        if pid:
+            co_accused = [c for c in co_accused if c.get("person_id") != pid]
+        else:
+            co_accused = [c for c in co_accused if c["name"] != primary_acc["name"]]
+        co_canonical = await _canonical_accused_ids([c["person_id"] for c in co_accused if c.get("person_id")])
+
         for co in co_accused:
-            co_node_id = f"accused_{co['ROWID']}"
-            builder.add_node(co_node_id, label=co["name"], node_type="Accused", properties={"age": co.get("age")})
-            builder.add_edge(co_node_id, fir_node_id, "ACCUSED_IN")
-            
+            co_node_id = _accused_node_id(co, co_canonical)
+            builder.add_node(
+                co_node_id, label=co["name"], node_type="Accused",
+                properties={"age": co.get("age"), "person_id": co.get("person_id")},
+            )
+            builder.add_edge(co_node_id, f"fir_{co['fir_rowid']}", "ACCUSED_IN")
+
     return builder.build()
 
 async def get_network_by_name(name: str) -> GraphData:
-    query = "SELECT ROWID as AccusedMasterID FROM Accused WHERE name LIKE :name LIMIT 1"
+    query = "SELECT ROWID as AccusedMasterID FROM Accused WHERE LOWER(name) LIKE LOWER(:name) LIMIT 1"
     res = await execute_query(query, {"name": f"%{name}%"})
     if res:
         return await get_accused_network(res[0]["AccusedMasterID"])
     return GraphData(nodes=[], edges=[])
+
+
+async def get_repeat_offenders(limit: int = 20) -> List[dict]:
+    query = """
+        SELECT a.person_id,
+               MAX(a.name) as name,
+               MAX(a.age) as age,
+               MAX(a.gender) as gender,
+               COUNT(DISTINCT a.fir_rowid) as case_count,
+               GROUP_CONCAT(DISTINCT c.district) as districts,
+               GROUP_CONCAT(DISTINCT c.crime_minor_head) as categories,
+               MIN(c.date_reported) as first_seen,
+               MAX(c.date_reported) as last_seen,
+               MIN(a.ROWID) as any_accused_rowid
+        FROM Accused a
+        JOIN FIRs c ON a.fir_rowid = c.ROWID
+        WHERE a.person_id IS NOT NULL
+        GROUP BY a.person_id
+        HAVING COUNT(DISTINCT a.fir_rowid) >= 2
+        ORDER BY case_count DESC, last_seen DESC
+        LIMIT :limit
+    """
+    rows = await execute_query(query, {"limit": limit})
+    return [{
+        "person_id": r["person_id"],
+        "name": r["name"],
+        "age": r["age"],
+        "gender": r["gender"],
+        "case_count": r["case_count"],
+        "districts": sorted(set((r["districts"] or "").split(","))) if r["districts"] else [],
+        "categories": sorted(set((r["categories"] or "").split(","))) if r["categories"] else [],
+        "first_seen": r["first_seen"],
+        "last_seen": r["last_seen"],
+        "any_accused_rowid": r["any_accused_rowid"],
+    } for r in rows]
 
 async def get_all_accused(limit: int = 100) -> List[AccusedPerson]:
     query = "SELECT * FROM Accused LIMIT :limit"

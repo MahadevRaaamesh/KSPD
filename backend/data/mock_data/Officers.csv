@@ -1,76 +1,344 @@
 ROWID,name,rank,station_rowid,designation,kgid,dob,gender,blood_group,is_physically_challenged,appointment_date
-1,Christopher Palla,Constable,1,Beat Officer,3480706707,1992-10-26,Female,B-,1,2024-09-21
-2,Ishwar Hayre,Sub-Inspector,1,Station House Officer (SHO),5353148394,1984-04-30,Male,AB-,0,2017-10-17
-3,Hritik Rajan,Inspector,1,Station House Officer (SHO),7817795333,1991-03-22,Male,O+,0,2016-11-27
-4,Onveer Saxena,Sub-Inspector,1,Investigating Officer (IO),7716913984,1969-11-17,Male,B-,0,2020-03-30
-5,Kavya Dada,Sub-Inspector,1,Station House Officer (SHO),9172758224,1985-01-24,Female,AB-,0,2013-01-15
-6,Jeremiah Agate,Head Constable,2,Beat Officer,4815002590,1986-04-11,Female,B+,0,2018-01-26
-7,Forum Bhatt,Sub-Inspector,2,Investigating Officer (IO),0886134281,1974-02-01,Female,B-,1,2014-10-30
-8,Vedika Lad,Head Constable,2,Station House Officer (SHO),9839081357,1969-07-28,Male,A+,1,2016-08-16
-9,Suhani Gara,Head Constable,2,Beat Officer,1054408518,1972-06-21,Male,O-,0,2020-12-25
-10,Yashvi Dhar,Constable,2,Investigating Officer (IO),9030053607,1994-11-19,Male,A-,0,2018-07-11
-11,Chanchal Malhotra,Sub-Inspector,3,Investigating Officer (IO),5710024765,1990-09-23,Female,AB+,0,2017-11-22
-12,Krishna Nadig,Constable,3,Investigating Officer (IO),5313093892,1978-03-04,Female,O-,0,2020-01-30
-13,Yuvraj Sharaf,Sub-Inspector,3,Investigating Officer (IO),5771658763,1992-02-12,Female,B+,0,2016-09-11
-14,Omya Mohanty,Inspector,3,Station House Officer (SHO),7126460197,1993-08-21,Male,AB-,0,2018-04-07
-15,Udarsh Mane,Sub-Inspector,3,Investigating Officer (IO),7979977900,1995-05-28,Male,AB+,0,2013-12-04
-16,Falan Ghosh,Head Constable,4,Station House Officer (SHO),5609245097,1986-03-14,Male,AB-,0,2015-11-15
-17,Dakshesh Bansal,Sub-Inspector,4,Investigating Officer (IO),6681872284,1977-08-30,Female,O-,1,2025-01-07
-18,Elijah Sanghvi,Head Constable,4,Beat Officer,0085077506,1994-08-14,Male,B-,1,2021-05-23
-19,Harish Chawla,Head Constable,4,Investigating Officer (IO),6628459562,1969-07-25,Female,A+,0,2018-09-08
-20,Advay Iyer,Constable,4,Station House Officer (SHO),6715764809,1976-07-30,Male,B+,0,2012-03-09
-21,Urishilla Chadha,Inspector,5,Station House Officer (SHO),3260293832,1987-07-22,Male,AB-,0,2013-11-22
-22,Rushil Randhawa,Sub-Inspector,5,Station House Officer (SHO),0396770236,1992-04-15,Male,A+,0,2019-11-07
-23,Aadi Konda,Inspector,5,Station House Officer (SHO),6569853232,1969-11-17,Female,B+,0,2019-05-08
-24,Mitali Apte,Head Constable,5,Station House Officer (SHO),0283246944,1998-05-15,Male,AB-,0,2012-08-24
-25,Warinder Swaminathan,Head Constable,5,Station House Officer (SHO),9744264406,1995-12-21,Female,O+,1,2017-11-22
-26,Jatin Bora,Sub-Inspector,6,Beat Officer,7538080723,1989-05-03,Male,A+,0,2019-06-26
-27,Pooja Lad,Head Constable,6,Beat Officer,9441033992,1992-09-13,Female,B+,1,2016-10-28
-28,Prisha Basu,Inspector,6,Beat Officer,5221855986,1977-03-31,Male,B+,0,2022-11-21
-29,Zayyan Madan,Head Constable,6,Station House Officer (SHO),1805009033,1978-08-01,Female,B-,0,2016-05-05
-30,Vanya Talwar,Constable,6,Station House Officer (SHO),6413917350,1994-11-26,Female,O+,0,2016-06-18
-31,Neelima Nayar,Sub-Inspector,7,Station House Officer (SHO),1985589889,1977-07-14,Female,B+,0,2020-01-03
-32,Oeshi Morar,Constable,7,Investigating Officer (IO),5354085325,1984-04-30,Female,B+,0,2024-08-24
-33,Barkha Mammen,Sub-Inspector,7,Beat Officer,8253225926,1976-07-07,Male,O+,0,2019-11-10
-34,Radha Saraf,Inspector,7,Investigating Officer (IO),5450509867,1983-12-28,Female,B-,1,2018-08-18
-35,Atharv Thaker,Constable,7,Investigating Officer (IO),6593388384,1985-11-21,Female,AB+,0,2025-07-04
-36,Ekaja Mammen,Sub-Inspector,8,Beat Officer,5337450388,1997-06-19,Female,B+,0,2011-10-11
-37,Maanas Luthra,Sub-Inspector,8,Beat Officer,6277261641,1987-06-23,Male,B+,1,2014-12-19
-38,Prisha Natarajan,Constable,8,Station House Officer (SHO),7812497155,1998-03-23,Female,AB-,0,2023-08-22
-39,Urvashi Dhawan,Inspector,8,Investigating Officer (IO),7600686502,1998-09-17,Male,A-,0,2022-10-07
-40,Triveni Madan,Head Constable,8,Station House Officer (SHO),6474648021,1980-12-10,Female,O+,0,2013-10-31
-41,Azad Bhardwaj,Inspector,9,Investigating Officer (IO),3972169544,1992-06-09,Female,O-,0,2022-01-22
-42,Ayushman Lall,Constable,9,Station House Officer (SHO),6288346770,1973-02-17,Female,A+,0,2021-11-09
-43,Ojasvi Balasubramanian,Constable,9,Beat Officer,9358804691,1983-08-05,Female,AB-,0,2021-12-07
-44,Daksha Chandra,Head Constable,9,Investigating Officer (IO),6310623673,1972-11-08,Female,A+,0,2013-12-17
-45,Chaitanya Ganguly,Inspector,9,Station House Officer (SHO),6360410287,1983-05-10,Male,O+,0,2020-09-02
-46,Patrick Shenoy,Inspector,10,Investigating Officer (IO),3349986061,1978-04-03,Male,AB-,0,2015-12-07
-47,Meghana Joshi,Sub-Inspector,10,Station House Officer (SHO),8705668566,1999-12-14,Male,A-,1,2021-01-01
-48,Faqid Salvi,Head Constable,10,Station House Officer (SHO),8169036027,1987-06-04,Female,O-,0,2022-03-22
-49,Ekansh Kota,Inspector,10,Beat Officer,2822254770,1981-03-22,Male,B-,0,2023-01-19
-50,Tamanna Bahl,Sub-Inspector,10,Beat Officer,0189355289,1984-09-17,Female,B+,0,2017-07-28
-51,Yachana Mital,Head Constable,11,Station House Officer (SHO),9559626186,1977-08-30,Male,AB-,0,2012-06-13
-52,Indrajit Yadav,Head Constable,11,Beat Officer,2985924997,1975-03-10,Male,B+,0,2018-04-02
-53,Aahana Anne,Inspector,11,Investigating Officer (IO),4629941311,1990-10-25,Female,O-,0,2024-07-18
-54,Theodore Deshpande,Head Constable,11,Beat Officer,5963666973,1972-11-28,Male,A-,1,2015-05-03
-55,Raagini Tella,Inspector,11,Station House Officer (SHO),1624878493,1983-10-11,Female,A+,0,2019-06-14
-56,Brinda Divan,Constable,12,Beat Officer,3723956125,1999-02-23,Female,O+,1,2023-09-13
-57,Hemangini Choudhry,Inspector,12,Station House Officer (SHO),8807543861,1975-06-14,Male,O+,0,2017-09-18
-58,Neel Dash,Inspector,12,Station House Officer (SHO),2157643534,1991-07-07,Female,B-,0,2011-10-24
-59,Sanya Randhawa,Head Constable,12,Station House Officer (SHO),6913139907,1991-08-29,Male,O+,0,2012-05-20
-60,Amol Batra,Sub-Inspector,12,Station House Officer (SHO),6086757160,1992-03-24,Male,AB+,1,2025-03-21
-61,Liam Manne,Constable,13,Investigating Officer (IO),8088837890,1974-04-05,Female,AB+,0,2021-02-12
-62,Waida Sen,Constable,13,Investigating Officer (IO),2961310947,1971-02-01,Male,O+,1,2022-12-22
-63,Nihal Pant,Sub-Inspector,13,Station House Officer (SHO),6128781196,1977-02-19,Female,B-,1,2025-04-02
-64,Yashasvi Walia,Constable,13,Investigating Officer (IO),4704340635,1997-04-14,Female,O+,0,2016-04-25
-65,Ganga Sharaf,Head Constable,13,Investigating Officer (IO),7692044288,1996-10-18,Male,B+,0,2019-07-30
-66,Ryan Bhavsar,Constable,14,Beat Officer,8242705570,1977-10-11,Male,AB+,1,2023-02-18
-67,Omkaar Ram,Constable,14,Investigating Officer (IO),7653148158,1995-12-21,Female,AB-,1,2022-02-13
-68,Jeevika Mallick,Inspector,14,Beat Officer,8329666020,1973-02-14,Female,A-,0,2016-04-10
-69,Om Yohannan,Inspector,14,Investigating Officer (IO),7670864832,1974-11-23,Female,AB-,0,2017-08-01
-70,Rajata Ramesh,Inspector,14,Beat Officer,5571583734,1996-05-05,Male,AB+,0,2020-09-20
-71,Aditya Andra,Constable,15,Station House Officer (SHO),2744133758,1978-03-17,Female,O+,0,2025-01-25
-72,Rishi Sood,Constable,15,Investigating Officer (IO),3951811149,1976-06-21,Male,A-,0,2013-07-17
-73,Lekha Johal,Sub-Inspector,15,Station House Officer (SHO),0281396105,1983-11-06,Male,A+,1,2025-02-07
-74,Jagdish Sagar,Inspector,15,Station House Officer (SHO),9872167536,1995-09-06,Male,O-,0,2013-07-24
-75,Jagat Swamy,Sub-Inspector,15,Investigating Officer (IO),6557516959,1990-04-22,Female,O+,0,2016-03-25
+1,PSI Joseph Prabhu,PSI,1,Investigating Officer,2256077,1983-03-18,Male,O-,0,2013-03-10
+2,DySP Deepa Puthran,DySP,1,Sub-Division Officer,2841319,1997-05-08,Female,A-,0,2019-09-03
+3,SI Shivakumar Pinto,SI,1,Investigating Officer,1346296,1976-03-22,Male,O+,0,2005-12-21
+4,SI Darshan Madiwal,SI,1,Investigating Officer,2408629,1995-12-07,Male,O-,0,2022-06-22
+5,PSI Venkatesh Sharma,PSI,1,Investigating Officer,2234048,1982-01-19,Male,B-,1,2012-05-08
+6,PSI Nagaraj Murthy,PSI,1,Investigating Officer,1584009,1973-06-03,Male,AB-,0,2003-09-25
+7,Inspector Farhan Sharma,Inspector,2,Station House Officer,2381986,1997-07-07,Male,AB+,0,2020-08-19
+8,ASI Manjunath Pasha,ASI,2,Investigating Officer,2678964,1992-02-02,Male,A-,0,2020-07-17
+9,SI Bhavya Kamath,SI,2,Investigating Officer,2694545,1980-08-08,Female,A-,0,2004-03-16
+10,DySP Suresh Kulkarni,DySP,2,Sub-Division Officer,1448260,1979-03-14,Male,AB+,0,2008-11-07
+11,PSI Lakshmi Hiremath,PSI,2,Investigating Officer,2388044,1997-08-10,Female,AB-,0,2026-05-14
+12,ASI Gowri Kini,ASI,3,Investigating Officer,2225109,1973-12-11,Female,AB-,0,1995-12-31
+13,DySP Vinod Shetty,DySP,3,Sub-Division Officer,1846778,1974-03-03,Male,A-,0,1997-06-25
+14,PSI Santhosh Bangera,PSI,3,Investigating Officer,2960221,1993-10-19,Male,O+,0,2024-03-21
+15,SI Ajay Patil,SI,3,Investigating Officer,2948292,1993-11-10,Male,A-,1,2023-04-13
+16,SI Girish Hegde,SI,3,Investigating Officer,2843963,1988-05-05,Male,B-,0,2015-06-03
+17,SI Pallavi Sait,SI,3,Investigating Officer,1627842,1997-11-17,Female,A-,0,2020-08-21
+18,ASI Lokesh Fernandes,ASI,4,Investigating Officer,1426974,1980-05-20,Male,O+,0,2005-11-05
+19,ASI Manjunath Kulkarni,ASI,4,Investigating Officer,2617154,1998-05-02,Male,B+,0,2020-10-13
+20,ASI Irfan Udupa,ASI,4,Investigating Officer,2144185,1989-01-04,Male,A+,0,2012-03-15
+21,PSI Anand Poojary,PSI,4,Investigating Officer,1440562,1981-06-26,Male,B-,0,2003-12-21
+22,ASI Bharath Bangera,ASI,4,Investigating Officer,1051980,1979-03-26,Male,B+,0,2003-10-17
+23,ASI Bharath Iyer,ASI,5,Investigating Officer,1802248,1995-04-09,Male,A+,0,2019-05-28
+24,SI Abdul Biradar,SI,5,Investigating Officer,1835643,1997-04-08,Male,O-,0,2019-07-10
+25,SI Mary Jadhav,SI,5,Investigating Officer,2969723,1988-07-22,Female,A+,0,2018-12-31
+26,DySP Anil Kini,DySP,5,Sub-Division Officer,2527869,1980-01-04,Male,O-,0,2008-06-21
+27,Inspector Umesh Hiremath,Inspector,5,Station House Officer,2090351,1978-05-02,Male,B-,0,2006-04-25
+28,SI Ambika Kamat,SI,5,Investigating Officer,2063512,1982-11-28,Female,O+,0,2006-04-24
+29,PSI Hanumantha Udupa,PSI,6,Investigating Officer,1631137,1985-11-13,Male,AB+,0,2010-08-25
+30,SI Nisha Acharya,SI,6,Investigating Officer,1926492,1990-10-21,Female,AB-,0,2018-06-09
+31,PSI Sunil Sheikh,PSI,6,Investigating Officer,2716358,1988-11-21,Male,B-,0,2016-01-01
+32,PSI Pavan Pai,PSI,6,Investigating Officer,1869145,1979-08-20,Male,B-,0,2003-04-04
+33,PSI Vikram Sharma,PSI,6,Investigating Officer,1458943,1994-01-25,Male,B+,0,2017-08-24
+34,ASI Syed Shetty,ASI,6,Investigating Officer,2172151,1975-08-05,Male,O-,0,2005-04-25
+35,Inspector Joseph Poojary,Inspector,7,Station House Officer,1543564,1989-08-06,Male,B-,0,2019-03-17
+36,ASI Wilson Ballal,ASI,7,Investigating Officer,1569827,1980-08-03,Male,O-,0,2006-11-25
+37,PSI Raghavendra Pai,PSI,7,Investigating Officer,1870041,1994-03-23,Male,AB+,0,2019-04-18
+38,Inspector Nagaraj Acharya,Inspector,7,Station House Officer,1797716,1984-10-23,Male,AB-,1,2007-08-08
+39,Inspector Madhu Devadiga,Inspector,7,Station House Officer,2023891,1998-07-18,Male,B-,0,2028-10-30
+40,ASI Madhu Kattimani,ASI,7,Investigating Officer,2928418,1997-07-24,Male,B+,0,2022-03-14
+41,ASI Sudeep Kini,ASI,7,Investigating Officer,2817919,1972-02-21,Male,AB-,0,2000-04-23
+42,SI Darshan Salian,SI,8,Investigating Officer,2750935,1996-07-09,Male,A-,0,2024-11-08
+43,PSI Manjunath Biradar,PSI,8,Investigating Officer,1418089,1974-11-02,Male,A+,0,1997-03-02
+44,PSI Farhan Sheikh,PSI,8,Investigating Officer,1351879,1978-08-23,Male,A-,0,2005-02-20
+45,ASI Divya Deshpande,ASI,8,Investigating Officer,2974406,1981-10-22,Female,B-,0,2010-05-06
+46,ASI Sanjay Deshpande,ASI,8,Investigating Officer,2641305,1981-11-20,Male,A+,0,2005-08-30
+47,SI Shankar Hegde,SI,8,Investigating Officer,1221331,1982-01-28,Male,AB+,0,2010-09-28
+48,ASI Imran Naik,ASI,9,Investigating Officer,1974910,1992-05-20,Male,AB+,0,2023-01-15
+49,PSI Abhishek Devadiga,PSI,9,Investigating Officer,2195061,1974-05-15,Male,AB+,0,2000-01-01
+50,SI Abhishek Naik,SI,9,Investigating Officer,2165578,1983-05-11,Male,A+,0,2009-09-22
+51,SI Rekha DSouza,SI,9,Investigating Officer,1939890,1989-04-23,Female,A+,0,2018-12-23
+52,ASI Sanjay Pawar,ASI,9,Investigating Officer,1892346,1983-08-18,Male,O-,0,2014-02-02
+53,PSI Puneeth Patil,PSI,9,Investigating Officer,2994134,1995-04-11,Male,B+,0,2019-01-04
+54,ASI Basavaraj DSouza,ASI,9,Investigating Officer,2746148,1996-09-20,Male,B-,0,2022-11-04
+55,SI Lakshmi Sait,SI,10,Investigating Officer,2462590,1980-01-02,Female,B+,0,2010-05-23
+56,PSI Lokesh Moily,PSI,10,Investigating Officer,1386638,1981-08-16,Male,A+,0,2011-01-30
+57,PSI Umesh Iyengar,PSI,10,Investigating Officer,1312890,1987-02-19,Male,O+,0,2009-05-01
+58,ASI Nithin Prabhu,ASI,10,Investigating Officer,1944797,1991-04-25,Male,AB-,0,2021-10-28
+59,ASI Rohan Pawar,ASI,10,Investigating Officer,2311800,1973-10-24,Male,B-,0,1997-02-01
+60,ASI Rekha Naik,ASI,10,Investigating Officer,1610815,1977-01-14,Female,A+,0,2006-09-04
+61,ASI Abdul Hegde,ASI,11,Investigating Officer,1240703,1980-11-19,Male,B-,0,2006-06-18
+62,PSI Anand Hegde,PSI,11,Investigating Officer,1260788,1997-05-20,Male,AB-,0,2023-12-24
+63,SI Gopal Alva,SI,11,Investigating Officer,2540429,1986-02-20,Male,O-,0,2008-09-23
+64,Inspector Hema Pasha,Inspector,11,Station House Officer,1084371,1990-10-01,Female,B+,0,2017-07-16
+65,DySP Basavaraj Naik,DySP,11,Sub-Division Officer,1985683,1985-11-27,Male,O-,0,2015-01-05
+66,PSI Lokesh Devadiga,PSI,11,Investigating Officer,2706171,1985-12-16,Male,A+,0,2012-07-02
+67,SI Umesh Lobo,SI,12,Investigating Officer,1866642,1988-01-22,Male,A+,0,2018-09-07
+68,SI Peter Amin,SI,12,Investigating Officer,2945470,1973-04-09,Male,O+,0,2003-06-08
+69,DySP Venkatesh Reddy,DySP,12,Sub-Division Officer,2155193,1991-04-23,Male,A+,0,2015-09-23
+70,DySP Seetha Salian,DySP,12,Sub-Division Officer,2479355,1992-03-16,Female,O+,0,2018-11-25
+71,SI Farhan Sharma,SI,12,Investigating Officer,2811995,1976-07-07,Male,A-,0,2006-09-07
+72,DySP Nithin Kattimani,DySP,12,Sub-Division Officer,2522639,1988-05-27,Male,O+,0,2010-10-13
+73,PSI Mustafa Moily,PSI,13,Investigating Officer,2599859,1989-08-12,Male,AB+,0,2017-05-14
+74,PSI Naveen Baig,PSI,13,Investigating Officer,1667264,1984-04-28,Male,AB-,0,2012-05-13
+75,Inspector Madhu Sheikh,Inspector,13,Station House Officer,2053380,1992-03-16,Male,O-,0,2014-05-14
+76,SI Irfan Deshpande,SI,13,Investigating Officer,2826478,1986-01-24,Male,B+,0,2010-08-15
+77,ASI Krishna Kattimani,ASI,13,Investigating Officer,1796937,1984-11-03,Male,O-,0,2012-07-27
+78,SI Mustafa Moily,SI,13,Investigating Officer,2566082,1991-02-08,Male,A-,0,2017-05-28
+79,Inspector Sharada Sait,Inspector,13,Station House Officer,1096450,1986-03-23,Female,O-,0,2012-03-30
+80,PSI Shankar Poojary,PSI,13,Investigating Officer,1367147,1988-07-19,Male,A-,0,2012-10-08
+81,Inspector Ajay Ballal,Inspector,14,Station House Officer,1535458,1976-04-15,Male,A+,0,2002-11-30
+82,SI Siddaraju Pasha,SI,14,Investigating Officer,2447692,1974-08-12,Male,O+,0,2001-03-10
+83,SI Madhu Devadiga,SI,14,Investigating Officer,1620489,1979-07-19,Male,O+,1,2007-05-02
+84,PSI Sudeep Jadhav,PSI,14,Investigating Officer,2626846,1993-12-02,Male,B-,0,2023-04-20
+85,PSI Naveen Bangera,PSI,14,Investigating Officer,2894574,1996-12-25,Male,A+,0,2021-02-06
+86,PSI Jagadish DSouza,PSI,14,Investigating Officer,1421097,1981-06-24,Male,B+,0,2009-09-14
+87,SI Jagadish Rai,SI,14,Investigating Officer,2565648,1980-03-09,Male,O-,0,2009-07-31
+88,DySP Anand Pinto,DySP,15,Sub-Division Officer,1767085,1993-12-22,Male,A-,0,2022-09-26
+89,SI Pallavi Joshi,SI,15,Investigating Officer,1799068,1993-12-22,Female,O-,0,2020-10-10
+90,Inspector Ganesh Bangera,Inspector,15,Station House Officer,2332538,1989-06-20,Male,AB-,0,2014-07-16
+91,PSI Bharath Joshi,PSI,15,Investigating Officer,1492411,1973-05-16,Male,B+,0,1996-06-28
+92,ASI Sagar Swamy,ASI,15,Investigating Officer,2291116,1995-03-14,Male,AB+,0,2018-11-13
+93,SI Shankar Acharya,SI,15,Investigating Officer,2890994,1979-06-04,Male,O-,0,2007-03-02
+94,Inspector Venkatesh Devadiga,Inspector,15,Station House Officer,2650027,1974-11-07,Male,O-,0,1996-11-26
+95,Inspector Chetan Hegde,Inspector,16,Station House Officer,1689039,1989-04-19,Male,B+,0,2014-08-10
+96,DySP Basavaraj Devadiga,DySP,16,Sub-Division Officer,2386338,1976-09-09,Male,A+,0,2000-10-29
+97,SI Ajay Kini,SI,16,Investigating Officer,2103281,1977-05-02,Male,A-,0,2001-11-27
+98,ASI Jagadish Alva,ASI,16,Investigating Officer,1632564,1986-09-08,Male,AB-,0,2009-05-26
+99,SI Meghana Devadiga,SI,16,Investigating Officer,2885899,1993-02-16,Female,A-,0,2022-03-18
+100,ASI Asha Bangera,ASI,17,Investigating Officer,1618445,1989-12-11,Female,AB-,0,2018-09-01
+101,ASI Umesh Devadiga,ASI,17,Investigating Officer,1946979,1996-09-24,Male,B-,0,2022-04-26
+102,ASI Vikram Swamy,ASI,17,Investigating Officer,2999828,1982-07-11,Male,B+,0,2009-01-11
+103,PSI Harish Achar,PSI,17,Investigating Officer,2166794,1985-02-24,Male,A+,0,2012-04-24
+104,PSI Rakesh Sheikh,PSI,17,Investigating Officer,1603202,1983-11-25,Male,O+,0,2011-12-14
+105,SI Arun Sheikh,SI,18,Investigating Officer,1240931,1975-06-28,Male,O+,0,2005-12-25
+106,DySP Ganesh Prabhu,DySP,18,Sub-Division Officer,1573089,1998-12-09,Male,O+,0,2021-03-05
+107,PSI Praveen Moily,PSI,18,Investigating Officer,1192429,1993-07-03,Male,B-,0,2017-07-12
+108,SI Vinod Angadi,SI,18,Investigating Officer,1326274,1982-10-20,Male,B+,0,2005-11-09
+109,SI Radha Jadhav,SI,18,Investigating Officer,1572872,1985-08-20,Female,B-,0,2015-03-13
+110,PSI Navya Joshi,PSI,18,Investigating Officer,1095247,1993-10-16,Female,B-,0,2024-03-14
+111,SI Ramesh Acharya,SI,18,Investigating Officer,1688122,1978-03-25,Male,A-,1,2004-08-13
+112,SI Anil Kamath,SI,18,Investigating Officer,1151153,1994-04-17,Male,AB+,0,2024-10-07
+113,PSI Abdul Kamat,PSI,19,Investigating Officer,1607157,1982-10-14,Male,A-,0,2011-05-08
+114,DySP Sunil Iyer,DySP,19,Sub-Division Officer,2771012,1986-12-12,Male,A-,0,2010-07-17
+115,SI Charan Kulkarni,SI,19,Investigating Officer,2633928,1981-12-11,Male,B+,0,2007-05-24
+116,PSI Charan Alva,PSI,19,Investigating Officer,1215596,1996-06-12,Male,B+,0,2020-10-04
+117,DySP Ravi Naik,DySP,20,Sub-Division Officer,2348451,1992-08-15,Male,O-,0,2022-05-24
+118,PSI Arun Suvarna,PSI,20,Investigating Officer,1738076,1986-11-10,Male,A-,0,2012-12-01
+119,Inspector Nagaraj Angadi,Inspector,20,Station House Officer,1806318,1974-11-28,Male,AB-,0,1998-08-08
+120,Inspector Santhosh Suvarna,Inspector,20,Station House Officer,2051443,1990-11-07,Male,B+,0,2018-07-01
+121,PSI Dinesh Sait,PSI,20,Investigating Officer,1921534,1992-03-02,Male,B+,0,2017-10-06
+122,ASI Dinesh Pasha,ASI,21,Investigating Officer,1691411,1997-11-21,Male,A-,0,2024-12-17
+123,Inspector Mohan DSouza,Inspector,21,Station House Officer,2391695,1991-03-11,Male,B+,0,2014-12-28
+124,ASI Sudeep Kamath,ASI,21,Investigating Officer,2705372,1974-05-18,Male,B+,0,2002-10-26
+125,ASI Charan Kulkarni,ASI,21,Investigating Officer,1647739,1985-09-12,Male,B+,0,2008-03-10
+126,PSI Mustafa Bhat,PSI,21,Investigating Officer,2064702,1976-03-03,Male,A+,0,2002-04-17
+127,SI Srinivas Prabhu,SI,21,Investigating Officer,1091629,1977-03-27,Male,AB+,0,2001-10-31
+128,ASI Siddaraju Pinto,ASI,22,Investigating Officer,2695807,1986-04-18,Male,AB-,0,2011-09-17
+129,DySP Bhagya Karanth,DySP,22,Sub-Division Officer,2106163,1986-05-25,Female,AB+,0,2015-01-30
+130,PSI Raghavendra Moily,PSI,22,Investigating Officer,2959355,1992-08-28,Male,A-,0,2020-05-31
+131,PSI Venkatesh Chavan,PSI,22,Investigating Officer,2742831,1977-05-15,Male,AB+,0,2007-07-22
+132,SI Salman Puthran,SI,22,Investigating Officer,1784254,1972-07-02,Male,B-,0,2001-03-09
+133,DySP Ganesh Shinde,DySP,23,Sub-Division Officer,1288567,1998-12-21,Male,A+,0,2026-02-26
+134,ASI Raghavendra Pinto,ASI,23,Investigating Officer,1536711,1986-10-01,Male,B-,0,2009-10-04
+135,PSI Charan Poojary,PSI,23,Investigating Officer,1500043,1981-04-10,Male,AB+,0,2004-04-28
+136,Inspector Shivakumar Joshi,Inspector,23,Station House Officer,2205961,1987-10-18,Male,B-,0,2010-07-02
+137,ASI Satish Sharma,ASI,24,Investigating Officer,1756240,1977-11-22,Male,A-,0,2001-08-11
+138,PSI Joseph Udupa,PSI,24,Investigating Officer,1531943,1987-01-21,Male,A+,0,2015-07-24
+139,ASI Rekha DSouza,ASI,24,Investigating Officer,1092978,1975-10-24,Female,O-,0,2002-12-24
+140,Inspector Anil Achar,Inspector,24,Station House Officer,1132331,1986-12-16,Male,AB-,0,2011-02-17
+141,PSI Vanitha Puthran,PSI,24,Investigating Officer,1531237,1981-09-13,Female,A+,0,2012-05-05
+142,Inspector Swathi Moily,Inspector,24,Station House Officer,1916353,1992-06-09,Female,AB+,0,2015-12-09
+143,ASI Praveen Ballal,ASI,25,Investigating Officer,1165521,1983-09-09,Male,AB+,0,2007-04-08
+144,SI Sagar Chavan,SI,25,Investigating Officer,1935153,1974-06-22,Male,AB+,0,2000-11-18
+145,ASI Salman Rao,ASI,25,Investigating Officer,1157372,1983-10-14,Male,AB+,0,2009-11-05
+146,PSI Vinod Reddy,PSI,25,Investigating Officer,1264723,1991-11-26,Male,A-,0,2020-12-05
+147,DySP Jagadish Hiremath,DySP,25,Sub-Division Officer,1780168,1973-10-05,Male,AB-,0,2003-04-05
+148,SI Charan Angadi,SI,25,Investigating Officer,2542822,1992-05-08,Male,B+,0,2015-05-16
+149,Inspector Venkatesh Patil,Inspector,25,Station House Officer,1419804,1994-08-07,Male,A-,0,2021-04-08
+150,Inspector Irfan Kulkarni,Inspector,26,Station House Officer,2137015,1982-11-12,Male,O+,0,2006-08-14
+151,SI Anil Sequeira,SI,26,Investigating Officer,2657532,1979-02-07,Male,AB-,1,2003-06-02
+152,Inspector Shankar Salian,Inspector,26,Station House Officer,1648629,1989-03-20,Male,AB+,0,2012-04-16
+153,ASI Charan Swamy,ASI,26,Investigating Officer,2347081,1998-10-03,Male,A-,0,2023-03-08
+154,DySP Praveen Lobo,DySP,27,Sub-Division Officer,2086538,1985-09-28,Male,B+,0,2007-11-25
+155,SI Spandana Murthy,SI,27,Investigating Officer,1411674,1988-05-28,Female,O+,0,2011-09-28
+156,SI Gagan Kulkarni,SI,27,Investigating Officer,2381462,1977-10-19,Male,O-,0,2002-01-08
+157,PSI Ganesh Kulkarni,PSI,27,Investigating Officer,1873645,1992-10-09,Male,A+,0,2018-07-22
+158,DySP Hanumantha Khan,DySP,27,Sub-Division Officer,1951150,1987-04-26,Male,A-,0,2015-09-18
+159,SI Soumya Kotian,SI,27,Investigating Officer,2539728,1982-10-05,Female,O-,0,2010-03-10
+160,ASI Deepa Alva,ASI,27,Investigating Officer,1942871,1982-04-15,Female,B-,0,2005-08-23
+161,ASI Pooja Moily,ASI,27,Investigating Officer,2512315,1979-03-27,Female,O-,0,2007-01-09
+162,SI Thomas Salian,SI,28,Investigating Officer,2059993,1981-08-01,Male,AB-,0,2005-02-12
+163,PSI Swathi Shetty,PSI,28,Investigating Officer,2125522,1987-10-27,Female,A+,0,2017-03-14
+164,SI Krishna DSouza,SI,28,Investigating Officer,2195967,1984-06-02,Male,B-,0,2012-06-21
+165,SI Madhu Alva,SI,28,Investigating Officer,1202755,1989-05-27,Male,AB+,0,2012-07-25
+166,PSI Jagadish Pinto,PSI,28,Investigating Officer,1095008,1991-09-13,Male,A+,0,2021-09-25
+167,PSI Wilson Salian,PSI,29,Investigating Officer,1824085,1988-03-11,Male,O+,0,2015-05-27
+168,SI Thomas Adiga,SI,29,Investigating Officer,1694659,1990-05-16,Male,A-,0,2012-11-14
+169,SI Ganesh Prabhu,SI,29,Investigating Officer,2223737,1992-10-19,Male,AB-,0,2017-11-08
+170,Inspector Murali Pai,Inspector,29,Station House Officer,1039714,1979-01-19,Male,AB-,0,2002-04-20
+171,SI Nandini Acharya,SI,29,Investigating Officer,2087757,1996-10-16,Female,B-,0,2018-12-20
+172,SI Riyaz Rai,SI,29,Investigating Officer,1742993,1977-08-18,Male,O+,0,2005-05-17
+173,PSI Basavaraj Udupa,PSI,30,Investigating Officer,1664882,1981-05-23,Male,AB-,0,2007-01-22
+174,PSI Basavaraj Chavan,PSI,30,Investigating Officer,2621233,1993-09-13,Male,B+,0,2022-03-01
+175,DySP Kiran Biradar,DySP,30,Sub-Division Officer,1423767,1992-05-24,Male,O+,0,2021-09-03
+176,ASI Raghavendra Deshpande,ASI,30,Investigating Officer,1473267,1990-04-08,Male,B-,0,2012-12-29
+177,ASI Farhan Deshpande,ASI,30,Investigating Officer,2369215,1976-01-18,Male,AB-,0,2000-08-07
+178,PSI Siddaraju Shinde,PSI,31,Investigating Officer,2549137,1973-02-21,Male,A+,0,1998-11-15
+179,Inspector Anitha Madiwal,Inspector,31,Station House Officer,2964210,1998-07-26,Female,O+,0,2027-10-22
+180,PSI Sandhya Prabhu,PSI,31,Investigating Officer,2035809,1982-05-15,Female,B+,0,2013-01-30
+181,PSI Naveen Iyer,PSI,31,Investigating Officer,1029536,1977-12-15,Male,O-,0,2004-03-13
+182,ASI Naveen Naik,ASI,31,Investigating Officer,1687712,1992-07-27,Male,A-,0,2021-04-09
+183,SI Savitha Kotian,SI,32,Investigating Officer,1936872,1979-01-09,Female,O+,0,2007-05-02
+184,ASI Suresh Patil,ASI,32,Investigating Officer,1643419,1994-04-02,Male,B+,0,2017-11-20
+185,PSI Puneeth Baig,PSI,32,Investigating Officer,1280114,1981-06-20,Male,AB-,0,2006-10-04
+186,ASI Shankar Swamy,ASI,32,Investigating Officer,2426780,1987-09-26,Male,A-,0,2013-01-23
+187,ASI Ravi Kamat,ASI,33,Investigating Officer,2125457,1973-09-17,Male,B+,0,1999-07-01
+188,ASI Irfan Joshi,ASI,33,Investigating Officer,1934244,1994-10-16,Male,A+,0,2018-06-28
+189,PSI Abdul Karanth,PSI,33,Investigating Officer,1830364,1986-11-26,Male,O+,0,2012-11-30
+190,SI Ravi Rao,SI,33,Investigating Officer,2958269,1994-02-18,Male,AB-,0,2016-03-19
+191,ASI Raghavendra Lobo,ASI,33,Investigating Officer,1940650,1995-11-14,Male,AB+,0,2023-05-21
+192,ASI Sagar Kamath,ASI,33,Investigating Officer,2109063,1983-02-06,Male,B+,0,2013-08-18
+193,PSI Ramesh Pinto,PSI,33,Investigating Officer,2115545,1981-08-22,Male,AB+,0,2012-03-19
+194,PSI Rajesh Pai,PSI,33,Investigating Officer,1504713,1995-02-02,Male,B-,0,2023-02-03
+195,ASI Uma Pasha,ASI,34,Investigating Officer,1920571,1973-04-24,Female,B-,0,1995-11-10
+196,SI Nagaraj Kamath,SI,34,Investigating Officer,2253924,1981-04-27,Male,O-,0,2009-02-09
+197,SI Wilson Murthy,SI,34,Investigating Officer,2165703,1980-01-18,Male,AB-,0,2004-08-17
+198,SI Murali Sequeira,SI,34,Investigating Officer,1789494,1994-07-14,Male,B+,0,2018-12-08
+199,Inspector Karthik Pawar,Inspector,34,Station House Officer,1873480,1976-08-02,Male,B+,0,2007-02-22
+200,PSI Rakesh Khan,PSI,34,Investigating Officer,1108080,1986-06-03,Male,O+,0,2016-08-31
+201,PSI Santhosh Moily,PSI,34,Investigating Officer,2005362,1997-10-24,Male,B-,0,2028-02-05
+202,DySP Suresh Acharya,DySP,34,Sub-Division Officer,2458834,1995-02-24,Male,B-,0,2024-06-20
+203,SI Siddaraju Hiremath,SI,35,Investigating Officer,2075454,1992-06-10,Male,AB-,0,2018-12-05
+204,Inspector Farhan Pinto,Inspector,35,Station House Officer,2179699,1978-06-11,Male,B-,0,2006-06-27
+205,ASI Vidya Madiwal,ASI,35,Investigating Officer,1691777,1995-07-10,Female,B-,0,2019-10-12
+206,ASI Peter Udupa,ASI,35,Investigating Officer,1966428,1993-06-09,Male,B+,0,2023-02-08
+207,SI Raghavendra DSouza,SI,35,Investigating Officer,1070933,1977-09-21,Male,A-,0,2000-06-10
+208,Inspector Bharath Kamath,Inspector,36,Station House Officer,1458688,1979-02-23,Male,AB-,0,2003-02-21
+209,SI Riyaz Sheikh,SI,36,Investigating Officer,1035077,1972-09-18,Male,O+,0,2000-09-17
+210,ASI Joseph Iyengar,ASI,36,Investigating Officer,1312260,1985-03-04,Male,B-,0,2008-11-21
+211,Inspector Satish Jadhav,Inspector,36,Station House Officer,1510043,1974-06-13,Male,B-,0,2004-03-21
+212,SI Prakash Kulkarni,SI,37,Investigating Officer,2473973,1984-09-16,Male,B+,0,2006-09-15
+213,DySP Rakesh Karanth,DySP,37,Sub-Division Officer,2890106,1975-09-02,Male,AB-,0,2000-12-12
+214,SI Basavaraj Shanbhag,SI,37,Investigating Officer,1434442,1993-01-06,Male,B+,0,2020-01-08
+215,PSI Sudeep Madiwal,PSI,37,Investigating Officer,1695687,1977-10-08,Male,AB+,0,2006-07-04
+216,ASI Kiran Alva,ASI,38,Investigating Officer,2758828,1983-01-04,Male,A-,0,2011-04-25
+217,SI Sudeep Lobo,SI,38,Investigating Officer,1478440,1992-05-26,Male,O-,0,2022-01-25
+218,ASI Praveen Pasha,ASI,38,Investigating Officer,2495496,1984-02-25,Male,A-,0,2010-06-24
+219,ASI Spandana Sequeira,ASI,38,Investigating Officer,1191932,1995-07-11,Female,A+,0,2022-08-27
+220,PSI Gopal Deshpande,PSI,38,Investigating Officer,2074666,1977-07-15,Male,AB+,0,2008-04-17
+221,ASI Harish Prabhu,ASI,39,Investigating Officer,1813274,1982-07-01,Male,A-,0,2009-01-21
+222,SI Sanjay Karanth,SI,39,Investigating Officer,1631518,1993-07-06,Male,O+,0,2017-11-14
+223,SI Navya Jadhav,SI,39,Investigating Officer,2511835,1987-02-12,Female,AB-,0,2013-06-11
+224,SI Geetha Kamath,SI,39,Investigating Officer,1923214,1984-06-27,Female,O-,0,2012-12-05
+225,DySP Priya Prabhu,DySP,40,Sub-Division Officer,1669280,1978-08-11,Female,O+,0,2003-02-24
+226,SI Sanjay Shinde,SI,40,Investigating Officer,1419011,1998-07-12,Male,B+,0,2022-04-20
+227,PSI Syed Sait,PSI,40,Investigating Officer,2411336,1997-05-27,Male,AB-,0,2020-12-16
+228,PSI Mohan Sheikh,PSI,40,Investigating Officer,2221054,1985-07-03,Male,AB+,0,2015-02-26
+229,PSI Nithin Adiga,PSI,40,Investigating Officer,1229364,1983-12-26,Male,B-,0,2014-01-30
+230,DySP Santhosh Karanth,DySP,40,Sub-Division Officer,1222181,1993-11-13,Male,A+,0,2021-06-14
+231,ASI Wilson Udupa,ASI,40,Investigating Officer,1971113,1990-04-15,Male,B+,0,2017-10-25
+232,SI Geetha Chavan,SI,40,Investigating Officer,1654081,1974-02-27,Female,O-,0,1998-08-18
+233,PSI Rajesh Kotian,PSI,41,Investigating Officer,1629699,1995-12-15,Male,A+,0,2023-01-11
+234,PSI Shruthi Khan,PSI,41,Investigating Officer,1365854,1997-03-24,Female,B+,0,2022-12-07
+235,Inspector Syed Murthy,Inspector,41,Station House Officer,1061220,1992-03-06,Male,B-,0,2020-09-17
+236,PSI Ramesh Sait,PSI,41,Investigating Officer,1213389,1980-12-26,Male,B+,0,2004-10-11
+237,ASI Seetha Patil,ASI,41,Investigating Officer,2282006,1987-09-21,Female,AB+,0,2015-03-31
+238,PSI Abdul Bangera,PSI,42,Investigating Officer,2409517,1993-12-26,Male,B+,0,2020-02-01
+239,SI Umesh Naik,SI,42,Investigating Officer,2205455,1976-09-13,Male,AB+,0,2004-11-15
+240,Inspector Gagan Baig,Inspector,42,Station House Officer,1294223,1977-09-06,Male,B+,0,2007-01-24
+241,SI Manjunath Moily,SI,42,Investigating Officer,2177722,1972-08-05,Male,AB-,0,1998-02-11
+242,PSI Irfan Ballal,PSI,42,Investigating Officer,1068566,1990-01-26,Male,O+,0,2015-06-18
+243,ASI Abdul Karanth,ASI,42,Investigating Officer,2201068,1996-08-18,Male,A-,0,2026-10-07
+244,Inspector Jagadish Adiga,Inspector,43,Station House Officer,1891614,1973-12-15,Male,A-,0,2004-03-28
+245,Inspector Sanjay Pawar,Inspector,43,Station House Officer,1920796,1973-08-09,Male,A-,0,2000-09-15
+246,ASI Rajesh Moily,ASI,43,Investigating Officer,2706095,1992-07-06,Male,B-,0,2016-10-13
+247,ASI Gagan Jadhav,ASI,43,Investigating Officer,2201113,1977-06-23,Male,O+,0,2003-11-12
+248,DySP Girish Kamath,DySP,43,Sub-Division Officer,2470998,1997-07-02,Male,B+,0,2023-08-29
+249,Inspector Sanjay Pinto,Inspector,43,Station House Officer,1786793,1984-08-05,Male,AB-,0,2011-02-27
+250,SI Harish Kumar,SI,43,Investigating Officer,1686375,1980-12-12,Male,A+,0,2010-08-11
+251,DySP Harish DSouza,DySP,43,Sub-Division Officer,2668657,1992-11-23,Male,AB+,0,2019-12-19
+252,SI Peter Jadhav,SI,44,Investigating Officer,2787659,1981-06-18,Male,AB-,0,2006-03-28
+253,PSI Manjunath Rao,PSI,44,Investigating Officer,1925443,1997-08-01,Male,AB-,1,2020-10-14
+254,Inspector Pavan Baig,Inspector,44,Station House Officer,2372770,1992-05-06,Male,O-,0,2018-06-16
+255,SI Sunil Shetty,SI,44,Investigating Officer,2374652,1981-12-23,Male,A-,0,2007-07-24
+256,PSI Meghana Hegde,PSI,44,Investigating Officer,1016908,1979-09-22,Female,O-,0,2008-09-18
+257,PSI Rohan Baig,PSI,44,Investigating Officer,1216429,1974-04-13,Male,O-,0,1997-05-29
+258,Inspector Murali Lobo,Inspector,44,Station House Officer,2112556,1976-11-22,Male,A+,0,2000-12-21
+259,ASI Darshan Amin,ASI,45,Investigating Officer,1181797,1985-10-22,Male,A-,0,2015-02-03
+260,SI Ayesha Hiremath,SI,45,Investigating Officer,1580843,1985-06-26,Female,A-,0,2009-10-24
+261,DySP Siddaraju Lobo,DySP,45,Sub-Division Officer,2272817,1972-11-10,Male,B-,0,1998-07-27
+262,Inspector Manjunath Sequeira,Inspector,45,Station House Officer,2047700,1979-08-13,Male,A-,0,2002-12-08
+263,SI Jagadish Madiwal,SI,45,Investigating Officer,2432233,1984-10-14,Male,B+,0,2012-07-13
+264,PSI Shobha Gowda,PSI,46,Investigating Officer,1600808,1973-01-26,Female,AB+,0,2001-10-05
+265,ASI Gagan Adiga,ASI,46,Investigating Officer,2931319,1980-02-10,Male,B-,0,2003-10-23
+266,ASI Priya Kumar,ASI,46,Investigating Officer,2465229,1996-11-22,Female,AB+,0,2020-04-23
+267,PSI Nagaraj Sharma,PSI,46,Investigating Officer,2396870,1985-02-15,Male,B+,0,2007-07-18
+268,DySP Vinod Ballal,DySP,47,Sub-Division Officer,1779866,1988-09-26,Male,B+,0,2014-12-14
+269,Inspector Venkatesh Lobo,Inspector,47,Station House Officer,1551445,1982-07-09,Male,A-,0,2012-08-02
+270,Inspector Nagaraj Ballal,Inspector,47,Station House Officer,2875416,1977-06-06,Male,A-,0,2003-07-22
+271,Inspector Santhosh Devadiga,Inspector,47,Station House Officer,2929854,1979-01-16,Male,B+,0,2006-07-24
+272,Inspector Prakash Udupa,Inspector,47,Station House Officer,1674867,1994-12-21,Male,B-,0,2023-04-07
+273,SI Ravi Karanth,SI,48,Investigating Officer,2686819,1988-11-02,Male,A+,0,2013-02-18
+274,PSI Chaitra Moily,PSI,48,Investigating Officer,1016712,1981-06-03,Female,O-,0,2012-01-15
+275,ASI Chandru Fernandes,ASI,48,Investigating Officer,2536086,1986-06-19,Male,B-,0,2015-09-20
+276,SI Ganesh Murthy,SI,48,Investigating Officer,2591589,1992-12-01,Male,AB+,0,2019-11-25
+277,SI Lokesh Acharya,SI,48,Investigating Officer,2492443,1979-07-16,Male,O+,0,2001-09-20
+278,ASI Wilson Swamy,ASI,48,Investigating Officer,1200439,1983-08-24,Male,B+,0,2007-06-11
+279,SI Sandhya Shetty,SI,49,Investigating Officer,2942050,1976-04-10,Female,AB+,0,2002-09-12
+280,PSI Yash Suvarna,PSI,49,Investigating Officer,1221580,1974-04-05,Male,B+,0,1997-06-17
+281,SI Venkatesh Adiga,SI,49,Investigating Officer,1555761,1996-04-15,Male,A-,0,2022-12-02
+282,ASI Chandru Iyengar,ASI,49,Investigating Officer,1191287,1991-01-07,Male,B-,0,2018-03-16
+283,PSI Manjunath Pasha,PSI,49,Investigating Officer,2165919,1998-03-01,Male,B-,0,2026-10-11
+284,PSI Savitha Joshi,PSI,49,Investigating Officer,1780643,1998-04-05,Female,A-,0,2023-10-21
+285,DySP Ravi Reddy,DySP,49,Sub-Division Officer,2898086,1978-11-15,Male,O-,0,2002-12-26
+286,Inspector Sandhya Poojary,Inspector,50,Station House Officer,1362402,1984-08-01,Female,O-,0,2013-02-28
+287,Inspector Asha Suvarna,Inspector,50,Station House Officer,2046251,1973-10-20,Female,AB+,0,1999-03-14
+288,SI Harish Jadhav,SI,50,Investigating Officer,2322787,1985-04-21,Male,A+,0,2015-08-19
+289,SI Satish Kotian,SI,50,Investigating Officer,1814494,1987-06-19,Male,O+,0,2017-11-22
+290,Inspector Karthik Reddy,Inspector,50,Station House Officer,1749591,1996-05-02,Male,B-,0,2026-01-21
+291,PSI Ambika Sharma,PSI,50,Investigating Officer,2775249,1998-12-02,Female,AB+,0,2024-09-15
+292,PSI Anil Naik,PSI,50,Investigating Officer,2475247,1982-12-23,Male,O-,0,2009-12-30
+293,DySP Vanitha Achar,DySP,51,Sub-Division Officer,1079615,1987-09-10,Female,A-,0,2012-05-12
+294,SI Mahesh Rai,SI,51,Investigating Officer,2503527,1982-10-07,Male,B+,0,2007-03-24
+295,PSI Abhishek Shetty,PSI,51,Investigating Officer,2804954,1990-12-05,Male,O-,0,2014-08-25
+296,PSI Sudeep Kini,PSI,51,Investigating Officer,2660614,1981-06-05,Male,AB-,0,2006-01-08
+297,Inspector Vidya Baig,Inspector,51,Station House Officer,1643454,1991-06-08,Female,O+,0,2015-12-12
+298,DySP Sudeep Devadiga,DySP,51,Sub-Division Officer,2341436,1990-01-06,Male,A-,0,2017-04-22
+299,PSI Fathima Hegde,PSI,51,Investigating Officer,1936650,1982-03-21,Female,A+,0,2005-09-02
+300,PSI Shivakumar Biradar,PSI,51,Investigating Officer,1919014,1975-12-01,Male,AB+,0,1998-06-10
+301,SI Murali Biradar,SI,52,Investigating Officer,1946418,1975-08-26,Male,A-,0,2000-11-10
+302,PSI Saraswathi Shinde,PSI,52,Investigating Officer,1337441,1975-02-11,Female,A-,0,1999-08-16
+303,ASI Harish Kattimani,ASI,52,Investigating Officer,2976444,1991-08-23,Male,B+,0,2014-03-25
+304,SI Manjunath Deshpande,SI,52,Investigating Officer,1556300,1978-07-23,Male,O+,0,2009-04-17
+305,SI Ramya Karanth,SI,52,Investigating Officer,1896754,1987-03-02,Female,A-,0,2014-02-24
+306,PSI Riyaz Bhat,PSI,52,Investigating Officer,1993149,1978-03-21,Male,A-,0,2004-04-24
+307,ASI Mustafa Shanbhag,ASI,52,Investigating Officer,1778086,1974-11-18,Male,AB+,0,2003-02-13
+308,PSI Bhavya Salian,PSI,53,Investigating Officer,2577551,1998-05-19,Female,A-,0,2020-07-29
+309,DySP Sagar Swamy,DySP,53,Sub-Division Officer,2716320,1990-04-18,Male,AB+,0,2012-10-27
+310,Inspector Farhan Karanth,Inspector,53,Station House Officer,2052983,1987-05-03,Male,B+,0,2015-05-13
+311,DySP Anil Nayak,DySP,53,Sub-Division Officer,1164350,1997-04-05,Male,AB+,0,2019-11-02
+312,ASI Anand Achar,ASI,53,Investigating Officer,1813902,1982-12-26,Male,AB+,0,2006-02-02
+313,Inspector Wilson Salian,Inspector,53,Station House Officer,1235969,1972-12-20,Male,AB+,0,2003-07-15
+314,PSI Girish Madiwal,PSI,53,Investigating Officer,2845778,1996-02-26,Male,O-,0,2022-11-20
+315,ASI Mustafa Karanth,ASI,54,Investigating Officer,2296552,1973-03-09,Male,AB+,0,2001-05-14
+316,PSI Rakesh Baig,PSI,54,Investigating Officer,1708556,1995-08-09,Male,O+,0,2022-08-12
+317,PSI Girish Moily,PSI,54,Investigating Officer,2528403,1981-12-15,Male,AB+,0,2009-04-24
+318,Inspector Bhavya Acharya,Inspector,54,Station House Officer,2721798,1985-12-16,Female,A+,0,2016-06-17
+319,SI Divya Sait,SI,54,Investigating Officer,1404254,1976-09-19,Female,B-,0,1998-12-11
+320,Inspector Abdul Shetty,Inspector,54,Station House Officer,2059326,1994-04-09,Male,AB+,0,2021-11-25
+321,SI Ajay Angadi,SI,55,Investigating Officer,2156230,1986-03-28,Male,O-,0,2016-01-15
+322,Inspector Krishna Fernandes,Inspector,55,Station House Officer,1341641,1974-05-01,Male,B-,0,2002-05-19
+323,ASI Chetan Jadhav,ASI,55,Investigating Officer,2911586,1988-01-28,Male,B+,0,2010-09-21
+324,PSI Suresh Murthy,PSI,55,Investigating Officer,2877963,1997-05-23,Male,AB+,0,2023-12-19
+325,ASI Syed Pawar,ASI,56,Investigating Officer,2072722,1998-10-13,Male,O-,0,2021-10-10
+326,ASI Siddaraju Pawar,ASI,56,Investigating Officer,2806678,1987-02-11,Male,O+,0,2013-07-20
+327,PSI Chandru Bhat,PSI,56,Investigating Officer,2427648,1996-04-02,Male,B+,0,2024-09-05
+328,Inspector Hanumantha Patil,Inspector,56,Station House Officer,2484928,1984-07-24,Male,B-,0,2007-05-13
+329,Inspector Gagan Amin,Inspector,56,Station House Officer,2762947,1993-06-17,Male,B+,0,2019-09-06
+330,Inspector Krishna DSouza,Inspector,56,Station House Officer,1466099,1996-03-22,Male,O-,0,2023-04-30
+331,Inspector Nithin Sequeira,Inspector,56,Station House Officer,2785124,1983-05-19,Male,A-,0,2010-01-04
+332,Inspector Ravi Kotian,Inspector,57,Station House Officer,1625697,1988-02-28,Male,AB+,0,2016-11-18
+333,SI Raghavendra Bhat,SI,57,Investigating Officer,2633558,1990-08-05,Male,A-,0,2017-10-29
+334,ASI Anil Shinde,ASI,57,Investigating Officer,2208544,1972-08-09,Male,B+,0,1997-10-28
+335,ASI Harish Kamath,ASI,57,Investigating Officer,1803872,1992-07-13,Male,A+,0,2021-03-07
+336,Inspector Deepa Gowda,Inspector,57,Station House Officer,2314257,1996-09-07,Female,B-,0,2018-09-04
+337,PSI Puneeth Kamath,PSI,57,Investigating Officer,2727725,1988-10-10,Male,A+,0,2012-11-06
+338,SI Wilson Prabhu,SI,57,Investigating Officer,1753403,1985-11-05,Male,B-,0,2013-07-06
+339,PSI Vikram Reddy,PSI,57,Investigating Officer,1354386,1995-03-07,Male,A-,0,2017-11-14
+340,SI Mohan Lobo,SI,58,Investigating Officer,1101156,1973-10-02,Male,A-,0,1996-10-06
+341,ASI Mohan Kotian,ASI,58,Investigating Officer,1882631,1978-12-22,Male,A-,0,2001-05-19
+342,Inspector Raghavendra Swamy,Inspector,58,Station House Officer,1239101,1975-09-24,Male,A-,0,1999-02-09
+343,SI Krishna Achar,SI,58,Investigating Officer,1336327,1978-06-23,Male,A+,0,2006-11-14

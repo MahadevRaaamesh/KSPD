@@ -1,7 +1,6 @@
-from fastapi import APIRouter, Query, Path
+from fastapi import APIRouter, Query, Path, HTTPException
 from models.schemas import SimilaritySearchResponse, SimilaritySearchRequest, FIR
 from services.similarity_service import similarity_service
-from typing import Optional
 
 router = APIRouter()
 
@@ -25,6 +24,5 @@ async def search_similar_by_id(
 async def get_fir(fir_id: int = Path(...)):
     fir = await similarity_service.get_fir_by_id(fir_id)
     if not fir:
-        from fastapi import HTTPException
         raise HTTPException(status_code=404, detail="FIR not found")
     return fir
